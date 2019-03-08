@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu, Row, Button } from 'antd';
 import "antd/dist/antd.css";
 // import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+    this.props = {
       data: []
     };
   }
@@ -22,7 +22,7 @@ class App extends Component {
   
   render() {
     return (
-      <Layout style={{height:'100vh'}}>
+      <Layout>
         <NavMenu />
         <BodyContent />
         <FooterContent />
@@ -56,13 +56,22 @@ class BodyContent extends Component {
     const {Content} = Layout;
 
     return (
-      <Content>
-        {/* <Breadcrumb>
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb> */}
-        <div>Content</div>
+      <Content style={{ padding: '20px 20px' }}>
+        <div style={{ background: '#fff', padding: '24px', height: '100vh' }}>
+          <div style={{textAlign:'center'}}>
+            <Row></Row>
+            <Row align='middle' justify='center' type='flex' style={{height:'100vh'}}>
+              <Row>
+                <h1>Foodfluence</h1>
+              </Row>
+              <Row>
+                <Button type='default'>Click me</Button>
+              </Row>
+            </Row>
+            {/* <Row>
+            </Row> */}
+          </div>
+        </div>
       </Content>
     );
   }
