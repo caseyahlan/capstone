@@ -76,7 +76,7 @@ class BodyContent extends Component {
                 </Row>
                 <Row type='flex' align='middle' justify='center'>
                   <Link to='/input'>
-                    <Button type='primary'>Click me</Button>
+                    <Button type='primary'>Enter</Button>
                   </Link>
                 </Row>
               </Col>
