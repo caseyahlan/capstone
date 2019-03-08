@@ -4,6 +4,22 @@ import "antd/dist/antd.css";
 // import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: []
+    };
+  }
+  
+  componentDidMount() {
+    fetch('./data/data.json')
+      .then((response) => (response.json()))
+      .then((data) => {
+        this.setState({data: data});
+      })
+      .catch((e) => {console.log(e)});
+  }
+  
   render() {
     return (
       <Layout>
@@ -60,5 +76,6 @@ class FooterContent extends Component {
     )
   }
 }
+
 
 export default App;
