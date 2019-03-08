@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Row, Button, Col } from 'antd';
-import { Route, Switch, Link, Redirect, NavLink} from 'react-router-dom';
+import { Route, Link, Redirect, NavLink} from 'react-router-dom';
+import InputBox from './Components/InputBox';
+import Results from './Components/Results';
 import "antd/dist/antd.css";
 import './App.css';
 
@@ -27,7 +29,10 @@ class App extends Component {
         <NavMenu />
         {/* <Switch> */}
           <Route exact path='/' component={BodyContent}/>
-          <Route path='/test' component={FooterContent}/>
+          <Route path='/input' render={(routerProps) => (
+            <InputBox {...routerProps} data={this.state.data}/>
+          )}/>
+          <Route path='/results' component={Results}/>
         {/* </Switch> */}
         {/* <FooterContent /> */}
       </Layout>
@@ -69,14 +74,12 @@ class BodyContent extends Component {
                   <h1>foodfluence.</h1>
                 </Row>
                 <Row type='flex' align='middle' justify='center'>
-                  <Link to='/test'>
+                  <Link to='/input'>
                     <Button type='primary'>Click me</Button>
                   </Link>
                 </Row>
               </Col>
             </Row>
-            {/* <Row>
-            </Row> */}
           </div>
         </div>
       </Content>
