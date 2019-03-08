@@ -6,8 +6,10 @@ class InputBox extends Component {
 
     render() {
         return(
-            <div><h1>{ this.props.data.product }</h1>
-            <InputNumber/></div>
+            <div>
+                <row><h1>{ this.props.data.Product }</h1><InputNumber/>
+                </row>>
+            </div>
             
         );
     }

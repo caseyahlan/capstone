@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import "antd/dist/antd.css";
+import FoodForm from './FoodForm.js';
 // import './App.css';
 
 class App extends Component {
@@ -60,6 +61,7 @@ class BodyContent extends Component {
           <Breadcrumb.Item>App</Breadcrumb.Item>
         </Breadcrumb> */}
         <div>Content</div>
+        <FoodForm data = {this.state.data}/>
       </Content>
     );
   }
