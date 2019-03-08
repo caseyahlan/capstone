@@ -22,7 +22,7 @@ class App extends Component {
   
   render() {
     return (
-      <Layout>
+      <Layout style={{height:'100vh'}}>
         <NavMenu />
         <BodyContent />
         <FooterContent />
@@ -36,12 +36,15 @@ class NavMenu extends Component {
     const {Header} = Layout;
 
     return (
-      <Header>
+      <Header style={{width:'100%'}}>
         <div className="logo" />
-        <Menu mode='horizontal' defaultSelectedKeys={['2']}>
-          <Menu.Item key="1">nav 1</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
+        <Menu
+          theme="dark"
+          mode="horizontal"
+          defaultSelectedKeys={['0']}
+          style={{ lineHeight: '64px' }}
+        >
+          <Menu.Item key="1">Foodfluence</Menu.Item>
         </Menu>
       </Header>
     );
