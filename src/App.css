@@ -1,4 +1,16 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+#root, #hello {
+  height: inherit;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -38,4 +50,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

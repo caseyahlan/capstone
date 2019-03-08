@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu, Row, Button, Col } from 'antd';
+import { Route, Link, Redirect, NavLink} from 'react-router-dom';
+import InputBox from './Components/InputBox';
+import Results from './Components/Results';
 import "antd/dist/antd.css";
 import FoodForm from './FoodForm.js';
-// import './App.css';
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -23,10 +26,16 @@ class App extends Component {
   
   render() {
     return (
-      <Layout>
+      <Layout style={{height:'100vh'}}>
         <NavMenu />
-        <BodyContent />
-        <FooterContent />
+        {/* <Switch> */}
+          <Route exact path='/' component={BodyContent}/>
+          <Route path='/input' render={(routerProps) => (
+            <InputBox {...routerProps} data={this.state.data}/>
+          )}/>
+          <Route path='/results' component={Results}/>
+        {/* </Switch> */}
+        {/* <FooterContent /> */}
       </Layout>
     );
   }
@@ -37,12 +46,15 @@ class NavMenu extends Component {
     const {Header} = Layout;
 
     return (
-      <Header>
+      <Header style={{width:'100%'}}>
         <div className="logo" />
-        <Menu mode='horizontal' defaultSelectedKeys={['2']}>
-          <Menu.Item key="1">nav 1</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
+        <Menu
+          theme="dark"
+          mode="horizontal"
+          defaultSelectedKeys={['0']}
+          style={{ lineHeight: '64px' }}
+        >
+          <Menu.Item key="1"><Link to='/'>Foodfluence</Link></Menu.Item>
         </Menu>
       </Header>
     );
@@ -54,14 +66,23 @@ class BodyContent extends Component {
     const {Content} = Layout;
 
     return (
-      <Content>
-        {/* <Breadcrumb>
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb> */}
-        <div>Content</div>
-        <FoodForm data = {this.state.data}/>
+      <Content style={{ padding: '20px 20px'}}>
+        <div style={{ background: '#fff', padding: '24px', height: '100%' }}>
+          <div style={{height:'100%'}}>
+            <Row align='middle' justify='center' type='flex' style={{height: '100%'}}>
+              <Col>
+                <Row type='flex' align='middle' justify='center'>
+                  <h1>foodfluence.</h1>
+                </Row>
+                <Row type='flex' align='middle' justify='center'>
+                  <Link to='/input'>
+                    <Button type='primary'>Click me</Button>
+                  </Link>
+                </Row>
+              </Col>
+            </Row>
+          </div>
+        </div>
       </Content>
     );
   }
