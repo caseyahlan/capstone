@@ -3,6 +3,9 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
 import circles from '../imgs/circles.svg';
+import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
+import orangutanStumps from '../imgs/orangutanStumps-07.svg';
+import orangutanTrees from '../imgs/orangutanTrees-07.svg';
 
 class Nutella extends Component {
   render() {
@@ -23,7 +26,7 @@ class NutellaDesktop extends Component {
   render() {
     return (
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
-          
+
           {/* Slide One */}
           <ParallaxLayer
             offset={0}
@@ -31,7 +34,7 @@ class NutellaDesktop extends Component {
             onClick={() => this.parallax.scrollTo(1)}>
             <Container fluid={true}>
               <Row>
-                <Col xs='12' className='split-horizontal pink-background d-flex justify-content-center align-items-end'>
+                <Col xs='12' className='split-horizontal light-green-background d-flex justify-content-center align-items-end'>
                   <h1 className='text-white pb-3'>Nutella</h1>
                 </Col>
                 <Col xs='12' className='d-flex justify-content-center'>
@@ -43,7 +46,7 @@ class NutellaDesktop extends Component {
               </Row>
             </Container>
           </ParallaxLayer>
-          
+
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
           <ParallaxLayer offset={1} speed={0.1}>
@@ -56,10 +59,10 @@ class NutellaDesktop extends Component {
                       well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla (Citation 1).
                       <br></br><br></br>
                       Just by looking at the ingredients, nutella seems like a perfect choice for many recipes. However, nutella’s
-                      heavy use of palm oil spreads damage to the environment. 
+                      heavy use of palm oil spreads damage to the environment.
                     </p>
                 </div>
-                <img src='https://via.placeholder.com/400x400.png' className='img-fluid d-none d-md-flex ml-5 mt-md-5 pl-3 pt-5'></img>
+                <img src={hazelnutSpread} className='img-fluid d-none d-md-flex ml-5 mt-md-5 pl-3 pt-5'></img>
               </div>
             </Container>
           </ParallaxLayer>
@@ -82,14 +85,15 @@ class NutellaDesktop extends Component {
                 <div className='media-body px-3'>
                   <h1 className='text-left mt-4'>How has Nutella Impacted Orangutans?</h1>
                   <p className='text-monospace font-italic'>
-                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation. 
+                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
                     Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
                     where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
                     45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
                     -orangutantrekkingtours.com
                   </p>
                 </div>
-                <img src='https://via.placeholder.com/400x400.png' className='align-self-center'></img>
+                <img src={orangutanTrees} className='align-self-center'></img>
+                <img src={orangutanStumps} className='align-self-center'></img>
               </div>
             </Container>
           </ParallaxLayer>
@@ -98,7 +102,7 @@ class NutellaDesktop extends Component {
           <ParallaxLayer offset={4} speed={0.5}>
             <Container fluid={true}>
               <Row>
-                <Col md='6' className='split-vertical pink-background text-white d-flex align-items-center flex-wrap'>
+                <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap'>
                   <Row className='px-3'>
                     <h1>Alternatives to popular products that use palm oil</h1>
                     <p className='text-monospace pt-3'>
@@ -132,7 +136,7 @@ class NutellaDesktop extends Component {
           <ParallaxLayer offset={5} speed={0.1}>
             <Container fluid={true}>
               <Row>
-                <Col md='6' className='split-vertical pink-background text-white d-flex align-items-center'>
+                <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center'>
                   <h1 className='px-3'>What can you do to help?</h1>
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
@@ -147,7 +151,7 @@ class NutellaDesktop extends Component {
                     <ListGroupItem>
                       <ListGroupItemHeading>Research alternatives</ListGroupItemHeading>
                       <ListGroupItemText>
-                        Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research 
+                        Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research
                         the ingredients in products you use and try to find alternatives.
                       </ListGroupItemText>
                     </ListGroupItem>
@@ -157,37 +161,37 @@ class NutellaDesktop extends Component {
             </Container>
           </ParallaxLayer>
 
-  
-  
+
+
           <ParallaxLayer
             offset={1}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(2)}/>
-  
+
           <ParallaxLayer
             offset={2}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(3)}>
           </ParallaxLayer>
-  
+
           <ParallaxLayer
             offset={3}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(4)}>
           </ParallaxLayer>
-  
+
           <ParallaxLayer
             offset={4}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(5)}>
           </ParallaxLayer>
-  
+
           <ParallaxLayer
             offset={5}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(6)}>
           </ParallaxLayer>
-  
+
           <ParallaxLayer
             offset={6}
             speed={0.1}
@@ -204,7 +208,7 @@ class NutellaMobile extends Component {
   render() {
     return (
         <Parallax ref={ref => (this.parallax = ref)} pages={9}>
-          
+
           {/* Slide One */}
           <ParallaxLayer
             offset={0}
@@ -212,7 +216,7 @@ class NutellaMobile extends Component {
             onClick={() => this.parallax.scrollTo(1)}>
             <Container fluid={true}>
               <Row>
-                <Col xs='12' className='split-horizontal pink-background d-flex justify-content-center align-items-end'>
+                <Col xs='12' className='split-horizontal light-green-background d-flex justify-content-center align-items-end'>
                   <h1 className='text-white pb-3'>Nutella</h1>
                 </Col>
                 <Col xs='12' className='d-flex justify-content-center'>
@@ -224,7 +228,7 @@ class NutellaMobile extends Component {
               </Row>
             </Container>
           </ParallaxLayer>
-          
+
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
           <ParallaxLayer offset={1} speed={0.1}>
@@ -237,12 +241,12 @@ class NutellaMobile extends Component {
                     well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla (Citation 1).
                     <br></br><br></br>
                     Just by looking at the ingredients, nutella seems like a perfect choice for many recipes. However, nutella’s
-                    heavy use of palm oil spreads damage to the environment. 
+                    heavy use of palm oil spreads damage to the environment.
                   </p>
                 </Col>
               </Row>
               <Row className='justify-content-center'>
-                  <img src='https://via.placeholder.com/300x300.png' className='img-fluid'></img>
+                  <img src={hazelnutSpread} className='img-fluid'></img>
               </Row>
             </Container>
           </ParallaxLayer>
@@ -267,7 +271,7 @@ class NutellaMobile extends Component {
                 <Col xs='12'>
                   <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Nutella Impacted Orangutans?</h1>
                   <p className='text-monospace font-italic'>
-                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation. 
+                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
                     Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
                     where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
                     45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
@@ -276,7 +280,8 @@ class NutellaMobile extends Component {
                 </Col>
               </Row>
               <Row className='justify-content-center'>
-                <img src='https://via.placeholder.com/300x300.png' className='img-fluid'></img>
+              <img src={orangutanTrees} className='img-fluid'></img>
+                <img src={orangutanStumps} className='img-fluid'></img>
               </Row>
             </Container>
           </ParallaxLayer>
@@ -285,7 +290,7 @@ class NutellaMobile extends Component {
           <ParallaxLayer offset={4} speed={0.5}>
             <Container>
               <Row>
-                <Col xs='12' className='split-horizontal pink-background text-white d-flex justify-content-center'>
+                <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>Alternatives to popular products that use palm oil</h1>
                     <p>There are many products that use palm oil. Below is a small list of those products and possible alternatives for them.</p>
@@ -321,7 +326,7 @@ class NutellaMobile extends Component {
           <ParallaxLayer offset={6} speed={0.1}>
             <Container fluid={true}>
               <Row>
-                <Col md='6' className='pink-background text-white d-flex align-items-center'>
+                <Col md='6' className='light-green-background text-white d-flex align-items-center'>
                   <h1>What can you do to help?</h1>
                 </Col>
               </Row>
@@ -342,7 +347,7 @@ class NutellaMobile extends Component {
                 <ListGroupItem>
                   <ListGroupItemHeading>Research alternatives</ListGroupItemHeading>
                   <ListGroupItemText>
-                    Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research 
+                    Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research
                     the ingredients in products you use and try to find alternatives.
                   </ListGroupItemText>
                 </ListGroupItem>
@@ -350,31 +355,31 @@ class NutellaMobile extends Component {
             </Container>
           </ParallaxLayer>
 
-  
-  
+
+
           <ParallaxLayer
             offset={1}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(2)}/>
-  
+
           <ParallaxLayer
             offset={2}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(3)}>
           </ParallaxLayer>
-  
+
           <ParallaxLayer
             offset={3}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(4)}>
           </ParallaxLayer>
-  
+
           <ParallaxLayer
             offset={4}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(5)}>
           </ParallaxLayer>
-  
+
           <ParallaxLayer
             offset={5}
             speed={0.1}
@@ -392,7 +397,7 @@ class NutellaMobile extends Component {
             speed={0.1}
             onClick={() => this.parallax.scrollTo(8)}>
           </ParallaxLayer>
-  
+
           <ParallaxLayer
             offset={8}
             speed={0.1}
