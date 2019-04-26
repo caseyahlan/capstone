@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch, NavLink} from 'react-router-dom';
-// import './styles.css'
+// import MediaQuery from 'react-responsive';
 import { Container, Row, Col } from 'reactstrap';
 import Nutella from './components/nutella';
 

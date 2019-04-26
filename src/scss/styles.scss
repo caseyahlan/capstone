@@ -1,3 +1,27 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.3rem;
+  }
+}
+
 .whole-screen-container {
     width: 100%;
     margin:0px !important;
