@@ -3,6 +3,7 @@ import { Route, Link, Switch, NavLink} from 'react-router-dom';
 // import MediaQuery from 'react-responsive';
 import { Container, Row, Col } from 'reactstrap';
 import Nutella from './components/nutella';
+import Fish from './components/fish';
 
 class App extends Component {
   constructor(props) {
@@ -11,12 +12,13 @@ class App extends Component {
       data: []
     };
   }
-  
+
   render() {
     return (
       <Switch>
         <Route exact path='/' component={BodyContent}/>
         <Route path='/nutella' component={Nutella}/>
+        <Route path='/fish' component={Fish}/>
       </Switch>
     );
   }
@@ -28,6 +30,9 @@ class BodyContent extends Component {
       <Container>
         <Row>
           <Col><Link to='/nutella'>nutella</Link></Col>
+        </Row>
+        <Row>
+          <Col><Link to='/fish'>fish</Link></Col>
         </Row>
       </Container>
     )
