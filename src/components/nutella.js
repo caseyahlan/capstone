@@ -4,6 +4,10 @@ import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, Li
 import MediaQuery from 'react-responsive';
 import circles from '../imgs/circles.svg';
 import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
+import apple from '../imgs/apple-03.svg';
+import crepe from '../imgs/crepe-05.svg';
+import strawberry from '../imgs/strawberry-02.svg';
+import toast from '../imgs/toast-06.svg';
 import orangutanStumps from '../imgs/orangutanStumps-07.svg';
 import orangutanTrees from '../imgs/orangutanTrees-07.svg';
 
@@ -54,7 +58,8 @@ class NutellaDesktop extends Component {
               <div className='media'>
                 <div className='media-body'>
                   <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Nutella</h1>
-                    <p className='text-monospace'>
+                    <p className='text-monospace body-text'>
+                      <br></br>
                       Nutella is a popular hazelnut spread that is commonly used in many food products. Currently, there are 7
                       well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla (Citation 1).
                       <br></br><br></br>
@@ -62,7 +67,7 @@ class NutellaDesktop extends Component {
                       heavy use of palm oil spreads damage to the environment.
                     </p>
                 </div>
-                <img src={hazelnutSpread} className='img-fluid d-none d-md-flex ml-5 mt-md-5 pl-3 pt-5'></img>
+                <img src={hazelnutSpread} className='align-self-center' height="35%" width="35%"></img>
               </div>
             </Container>
           </ParallaxLayer>
@@ -79,12 +84,13 @@ class NutellaDesktop extends Component {
           </ParallaxLayer>
 
           {/* Slide Four */}
-          <ParallaxLayer offset={3} speed={1}>
+          <ParallaxLayer offset={3} speed={1} className='grey-background'>
             <Container>
               <div className='media'>
                 <div className='media-body px-3'>
                   <h1 className='text-left mt-4'>How has Nutella Impacted Orangutans?</h1>
                   <p className='text-monospace font-italic'>
+                    <br></br>
                     “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
                     Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
                     where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
@@ -92,8 +98,8 @@ class NutellaDesktop extends Component {
                     -orangutantrekkingtours.com
                   </p>
                 </div>
-                <img src={orangutanTrees} className='align-self-center'></img>
-                <img src={orangutanStumps} className='align-self-center'></img>
+                <img src={orangutanTrees} className='align-self-center' height="25%" width="25%"></img>
+                <img src={orangutanStumps} className='align-self-center' height="25%" width="25%"></img>
               </div>
             </Container>
           </ParallaxLayer>
@@ -112,18 +118,22 @@ class NutellaDesktop extends Component {
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
+                  <img src={crepe} className='align-self-center' height="25%" width="25%"></img>
+                  <img src={apple} className='align-self-center' height="25%" width="25%"></img>
+                  <img src={strawberry} className='align-self-center' height="25%" width="25%"></img>
+                  <img src={toast} className='align-self-center' height="25%" width="25%"></img>
                     <ListGroup>
                       <ListGroupItem>
                         <ListGroupItemHeading>Nutella</ListGroupItemHeading>
-                        <ListGroupItemText>Try Nicciolata Organic Hazelnut Spread with Cocoa & Milk; this product is also GMO Free</ListGroupItemText>
+                        <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
                       </ListGroupItem>
                       <ListGroupItem>
                         <ListGroupItemHeading>Clif Bar</ListGroupItemHeading>
-                        <ListGroupItemText>Try Health Warriors Chia Bar; this product is 100 calories and has 3g of sugar</ListGroupItemText>
+                        <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_top">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
                       </ListGroupItem>
                       <ListGroupItem>
                         <ListGroupItemHeading>JIF Peanut Butter</ListGroupItemHeading>
-                        <ListGroupItemText>Try Wild Friends Foods Chocolate Coconut Peanut Butter; this product is kosher and gluten-free</ListGroupItemText>
+                        <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_top">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free</ListGroupItemText>
                       </ListGroupItem>
                     </ListGroup>
                   </Container>
@@ -140,22 +150,28 @@ class NutellaDesktop extends Component {
                   <h1 className='px-3'>What can you do to help?</h1>
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
-                  <ListGroup>
-                    <ListGroupItem>
-                      <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
-                      <ListGroupItemText>
-                        Consider buying alternative products that do not use palm oil. While it is impossible to completely avoid palm oil products,
-                        reducing purchases of these products is a start to reducing demand of palm oil products.
-                      </ListGroupItemText>
-                    </ListGroupItem>
-                    <ListGroupItem>
-                      <ListGroupItemHeading>Research alternatives</ListGroupItemHeading>
-                      <ListGroupItemText>
-                        Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research
-                        the ingredients in products you use and try to find alternatives.
-                      </ListGroupItemText>
-                    </ListGroupItem>
-                  </ListGroup>
+                  <Container>
+                  <img src={crepe} className='align-self-center' height="25%" width="25%"></img>
+                  <img src={apple} className='align-self-center' height="25%" width="25%"></img>
+                  <img src={strawberry} className='align-self-center' height="25%" width="25%"></img>
+                  <img src={toast} className='align-self-center' height="25%" width="25%"></img>
+                    <ListGroup>
+                      <ListGroupItem>
+                        <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
+                        <ListGroupItemText>
+                          Consider buying alternative products that do not use palm oil. While it is impossible to completely avoid palm oil products,
+                          reducing purchases of these products is a start to reducing demand of palm oil products.
+                        </ListGroupItemText>
+                      </ListGroupItem>
+                      <ListGroupItem>
+                        <ListGroupItemHeading>Research alternatives</ListGroupItemHeading>
+                        <ListGroupItemText>
+                          Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research
+                          the ingredients in products you use and try to find alternatives.
+                        </ListGroupItemText>
+                      </ListGroupItem>
+                    </ListGroup>
+                  </Container>
                 </Col>
               </Row>
             </Container>
@@ -236,7 +252,11 @@ class NutellaMobile extends Component {
               <Row>
                 <Col xs='12'>
                   <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Nutella</h1>
+                  <Row className='justify-content-center'>
+                      <img src={hazelnutSpread} className='img-fluid' height="35%" width="35%"></img>
+                  </Row>
                   <p className='text-monospace'>
+                    <br></br>
                     Nutella is a popular hazelnut spread that is commonly used in many food products. Currently, there are 7
                     well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla (Citation 1).
                     <br></br><br></br>
@@ -244,9 +264,6 @@ class NutellaMobile extends Component {
                     heavy use of palm oil spreads damage to the environment.
                   </p>
                 </Col>
-              </Row>
-              <Row className='justify-content-center'>
-                  <img src={hazelnutSpread} className='img-fluid'></img>
               </Row>
             </Container>
           </ParallaxLayer>
@@ -265,12 +282,17 @@ class NutellaMobile extends Component {
           </ParallaxLayer>
 
           {/* Slide Four */}
-          <ParallaxLayer offset={3} speed={1}>
+          <ParallaxLayer offset={3} speed={1} className='grey-background'>
             <Container>
               <Row>
                 <Col xs='12'>
                   <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Nutella Impacted Orangutans?</h1>
+                  <Row className='justify-content-center'>
+                    <img src={orangutanTrees} className='img-fluid'></img>
+                    <img src={orangutanStumps} className='img-fluid'></img>
+                  </Row>
                   <p className='text-monospace font-italic'>
+                    <br></br>
                     “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
                     Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
                     where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
@@ -278,10 +300,6 @@ class NutellaMobile extends Component {
                     -orangutantrekkingtours.com
                   </p>
                 </Col>
-              </Row>
-              <Row className='justify-content-center'>
-              <img src={orangutanTrees} className='img-fluid'></img>
-                <img src={orangutanStumps} className='img-fluid'></img>
               </Row>
             </Container>
           </ParallaxLayer>
@@ -293,6 +311,10 @@ class NutellaMobile extends Component {
                 <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>Alternatives to popular products that use palm oil</h1>
+                    <img src={crepe} className='img-fluid' height="25%" width="25%"></img>
+                    <img src={apple} className='img-fluid' height="25%" width="25%"></img>
+                    <img src={strawberry} className='img-fluid' height="25%" width="25%"></img>
+                    <img src={toast} className='img-fluid' height="25%" width="25%"></img>
                     <p>There are many products that use palm oil. Below is a small list of those products and possible alternatives for them.</p>
                   </Row>
                 </Col>
@@ -300,15 +322,15 @@ class NutellaMobile extends Component {
                   <ListGroup>
                     <ListGroupItem>
                       <ListGroupItemHeading>Nutella</ListGroupItemHeading>
-                      <ListGroupItemText>Try Nicciolata Organic Hazelnut Spread with Cocoa & Milk; this product is also GMO Free</ListGroupItemText>
+                      <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
                       <ListGroupItemHeading>Clif Bar</ListGroupItemHeading>
-                      <ListGroupItemText>Try Health Warriors Chia Bar; this product is 100 calories and has 3g of sugar</ListGroupItemText>
+                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_top">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
                       <ListGroupItemHeading>JIF Peanut Butter</ListGroupItemHeading>
-                      <ListGroupItemText>Try Wild Friends Foods Chocolate Coconut Peanut Butter; this product is kosher and gluten-free</ListGroupItemText>
+                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_top">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free</ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>
                 </Col>
@@ -317,45 +339,40 @@ class NutellaMobile extends Component {
           </ParallaxLayer>
 
           {/* Slide Six */}
-          <ParallaxLayer offset={5} speed={0.1}>
-            <Container>
-            </Container>
-          </ParallaxLayer>
-
-          {/* Slide Seven */}
           <ParallaxLayer offset={6} speed={0.1}>
             <Container fluid={true}>
               <Row>
-                <Col md='6' className='light-green-background text-white d-flex align-items-center'>
-                  <h1>What can you do to help?</h1>
+                <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
+                  <Row>
+                    <h1>How can you help?</h1>
+                    <img src={crepe} className='img-fluid' height="25%" width="25%"></img>
+                    <img src={apple} className='img-fluid' height="25%" width="25%"></img>
+                    <img src={strawberry} className='img-fluid' height="25%" width="25%"></img>
+                    <img src={toast} className='img-fluid' height="25%" width="25%"></img>
+                    <p>There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.</p>
+                  </Row>
+                </Col>
+                <Col className='split-horizontal d-flex justify-content-center'>
+                  <ListGroup>
+                    <ListGroupItem>
+                      <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
+                      <ListGroupItemText>
+                        Consider buying alternative products that do not use palm oil. While it is impossible to completely avoid palm oil products,
+                        reducing purchases of these products is a start to reducing demand of palm oil products.
+                      </ListGroupItemText>
+                    </ListGroupItem>
+                    <ListGroupItem>
+                      <ListGroupItemHeading>Research alternatives</ListGroupItemHeading>
+                      <ListGroupItemText>
+                        Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research
+                        the ingredients in products you use and try to find alternatives.
+                      </ListGroupItemText>
+                    </ListGroupItem>
+                  </ListGroup>
                 </Col>
               </Row>
             </Container>
           </ParallaxLayer>
-
-          {/* Slide Eight */}
-          <ParallaxLayer offset={7} speed={0.1}>
-            <Container>
-              <ListGroup>
-                <ListGroupItem>
-                  <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
-                  <ListGroupItemText>
-                    Consider buying alternative products that do not use palm oil. While it is impossible to completely avoid palm oil products,
-                    reducing purchases of these products is a start to reducing demand of palm oil products.
-                  </ListGroupItemText>
-                </ListGroupItem>
-                <ListGroupItem>
-                  <ListGroupItemHeading>Research alternatives</ListGroupItemHeading>
-                  <ListGroupItemText>
-                    Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research
-                    the ingredients in products you use and try to find alternatives.
-                  </ListGroupItemText>
-                </ListGroupItem>
-              </ListGroup>
-            </Container>
-          </ParallaxLayer>
-
-
 
           <ParallaxLayer
             offset={1}
