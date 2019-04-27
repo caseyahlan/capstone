@@ -4,6 +4,7 @@ import { Route, Link, Switch, NavLink} from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 import Nutella from './components/nutella';
 import Fish from './components/fish';
+import Hamburger from './components/hamburger';
 
 class App extends Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class App extends Component {
         <Route exact path='/' component={BodyContent}/>
         <Route path='/nutella' component={Nutella}/>
         <Route path='/fish' component={Fish}/>
+        <Route path='/hamburger' component={Hamburger}/>
       </Switch>
     );
   }
@@ -33,6 +35,9 @@ class BodyContent extends Component {
         </Row>
         <Row>
           <Col><Link to='/fish'>fish</Link></Col>
+        </Row>
+        <Row>
+          <Col><Link to='/hamburger'>hamburger</Link></Col>
         </Row>
       </Container>
     )
