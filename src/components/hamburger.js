@@ -3,7 +3,7 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
 import circles from '../imgs/circles.svg';
-import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
+import hamburger from '../imgs/hamburger.svg';
 import apple from '../imgs/apple-03.svg';
 import crepe from '../imgs/crepe-05.svg';
 import strawberry from '../imgs/strawberry-02.svg';
@@ -65,7 +65,7 @@ class HamburgerDesktop extends Component {
                       Raising cows requires a lot of food, water, land, and energy.
                     </p>
                 </div>
-                <img src={hazelnutSpread} className='align-self-center' height="35%" width="35%"></img>
+                <img src={hamburger} className='align-self-center' height="35%" width="35%"></img>
               </div>
             </Container>
           </ParallaxLayer>
@@ -206,7 +206,7 @@ class HamburgerMobile extends Component {
                 <Col xs='12'>
                   <h1 className='text-center text-md-left pt-2 pt-lg-5'>About the Beef Industry</h1>
                   <Row className='justify-content-center'>
-                      <img src={hazelnutSpread} className='img-fluid' height="35%" width="35%"></img>
+                      <img src={hamburger} className='img-fluid' height="35%" width="35%"></img>
                   </Row>
                   <p className='text-monospace'>
                     <br></br>
