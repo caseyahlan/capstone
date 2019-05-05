@@ -10,6 +10,10 @@ import strawberry from '../imgs/strawberry-02.svg';
 import toast from '../imgs/toast-06.svg';
 import orangutanStumps from '../imgs/orangutanStumps-07.svg';
 import orangutanTrees from '../imgs/orangutanTrees-07.svg';
+import pinkCircle from '../imgs/pink-circle.svg';
+import blueCircle from '../imgs/blue-circle.svg';
+import house from '../imgs/house-w-line-03.svg';
+import deadPalm from '../imgs/dead-palm-07.svg';
 
 class Nutella extends Component {
   render() {
@@ -53,7 +57,10 @@ class NutellaDesktop extends Component {
 
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={1} speed={0.1}>
+          <ParallaxLayer offset={1.3} speed={4}>
+            <img src={hazelnutSpread} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={1.2} speed={0.1}>
             <Container>
               <div className='media'>
                 <div className='media-body'>
@@ -67,7 +74,6 @@ class NutellaDesktop extends Component {
                       heavy use of palm oil spreads damage to the environment.
                     </p>
                 </div>
-                <img src={hazelnutSpread} className='align-self-center' height="35%" width="35%"></img>
               </div>
             </Container>
           </ParallaxLayer>
@@ -77,14 +83,38 @@ class NutellaDesktop extends Component {
 
           {/* Slide Three */}
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
-            <h1 style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
+            <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={0.1}>
-            <img src={circles} className='py-5 my-5 mx-3'></img>
+          <ParallaxLayer offset={2.4} speed={6}>
+            <img src={pinkCircle} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.5} speed={0.1}>
+            <img src={house} style={{ display: 'block', height: '10%', width: 'auto', marginLeft: '76%' }}></img>
+            <p className='text-white text-monospace' style={{ marginLeft: '57%', textAlign: 'center' }}>displacement of natives & <br></br> endangered species</p>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.3} speed={2.8}>
+            <img src={blueCircle} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.35} speed={0}>
+            <img src={deadPalm} style={{ display: 'block', height: '10%', width: 'auto', marginLeft: '53%' }}></img>
+            <p className='text-white text-monospace' style={{ marginLeft: '12.5%', textAlign: 'center', fontSize: '15px' }}>Release of carbon emissions,<br></br> biodiversity compromised</p>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.5} speed={1}>
+            <img src={pinkCircle} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.62} speed={1}>
+            <p className='text-white text-monospace' style={{ marginRight: '28%', textAlign: 'center', fontSize: '15px' }}>Deforestation of rainforests<br></br> to make room for<br></br> palm oil plantations</p>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.2} speed={-0.2}>
+            <img src={blueCircle} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.38} speed={-0.2}>
+            <p className='text-white text-monospace' style={{ marginRight: '64%', textAlign: 'center', fontSize: '30px' }}>Demand for Palm Oil</p>
           </ParallaxLayer>
 
           {/* Slide Four */}
-          <ParallaxLayer offset={3} speed={1} className='grey-background'>
+          <ParallaxLayer offset={3} speed={1} className='grey-background'/>
+          <ParallaxLayer offset={3.15} speed={1}>
             <Container>
               <div className='media'>
                 <div className='media-body px-3'>
@@ -98,10 +128,14 @@ class NutellaDesktop extends Component {
                     -orangutantrekkingtours.com
                   </p>
                 </div>
-                <img src={orangutanTrees} className='align-self-center' height="25%" width="25%"></img>
-                <img src={orangutanStumps} className='align-self-center' height="25%" width="25%"></img>
               </div>
             </Container>
+          </ParallaxLayer>
+          <ParallaxLayer offset={3.53} speed={0.4}>
+            <img src={orangutanTrees} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={3.54} speed={1.7}>
+            <img src={orangutanStumps} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '50%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Five */}
