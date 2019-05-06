@@ -140,6 +140,7 @@ class FishDesktop extends Component {
               <Row>
                 <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center'>
                   <h1 className='px-3'>What can you do to help?</h1>
+                  <img src={cookedfish} className='align-self-center' height="25%" width="25%"></img>
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>

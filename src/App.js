@@ -5,6 +5,8 @@ import { Container, Row, Col } from 'reactstrap';
 import Nutella from './components/nutella';
 import Fish from './components/fish';
 import Hamburger from './components/hamburger';
+import Milk from './components/milk';
+import Avocado from './components/avocado';
 
 class App extends Component {
   constructor(props) {
@@ -22,6 +24,7 @@ class App extends Component {
         <Route path='/fish' component={Fish}/>
         <Route path='/hamburger' component={Hamburger}/>
         <Route path='/milk' component={Milk}/>
+        <Route path='/avocado' component={Avocado}/>
       </Switch>
     );
   }
@@ -42,6 +45,9 @@ class BodyContent extends Component {
         </Row>
         <Row>
           <Col><Link to='/milk'>milk</Link></Col>
+        </Row>
+        <Row>
+          <Col><Link to='/avocado'>avocado</Link></Col>
         </Row>
       </Container>
     )
