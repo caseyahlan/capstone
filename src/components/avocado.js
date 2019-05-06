@@ -231,7 +231,7 @@ class AvocadoMobile extends Component {
             <Container fluid={true}>
               <Row>
                 <Col xs='12' className='split-horizontal light-green-background d-flex justify-content-center align-items-end'>
-                  <h1 className='text-white pb-3'>Fishing</h1>
+                  <h1 className='text-white pb-3'>Avocado</h1>
                 </Col>
                 <Col xs='12' className='d-flex justify-content-center'>
                   <div className='arrow-down'></div>
