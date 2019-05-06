@@ -102,6 +102,7 @@ class FishDesktop extends Component {
                 <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap'>
                   <Row className='px-3'>
                     <h1>What fish are frequently overfished?</h1>
+                    <img src={cookedfish} className='align-self-center' height="25%" width="25%"></img>
                     <p className='text-monospace pt-3'>
                       It is important to know when certain types of fish are more endangered than others so shoppers know what fish they should and should not buy at any given time.
                     </p>
@@ -109,7 +110,6 @@ class FishDesktop extends Component {
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
-                  <img src={cookedfish} className='align-self-center' height="25%" width="25%"></img>
                     <ListGroup>
                       <ListGroupItem>
                         <ListGroupItemHeading>Atlantic Cod</ListGroupItemHeading>
@@ -143,7 +143,6 @@ class FishDesktop extends Component {
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
-                  <img src={cookedfish} className='align-self-center' height="25%" width="25%"></img>
                     <ListGroup>
                       <ListGroupItem>
                         <ListGroupItemHeading>Be a Responsible Shopper</ListGroupItemHeading>
@@ -240,7 +239,7 @@ class FishMobile extends Component {
                 <Col xs='12'>
                   <h1 className='text-center text-md-left pt-2 pt-lg-5'>About the Fishing Industry</h1>
                   <Row className='justify-content-center'>
-                      <img src={fishnet} className='img-fluid' height="35%" width="35%"></img>
+                      <img src={fishnet} className='img-fluid' height="45%" width="45%"></img>
                   </Row>
                   <p className='text-monospace'>
                     <br></br>
@@ -292,7 +291,6 @@ class FishMobile extends Component {
                 <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>What fish are frequently overfished?</h1>
-                    <img src={cookedfish} className='img-fluid' height="20%" width="20%"></img>
                     <p className='text-monospace pt-3'>
                       It is important to know when certain types of fish are more endangered than others so shoppers know what fish they should and should not buy at any given time.
                     </p>
@@ -329,7 +327,6 @@ class FishMobile extends Component {
                 <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>How can you help?</h1>
-                    <img src={cookedfish} className='img-fluid' height="25%" width="25%"></img>
                     <p>There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.</p>
                   </Row>
                 </Col>

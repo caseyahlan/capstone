@@ -21,6 +21,7 @@ class App extends Component {
         <Route path='/nutella' component={Nutella}/>
         <Route path='/fish' component={Fish}/>
         <Route path='/hamburger' component={Hamburger}/>
+        <Route path='/milk' component={Milk}/>
       </Switch>
     );
   }
@@ -38,6 +39,9 @@ class BodyContent extends Component {
         </Row>
         <Row>
           <Col><Link to='/hamburger'>hamburger</Link></Col>
+        </Row>
+        <Row>
+          <Col><Link to='/milk'>milk</Link></Col>
         </Row>
       </Container>
     )
