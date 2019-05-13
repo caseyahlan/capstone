@@ -151,10 +151,6 @@ class NutellaDesktop extends Component {
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
-                  <img src={crepe} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={apple} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={strawberry} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={toast} className='align-self-center' height="25%" width="25%"></img>
                     <ListGroup>
                       <ListGroupItem>
                         <ListGroupItemHeading>Nutella</ListGroupItemHeading>
@@ -179,15 +175,16 @@ class NutellaDesktop extends Component {
           <ParallaxLayer offset={5} speed={0.1}>
             <Container fluid={true}>
               <Row>
-                <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center'>
-                  <h1 className='px-3'>What can you do to help?</h1>
+                <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap'>
+                  <Row className='px-3'>
+                    <h1>What can you do to help?</h1>
+                    <p className='text-monospace pt-3'>
+                      There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.
+                    </p>
+                  </Row>
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
-                  <img src={crepe} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={apple} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={strawberry} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={toast} className='align-self-center' height="25%" width="25%"></img>
                     <ListGroup>
                       <ListGroupItem>
                         <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
@@ -341,18 +338,17 @@ class NutellaMobile extends Component {
           <ParallaxLayer offset={4} speed={0.5}>
             <Container>
               <Row>
-                <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
+                <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>Alternatives to popular products that use palm oil</h1>
-                    <img src={crepe} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={apple} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={strawberry} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={toast} className='img-fluid' height="25%" width="25%"></img>
+                    <br></br>
                     <p>There are many products that use palm oil. Below is a small list of those products and possible alternatives for them.</p>
+                    <br></br><br></br>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
+                    <br></br><br></br>
                     <ListGroupItem>
                       <ListGroupItemHeading>Nutella</ListGroupItemHeading>
                       <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
@@ -372,21 +368,20 @@ class NutellaMobile extends Component {
           </ParallaxLayer>
 
           {/* Slide Six */}
-          <ParallaxLayer offset={6} speed={0.1}>
+          <ParallaxLayer offset={5} speed={0.1}>
             <Container fluid={true}>
               <Row>
-                <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
+                <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>How can you help?</h1>
-                    <img src={crepe} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={apple} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={strawberry} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={toast} className='img-fluid' height="25%" width="25%"></img>
+                    <br></br>
                     <p>There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.</p>
+                    <br></br><br></br>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
+                    <br></br><br></br>
                     <ListGroupItem>
                       <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
                       <ListGroupItemText>

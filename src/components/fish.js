@@ -289,16 +289,19 @@ class FishMobile extends Component {
           <ParallaxLayer offset={4} speed={0.5}>
             <Container>
               <Row>
-                <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
+                <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>What fish are frequently overfished?</h1>
+                    <br></br>
                     <p className='text-monospace pt-3'>
                       It is important to know when certain types of fish are more endangered than others so shoppers know what fish they should and should not buy at any given time.
                     </p>
+                    <br></br><br></br>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
+                    <br></br><br></br>
                     <ListGroupItem>
                       <ListGroupItemHeading>Atlantic Cod</ListGroupItemHeading>
                       <ListGroupItemText>Atlantic Cod used to be known for how plentiful its population is, however, it is now in constant threat of extinction.</ListGroupItemText>
@@ -322,17 +325,20 @@ class FishMobile extends Component {
           </ParallaxLayer>
 
           {/* Slide Six */}
-          <ParallaxLayer offset={6} speed={0.1}>
+          <ParallaxLayer offset={5} speed={0.1}>
             <Container fluid={true}>
               <Row>
-                <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
+                <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>How can you help?</h1>
+                    <br></br>
                     <p>There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.</p>
+                    <br></br><br></br>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
+                    <br></br><br></br>
                     <ListGroupItem>
                       <ListGroupItemHeading>Be a Responsible Shopper</ListGroupItemHeading>
                       <ListGroupItemText>
