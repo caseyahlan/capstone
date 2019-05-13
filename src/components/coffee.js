@@ -3,6 +3,7 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
 import circles from '../imgs/circles.svg';
+import coffeeCup from '../imgs/coffee.svg';
 import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
 import apple from '../imgs/apple-03.svg';
 import crepe from '../imgs/crepe-05.svg';
@@ -15,22 +16,22 @@ import blueCircle from '../imgs/blue-circle.svg';
 import house from '../imgs/house-w-line-03.svg';
 import deadPalm from '../imgs/dead-palm-07.svg';
 
-class Nutella extends Component {
+class Coffee extends Component {
   render() {
     return (
       <div>
         <MediaQuery query='(min-device-width: 991px)'>
-          <NutellaDesktop />
+          <CoffeeDesktop />
         </MediaQuery>
         <MediaQuery query='(max-device-width: 991px)'>
-          <NutellaMobile />
+          <CoffeeMobile />
         </MediaQuery>
       </div>
     )
   }
 }
 
-class NutellaDesktop extends Component {
+class CoffeeDesktop extends Component {
   render() {
     return (
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
@@ -43,7 +44,7 @@ class NutellaDesktop extends Component {
             <Container fluid={true}>
               <Row>
                 <Col xs='12' className='split-horizontal light-green-background d-flex justify-content-center align-items-end'>
-                  <h1 className='text-white pb-3'>Nutella</h1>
+                  <h1 className='text-white pb-3'>Coffee</h1>
                 </Col>
                 <Col xs='12' className='d-flex justify-content-center'>
                   <div className='arrow-down'></div>
@@ -58,20 +59,18 @@ class NutellaDesktop extends Component {
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
           <ParallaxLayer offset={1.3} speed={4}>
-            <img src={hazelnutSpread} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
+            <img src={coffeeCup} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={1.2} speed={0.1}>
             <Container>
               <div className='media'>
                 <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Nutella</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Coffee</h1>
                     <p className='text-monospace body-text'>
                       <br></br>
-                      Nutella is a popular hazelnut spread that is commonly used in many food products. Currently, there are 7
-                      well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla (Citation 1).
+                      Did you know, throughout the world 1.1 billion cups of coffee are consumed daily? That’s over 400 billion cups a year! You can find countless varieties and flavors of this universally loved drink.
                       <br></br><br></br>
-                      Just by looking at the ingredients, nutella seems like a perfect choice for many recipes. However, nutella’s
-                      heavy use of palm oil spreads damage to the environment.
+                      After oil, coffee is the world’s most tradable commodity and the increased demand for convenient coffee has led coffee farmers to find new, more efficient ways to grow the crop. While some of these methods result in higher yields, they have also significantly contributed to deforestation and other environmental threats.
                     </p>
                 </div>
               </div>
@@ -82,7 +81,7 @@ class NutellaDesktop extends Component {
 
           {/* Slide Three */}
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
-            <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
+            <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Coffee</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
             <img src={pinkCircle} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
@@ -117,14 +116,12 @@ class NutellaDesktop extends Component {
             <Container>
               <div className='media'>
                 <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How has Nutella Impacted Orangutans?</h1>
+                  <h1 className='text-left mt-4'>How has Coffee Impacted Birds in Costa Rica?</h1>
                   <p className='text-monospace font-italic'>
                     <br></br>
-                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
-                    Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
-                    where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
-                    45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
-                    -orangutantrekkingtours.com
+                    “A 12-year study of 57,255 individually banded birds representing 265 species at 19 Costa Rican sites sheds new light on how tropical birds, a key indicator of ecosystem health, are faring across a patchwork of habitats in a changing agricultural countryside. The study compared bird populations on primarily open coffee farms (with small amounts of shade) with those in remaining forested areas. The study reveals that even a small increase in coffee farm tree cover, from 7 to 13 percent, can provide a significant boost to birds.
+                    <br></br><br></br>
+                    Researchers found that coffee farms offering some tree shade (not to be confused with coffee that is “shade grown” under a full canopy of mature trees) are still experiencing species decline and are no substitute for large swaths of protected forest. Across coffee farms and all sizes and types of forest, researchers found 61 percent more bird species’ populations declined as grew or remained steady.” -nationalgeographic.com
                   </p>
                 </div>
               </div>
@@ -143,30 +140,50 @@ class NutellaDesktop extends Component {
               <Row>
                 <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap'>
                   <Row className='px-3'>
-                    <h1>Alternatives to popular products that use palm oil</h1>
+                    <h1>Drink sustainably</h1>
                     <p className='text-monospace pt-3'>
-                      There are many products that use palm oil. Below is a small list of those products and possible alternatives for them.
+                      Don’t worry - you can still enjoy your daily cup of coffee.
                     </p>
                   </Row>
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
-                  <img src={crepe} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={apple} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={strawberry} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={toast} className='align-self-center' height="25%" width="25%"></img>
                     <ListGroup>
                       <ListGroupItem>
-                        <ListGroupItemHeading>Nutella</ListGroupItemHeading>
-                        <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
+                        <ListGroupItemHeading>Fair Trade</ListGroupItemHeading>
+                        <ListGroupItemText>
+                          Rigorous Fairtrade Standards support farmers and their communities and protect the environment. Every bean can be traced back to the cooperative of small-scale farmers who grew it.
+                          <br></br><br></br>
+                          Check out these Fair Trade brands:
+                          <br></br>
+                          <a href="https://www.traderjoes.com/" target="_top">Trader Joe's brand Sumatra Blend & Brew-in-the-Bag coffees</a>
+                          <br></br>
+                          <a href="https://www.starbucks.com/" target="_top">Starbucks Coffee Company</a>
+                          <br></br>
+                          <a href="https://www.costco.com/Kirkland-Signature-House-Blend-Coffee%2c-2-lbs.product.100334966.html" target="_top">Kirkland Coffee</a>
+                          <br></br>
+                          <a href="https://www.gourmesso.com/" target="_top">Gourmesso (coffee pods)</a>
+                          <br></br>
+                          <a href="https://onecoffee.com/us/home/" target="_top">One Coffee (compostable coffee pods)</a>
+                          <br></br>
+                          And more on <a href="fairtradeamerica.org" target="_top"></a>
+                      </ListGroupItemText>
                       </ListGroupItem>
                       <ListGroupItem>
-                        <ListGroupItemHeading>Clif Bar</ListGroupItemHeading>
-                        <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_top">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
-                      </ListGroupItem>
-                      <ListGroupItem>
-                        <ListGroupItemHeading>JIF Peanut Butter</ListGroupItemHeading>
-                        <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_top">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free</ListGroupItemText>
+                        <ListGroupItemHeading>Rainforest Alliance</ListGroupItemHeading>
+                        <ListGroupItemText>
+                        The Rainforest Alliance works at the intersection of business, agriculture, and forests to make responsible business the new normal. An alliance of companies, farmers, foresters, communities, and consumers committed to creating a world where people and nature thrive in harmony.
+                        <br></br><br></br>
+                        Check out these Rainforest Alliance Certified brands:
+                        <br></br>
+                        <a href="https://www.rainforest-alliance.org/find-certified/nescafe" target="_top">Nescafe</a>
+                        <br></br>
+                        <a href="https://www.rainforest-alliance.org/find-certified/royal-cup" target="_top">Royal Cup</a>
+                        <br></br>
+                        <a href="https://www.rainforest-alliance.org/find-certified/kroger" target="_top">Kroger</a>
+                        <br></br>
+                        <a href="https://www.rainforest-alliance.org/find-certified/mcdonalds" target="_top">McDonalds</a>
+                        </ListGroupItemText>
                       </ListGroupItem>
                     </ListGroup>
                   </Container>
@@ -184,23 +201,27 @@ class NutellaDesktop extends Component {
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
-                  <img src={crepe} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={apple} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={strawberry} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={toast} className='align-self-center' height="25%" width="25%"></img>
                     <ListGroup>
                       <ListGroupItem>
-                        <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
+                        <ListGroupItemHeading>Use reusable materials and BYOM (bring your own mug)</ListGroupItemHeading>
                         <ListGroupItemText>
-                          Consider buying alternative products that do not use palm oil. While it is impossible to completely avoid palm oil products,
-                          reducing purchases of these products is a start to reducing demand of palm oil products.
+                          A Keurig pod machine creates 10 times the amount of solid waste as a drip coffee maker and single use coffee cups often end up in landfills. Invest in a reusable mug, ground coffee for a drip coffee maker or reusable K-cup filter.
                         </ListGroupItemText>
                       </ListGroupItem>
                       <ListGroupItem>
-                        <ListGroupItemHeading>Research alternatives</ListGroupItemHeading>
+                        <ListGroupItemHeading>Buy shade-grown coffee</ListGroupItemHeading>
                         <ListGroupItemText>
-                          Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research
-                          the ingredients in products you use and try to find alternatives.
+                        With this method, coffee plants grow naturally with local forest trees. This method boosts biodiversity and supports reforestation. For example, in Ethiopia where coffee is often grown on plantations shaded by native trees, there are 2.5 times the number of bird species relative to adjacent mountain forest.
+                        <br></br><br></br>
+                        Try:
+                        <br></br>
+                        <a href="https://www.puravidacreategood.com/" target="_top">Pura Vida Coffee</a>
+                        <br></br>
+                        <a href="https://larryscoffee.com/" target="_top">Larry's Coffee</a>
+                        <br></br>
+                        <a href="https://cafemam.com/" target="_top">Café Mam</a>
+                        <br></br>
+                        and more!
                         </ListGroupItemText>
                       </ListGroupItem>
                     </ListGroup>
@@ -253,7 +274,7 @@ class NutellaDesktop extends Component {
   }
 }
 
-class NutellaMobile extends Component {
+class CoffeeMobile extends Component {
   render() {
     return (
         <Parallax ref={ref => (this.parallax = ref)} pages={9}>
@@ -266,7 +287,7 @@ class NutellaMobile extends Component {
             <Container fluid={true}>
               <Row>
                 <Col xs='12' className='split-horizontal light-green-background d-flex justify-content-center align-items-end'>
-                  <h1 className='text-white pb-3'>Nutella</h1>
+                  <h1 className='text-white pb-3'>Coffee</h1>
                 </Col>
                 <Col xs='12' className='d-flex justify-content-center'>
                   <div className='arrow-down'></div>
@@ -284,17 +305,15 @@ class NutellaMobile extends Component {
             <Container>
               <Row>
                 <Col xs='12'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Nutella</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Coffee</h1>
                   <Row className='justify-content-center'>
-                      <img src={hazelnutSpread} className='img-fluid' height="35%" width="35%"></img>
+                      <img src={coffeeCup} className='img-fluid' height="35%" width="35%"></img>
                   </Row>
                   <p className='text-monospace'>
                     <br></br>
-                    Nutella is a popular hazelnut spread that is commonly used in many food products. Currently, there are 7
-                    well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla (Citation 1).
+                    Did you know, throughout the world 1.1 billion cups of coffee are consumed daily? That’s over 400 billion cups a year! You can find countless varieties and flavors of this universally loved drink.
                     <br></br><br></br>
-                    Just by looking at the ingredients, nutella seems like a perfect choice for many recipes. However, nutella’s
-                    heavy use of palm oil spreads damage to the environment.
+                    After oil, coffee is the world’s most tradable commodity and the increased demand for convenient coffee has led coffee farmers to find new, more efficient ways to grow the crop. While some of these methods result in higher yields, they have also significantly contributed to deforestation and other environmental threats.
                   </p>
                 </Col>
               </Row>
@@ -306,7 +325,7 @@ class NutellaMobile extends Component {
 
           {/* Slide Three */}
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
-            <h1 style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
+            <h1 style={{ width: '70%', marginLeft: '5%' }}>Impact of Coffee</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2} speed={0.1}>
             <Container>
@@ -319,18 +338,16 @@ class NutellaMobile extends Component {
             <Container>
               <Row>
                 <Col xs='12'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Nutella Impacted Orangutans?</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Coffee Impacted Birds in Costa Rica?</h1>
                   <Row className='justify-content-center'>
                     <img src={orangutanTrees} className='img-fluid'></img>
                     <img src={orangutanStumps} className='img-fluid'></img>
                   </Row>
                   <p className='text-monospace font-italic'>
                     <br></br>
-                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
-                    Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
-                    where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
-                    45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
-                    -orangutantrekkingtours.com
+                    “A 12-year study of 57,255 individually banded birds representing 265 species at 19 Costa Rican sites sheds new light on how tropical birds, a key indicator of ecosystem health, are faring across a patchwork of habitats in a changing agricultural countryside. The study compared bird populations on primarily open coffee farms (with small amounts of shade) with those in remaining forested areas. The study reveals that even a small increase in coffee farm tree cover, from 7 to 13 percent, can provide a significant boost to birds.
+                    <br></br><br></br>
+                    Researchers found that coffee farms offering some tree shade (not to be confused with coffee that is “shade grown” under a full canopy of mature trees) are still experiencing species decline and are no substitute for large swaths of protected forest. Across coffee farms and all sizes and types of forest, researchers found 61 percent more bird species’ populations declined as grew or remained steady.” -nationalgeographic.com
                   </p>
                 </Col>
               </Row>
@@ -343,27 +360,47 @@ class NutellaMobile extends Component {
               <Row>
                 <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
                   <Row>
-                    <h1>Alternatives to popular products that use palm oil</h1>
-                    <img src={crepe} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={apple} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={strawberry} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={toast} className='img-fluid' height="25%" width="25%"></img>
-                    <p>There are many products that use palm oil. Below is a small list of those products and possible alternatives for them.</p>
+                    <h1>Drink sustainably</h1>
+                    <p>Don’t worry - you can still enjoy your daily cup of coffee.</p>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
                     <ListGroupItem>
-                      <ListGroupItemHeading>Nutella</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
+                      <ListGroupItemHeading>Fair Trade</ListGroupItemHeading>
+                      <ListGroupItemText>
+                        Rigorous Fairtrade Standards support farmers and their communities and protect the environment. Every bean can be traced back to the cooperative of small-scale farmers who grew it.
+                        <br></br><br></br>
+                        Check out these Fair Trade brands:
+                        <br></br>
+                        <a href="https://www.traderjoes.com/" target="_top">Trader Joe's brand Sumatra Blend & Brew-in-the-Bag coffees</a>
+                        <br></br>
+                        <a href="https://www.starbucks.com/" target="_top">Starbucks Coffee Company</a>
+                        <br></br>
+                        <a href="https://www.costco.com/Kirkland-Signature-House-Blend-Coffee%2c-2-lbs.product.100334966.html" target="_top">Kirkland Coffee</a>
+                        <br></br>
+                        <a href="https://www.gourmesso.com/" target="_top">Gourmesso (coffee pods)</a>
+                        <br></br>
+                        <a href="https://onecoffee.com/us/home/" target="_top">One Coffee (compostable coffee pods)</a>
+                        <br></br>
+                        And more on <a href="fairtradeamerica.org" target="_top"></a>
+                    </ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
-                      <ListGroupItemHeading>Clif Bar</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_top">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
-                    </ListGroupItem>
-                    <ListGroupItem>
-                      <ListGroupItemHeading>JIF Peanut Butter</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_top">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free</ListGroupItemText>
+                      <ListGroupItemHeading>Rainforest Alliancer</ListGroupItemHeading>
+                      <ListGroupItemText>
+                        The Rainforest Alliance works at the intersection of business, agriculture, and forests to make responsible business the new normal. An alliance of companies, farmers, foresters, communities, and consumers committed to creating a world where people and nature thrive in harmony.
+                        <br></br><br></br>
+                        Check out these Rainforest Alliance Certified brands:
+                        <br></br>
+                        <a href="https://www.rainforest-alliance.org/find-certified/nescafe" target="_top">Nescafe</a>
+                        <br></br>
+                        <a href="https://www.rainforest-alliance.org/find-certified/royal-cup" target="_top">Royal Cup</a>
+                        <br></br>
+                        <a href="https://www.rainforest-alliance.org/find-certified/kroger" target="_top">Kroger</a>
+                        <br></br>
+                        <a href="https://www.rainforest-alliance.org/find-certified/mcdonalds" target="_top">McDonalds</a>
+                      </ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>
                 </Col>
@@ -377,28 +414,31 @@ class NutellaMobile extends Component {
               <Row>
                 <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
                   <Row>
-                    <h1>How can you help?</h1>
-                    <img src={crepe} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={apple} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={strawberry} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={toast} className='img-fluid' height="25%" width="25%"></img>
-                    <p>There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.</p>
+                    <h1>What can you do to help?</h1>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
                     <ListGroupItem>
-                      <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
+                      <ListGroupItemHeading>Use reusable materials and BYOM (bring your own mug)</ListGroupItemHeading>
                       <ListGroupItemText>
-                        Consider buying alternative products that do not use palm oil. While it is impossible to completely avoid palm oil products,
-                        reducing purchases of these products is a start to reducing demand of palm oil products.
+                        A Keurig pod machine creates 10 times the amount of solid waste as a drip coffee maker and single use coffee cups often end up in landfills. Invest in a reusable mug, ground coffee for a drip coffee maker or reusable K-cup filter.
                       </ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
-                      <ListGroupItemHeading>Research alternatives</ListGroupItemHeading>
+                      <ListGroupItemHeading>Buy shade-grown coffee</ListGroupItemHeading>
                       <ListGroupItemText>
-                        Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research
-                        the ingredients in products you use and try to find alternatives.
+                        With this method, coffee plants grow naturally with local forest trees. This method boosts biodiversity and supports reforestation. For example, in Ethiopia where coffee is often grown on plantations shaded by native trees, there are 2.5 times the number of bird species relative to adjacent mountain forest.
+                        <br></br><br></br>
+                        Try:
+                        <br></br>
+                        <a href="https://www.puravidacreategood.com/" target="_top">Pura Vida Coffee</a>
+                        <br></br>
+                        <a href="https://larryscoffee.com/" target="_top">Larry's Coffee</a>
+                        <br></br>
+                        <a href="https://cafemam.com/" target="_top">Café Mam</a>
+                        <br></br>
+                        and more!
                       </ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>
@@ -460,4 +500,4 @@ class NutellaMobile extends Component {
   }
 }
 
-export default Nutella;
+export default Coffee;
