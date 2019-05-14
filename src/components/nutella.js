@@ -10,10 +10,10 @@ import strawberry from '../imgs/strawberry-02.svg';
 import toast from '../imgs/toast-06.svg';
 import orangutanStumps from '../imgs/orangutanStumps-07.svg';
 import orangutanTrees from '../imgs/orangutanTrees-07.svg';
-import pinkCircle from '../imgs/pink-circle.svg';
-import blueCircle from '../imgs/blue-circle.svg';
-import house from '../imgs/house-w-line-03.svg';
-import deadPalm from '../imgs/dead-palm-07.svg';
+import nutella01 from '../imgs/nutella1.svg';
+import nutella02 from '../imgs/nutella2.svg';
+import nutella03 from '../imgs/nutella3-01.svg';
+import nutella04 from '../imgs/nutella4-01.svg';
 
 class Nutella extends Component {
   render() {
@@ -85,30 +85,16 @@ class NutellaDesktop extends Component {
             <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
-            <img src={pinkCircle} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={2.5} speed={0.1}>
-            <img src={house} style={{ display: 'block', height: '10%', width: 'auto', marginLeft: '76%' }}></img>
-            <p className='text-white text-monospace' style={{ marginLeft: '57%', textAlign: 'center' }}>displacement of natives & <br></br> endangered species</p>
+            <img src={nutella01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.3} speed={2.8}>
-            <img src={blueCircle} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={2.35} speed={0}>
-            <img src={deadPalm} style={{ display: 'block', height: '10%', width: 'auto', marginLeft: '53%' }}></img>
-            <p className='text-white text-monospace' style={{ marginLeft: '12.5%', textAlign: 'center', fontSize: '15px' }}>Release of carbon emissions,<br></br> biodiversity compromised</p>
+            <img src={nutella02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1}>
-            <img src={pinkCircle} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={2.62} speed={1}>
-            <p className='text-white text-monospace' style={{ marginRight: '28%', textAlign: 'center', fontSize: '15px' }}>Deforestation of rainforests<br></br> to make room for<br></br> palm oil plantations</p>
+            <img src={nutella03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={blueCircle} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={2.38} speed={-0.2}>
-            <p className='text-white text-monospace' style={{ marginRight: '64%', textAlign: 'center', fontSize: '30px' }}>Demand for Palm Oil</p>
+            <img src={nutella04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -305,10 +291,17 @@ class NutellaMobile extends Component {
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={0.1}>
-            <Container>
-              <img src={circles}></img>
-            </Container>
+          <ParallaxLayer offset={2.4} speed={6}>
+            <img src={nutella01} style={{height: '25%', width: '25%', marginLeft: '5%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.3} speed={2.8}>
+            <img src={nutella02} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '30%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.5} speed={1}>
+            <img src={nutella03} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '50%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.2} speed={-0.2}>
+            <img src={nutella04} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '70%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
