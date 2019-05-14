@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
-import circles from '../imgs/circles.svg';
 import avocadopic from '../imgs/avocado.svg';
 import cookedfish from '../imgs/cookedfish-02.svg';
 import alivecoral from '../imgs/coral-02.svg';
 import deadcoral from '../imgs/deadcoral-02.svg';
 import fishnet from '../imgs/fishnet-02.svg';
+import avocado01 from '../imgs/avocado1-01.svg';
+import avocado02 from '../imgs/avocado2-01.svg';
+import avocado03 from '../imgs/avocado3-01.svg';
+import avocado04 from '../imgs/avocado4-01.svg';
 
 class Avocado extends Component {
   render() {
@@ -75,8 +78,17 @@ class AvocadoDesktop extends Component {
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impacts of Avocados</h1>
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={0.1}>
-            <img src={circles} className='py-5 my-5 mx-3'></img>
+          <ParallaxLayer offset={2.4} speed={6}>
+            <img src={avocado01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.3} speed={2.8}>
+            <img src={avocado02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.5} speed={1}>
+            <img src={avocado03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.2} speed={-0.2}>
+            <img src={avocado04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -271,10 +283,17 @@ class AvocadoMobile extends Component {
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impacts of Avocados</h1>
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={0.1}>
-            <Container>
-              <img src={circles}></img>
-            </Container>
+          <ParallaxLayer offset={2.4} speed={6}>
+            <img src={avocado01} style={{height: '25%', width: '25%', marginLeft: '5%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.3} speed={2.8}>
+            <img src={avocado02} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '30%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.5} speed={1}>
+            <img src={avocado03} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '50%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.2} speed={-0.2}>
+            <img src={avocado04} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '70%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}

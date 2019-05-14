@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
-import circles from '../imgs/circles.svg';
 import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
 import apple from '../imgs/apple-03.svg';
 import crepe from '../imgs/crepe-05.svg';
