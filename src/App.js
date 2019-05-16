@@ -20,6 +20,7 @@ import Fish from './components/fish';
 import Hamburger from './components/hamburger';
 import Milk from './components/milk';
 import Avocado from './components/avocado';
+import Coffee from './components/coffee';
 
 class App extends Component {
   constructor(props) {
@@ -38,6 +39,7 @@ class App extends Component {
         <Route path='/hamburger' component={Hamburger}/>
         <Route path='/milk' component={Milk}/>
         <Route path='/avocado' component={Avocado}/>
+        <Route path='/coffee' component={Coffee}/>
       </Switch>
     );
   }
@@ -61,6 +63,7 @@ class HomePage extends Component {
   
   render() {
     return (
+<<<<<<< HEAD
       <div>
         {/* <Navbar color='light'>
           <NavbarToggler onClick={this.toggle} />

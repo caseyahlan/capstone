@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
-import circles from '../imgs/circles.svg';
 import cookedfish from '../imgs/cookedfish-02.svg';
 import alivecoral from '../imgs/coral-02.svg';
 import deadcoral from '../imgs/deadcoral-02.svg';
 import fishnet from '../imgs/fishnet-02.svg';
+import fish01 from '../imgs/fish-01.svg';
+import fish02 from '../imgs/fish-02.svg';
+import fish03 from '../imgs/fish-03.svg';
 
 class Fish extends Component {
   render() {
@@ -74,8 +76,17 @@ class FishDesktop extends Component {
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impacts of Overfishing</h1>
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={0.1}>
-            <img src={circles} className='py-5 my-5 mx-3'></img>
+          <ParallaxLayer offset={2.4} speed={6}>
+            <img src={fish01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.3} speed={2.8}>
+            <img src={fish02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.5} speed={1}>
+            <img src={fish03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.2} speed={-0.2}>
+            <img src={fish01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -260,10 +271,17 @@ class FishMobile extends Component {
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impacts of Overfishing</h1>
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={0.1}>
-            <Container>
-              <img src={circles}></img>
-            </Container>
+          <ParallaxLayer offset={2.4} speed={6}>
+            <img src={fish01} style={{height: '25%', width: '25%', marginLeft: '5%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.3} speed={2.8}>
+            <img src={fish02} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '30%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.5} speed={1}>
+            <img src={fish03} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '50%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.2} speed={-0.2}>
+            <img src={fish01} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '70%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -289,16 +307,19 @@ class FishMobile extends Component {
           <ParallaxLayer offset={4} speed={0.5}>
             <Container>
               <Row>
-                <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
+                <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>What fish are frequently overfished?</h1>
+                    <br></br>
                     <p className='text-monospace pt-3'>
                       It is important to know when certain types of fish are more endangered than others so shoppers know what fish they should and should not buy at any given time.
                     </p>
+                    <br></br><br></br>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
+                    <br></br><br></br>
                     <ListGroupItem>
                       <ListGroupItemHeading>Atlantic Cod</ListGroupItemHeading>
                       <ListGroupItemText>Atlantic Cod used to be known for how plentiful its population is, however, it is now in constant threat of extinction.</ListGroupItemText>
@@ -322,17 +343,20 @@ class FishMobile extends Component {
           </ParallaxLayer>
 
           {/* Slide Six */}
-          <ParallaxLayer offset={6} speed={0.1}>
+          <ParallaxLayer offset={5} speed={0.1}>
             <Container fluid={true}>
               <Row>
-                <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
+                <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>How can you help?</h1>
+                    <br></br>
                     <p>There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.</p>
+                    <br></br><br></br>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
+                    <br></br><br></br>
                     <ListGroupItem>
                       <ListGroupItemHeading>Be a Responsible Shopper</ListGroupItemHeading>
                       <ListGroupItemText>

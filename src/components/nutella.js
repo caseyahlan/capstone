@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
-import circles from '../imgs/circles.svg';
 import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
 import apple from '../imgs/apple-03.svg';
 import crepe from '../imgs/crepe-05.svg';
@@ -10,10 +9,10 @@ import strawberry from '../imgs/strawberry-02.svg';
 import toast from '../imgs/toast-06.svg';
 import orangutanStumps from '../imgs/orangutanStumps-07.svg';
 import orangutanTrees from '../imgs/orangutanTrees-07.svg';
-import pinkCircle from '../imgs/pink-circle.svg';
-import blueCircle from '../imgs/blue-circle.svg';
-import house from '../imgs/house-w-line-03.svg';
-import deadPalm from '../imgs/dead-palm-07.svg';
+import nutella01 from '../imgs/nutella1.svg';
+import nutella02 from '../imgs/nutella2.svg';
+import nutella03 from '../imgs/nutella3-01.svg';
+import nutella04 from '../imgs/nutella4-01.svg';
 
 class Nutella extends Component {
   render() {
@@ -77,7 +76,6 @@ class NutellaDesktop extends Component {
               </div>
             </Container>
           </ParallaxLayer>
-
           <ParallaxLayer offset={1.1} speed={2}>
           </ParallaxLayer>
 
@@ -86,30 +84,16 @@ class NutellaDesktop extends Component {
             <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
-            <img src={pinkCircle} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={2.5} speed={0.1}>
-            <img src={house} style={{ display: 'block', height: '10%', width: 'auto', marginLeft: '76%' }}></img>
-            <p className='text-white text-monospace' style={{ marginLeft: '57%', textAlign: 'center' }}>displacement of natives & <br></br> endangered species</p>
+            <img src={nutella01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.3} speed={2.8}>
-            <img src={blueCircle} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={2.35} speed={0}>
-            <img src={deadPalm} style={{ display: 'block', height: '10%', width: 'auto', marginLeft: '53%' }}></img>
-            <p className='text-white text-monospace' style={{ marginLeft: '12.5%', textAlign: 'center', fontSize: '15px' }}>Release of carbon emissions,<br></br> biodiversity compromised</p>
+            <img src={nutella02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1}>
-            <img src={pinkCircle} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={2.62} speed={1}>
-            <p className='text-white text-monospace' style={{ marginRight: '28%', textAlign: 'center', fontSize: '15px' }}>Deforestation of rainforests<br></br> to make room for<br></br> palm oil plantations</p>
+            <img src={nutella03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={blueCircle} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={2.38} speed={-0.2}>
-            <p className='text-white text-monospace' style={{ marginRight: '64%', textAlign: 'center', fontSize: '30px' }}>Demand for Palm Oil</p>
+            <img src={nutella04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -152,10 +136,6 @@ class NutellaDesktop extends Component {
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
-                  <img src={crepe} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={apple} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={strawberry} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={toast} className='align-self-center' height="25%" width="25%"></img>
                     <ListGroup>
                       <ListGroupItem>
                         <ListGroupItemHeading>Nutella</ListGroupItemHeading>
@@ -180,15 +160,16 @@ class NutellaDesktop extends Component {
           <ParallaxLayer offset={5} speed={0.1}>
             <Container fluid={true}>
               <Row>
-                <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center'>
-                  <h1 className='px-3'>What can you do to help?</h1>
+                <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap'>
+                  <Row className='px-3'>
+                    <h1>What can you do to help?</h1>
+                    <p className='text-monospace pt-3'>
+                      There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.
+                    </p>
+                  </Row>
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
-                  <img src={crepe} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={apple} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={strawberry} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={toast} className='align-self-center' height="25%" width="25%"></img>
                     <ListGroup>
                       <ListGroupItem>
                         <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
@@ -309,10 +290,17 @@ class NutellaMobile extends Component {
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={0.1}>
-            <Container>
-              <img src={circles}></img>
-            </Container>
+          <ParallaxLayer offset={2.4} speed={6}>
+            <img src={nutella01} style={{height: '25%', width: '25%', marginLeft: '5%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.3} speed={2.8}>
+            <img src={nutella02} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '30%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.5} speed={1}>
+            <img src={nutella03} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '50%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.2} speed={-0.2}>
+            <img src={nutella04} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '70%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -342,18 +330,17 @@ class NutellaMobile extends Component {
           <ParallaxLayer offset={4} speed={0.5}>
             <Container>
               <Row>
-                <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
+                <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>Alternatives to popular products that use palm oil</h1>
-                    <img src={crepe} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={apple} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={strawberry} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={toast} className='img-fluid' height="25%" width="25%"></img>
+                    <br></br>
                     <p>There are many products that use palm oil. Below is a small list of those products and possible alternatives for them.</p>
+                    <br></br><br></br>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
+                    <br></br><br></br>
                     <ListGroupItem>
                       <ListGroupItemHeading>Nutella</ListGroupItemHeading>
                       <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
@@ -373,21 +360,20 @@ class NutellaMobile extends Component {
           </ParallaxLayer>
 
           {/* Slide Six */}
-          <ParallaxLayer offset={6} speed={0.1}>
+          <ParallaxLayer offset={5} speed={0.1}>
             <Container fluid={true}>
               <Row>
-                <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
+                <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>How can you help?</h1>
-                    <img src={crepe} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={apple} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={strawberry} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={toast} className='img-fluid' height="25%" width="25%"></img>
+                    <br></br>
                     <p>There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.</p>
+                    <br></br><br></br>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
+                    <br></br><br></br>
                     <ListGroupItem>
                       <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
                       <ListGroupItemText>

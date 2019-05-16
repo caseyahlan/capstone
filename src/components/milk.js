@@ -309,18 +309,17 @@ class MilkMobile extends Component {
           <ParallaxLayer offset={4} speed={0.5}>
             <Container>
               <Row>
-                <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
+                <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>Should you try dairy alternatives?</h1>
-                    <img src={crepe} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={apple} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={strawberry} className='img-fluid' height="25%" width="25%"></img>
-                    <img src={toast} className='img-fluid' height="25%" width="25%"></img>
+                    <br></br>
                     <p>There are many alternatice milk products. Below is a small list of those products and their associated benefits or drawbacks.</p>
+                    <br></br><br></br>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
+                    <br></br><br></br>
                     <ListGroupItem>
                       <ListGroupItemHeading>Almond milk</ListGroupItemHeading>
                       <ListGroupItemText>Almond milk is a $1 billion+ industry. But, it takes a little over a gallon to grow just one almond! Plus, many almonds come from California, which has suffered from droughts in recent years. This alternative is not suggested.</ListGroupItemText>
@@ -343,14 +342,17 @@ class MilkMobile extends Component {
           <ParallaxLayer offset={6} speed={0.1}>
             <Container fluid={true}>
               <Row>
-                <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
+                <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>So, what can you do to help?</h1>
+                    <br></br>
                     <p>There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.</p>
+                    <br></br><br></br>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
+                    <br></br><br></br>
                     <ListGroupItem>
                       <ListGroupItemHeading>Choose dairy alternatives</ListGroupItemHeading>
                       <ListGroupItemText>

@@ -255,14 +255,15 @@ class HamburgerMobile extends Component {
           <ParallaxLayer offset={4} speed={0.5}>
             <Container>
               <Row>
-                <Col xs='12' className='split-horizontal light-green-background text-white d-flex justify-content-center'>
+                <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>What can you do to help?</h1>
-                    <img src={strawberry} className='img-fluid' height="20%" width="20%"></img>
+                    <br></br><br></br>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
+                    <br></br><br></br>
                     <ListGroupItem>
                       <ListGroupItemHeading>Reduce consumption of beef</ListGroupItemHeading>
                       <ListGroupItemText>Reduce your portion size or try a blended burger. Blended burgers combine mushroom and beef to create a patty with less fat and fewer calories than a beef burger.</ListGroupItemText>
