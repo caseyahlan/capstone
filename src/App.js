@@ -1,7 +1,20 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch, NavLink} from 'react-router-dom';
 // import MediaQuery from 'react-responsive';
-import { Container, Row, Col } from 'reactstrap';
+import { 
+  Container, 
+  Row, 
+  Col, 
+  Navbar, 
+  Nav, 
+  NavItem, 
+  NavbarToggler, 
+  NavbarBrand, 
+  UncontrolledDropdown, 
+  DropdownMenu, 
+  DropdownToggle, 
+  DropdownItem, 
+  Collapse } from 'reactstrap';
 import Nutella from './components/nutella';
 import Fish from './components/fish';
 import Hamburger from './components/hamburger';
@@ -19,7 +32,7 @@ class App extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path='/' component={BodyContent}/>
+        <Route exact path='/' component={HomePage}/>
         <Route path='/nutella' component={Nutella}/>
         <Route path='/fish' component={Fish}/>
         <Route path='/hamburger' component={Hamburger}/>
@@ -30,26 +43,55 @@ class App extends Component {
   }
 }
 
-class BodyContent extends Component {
+class HomePage extends Component {
+  // constructor(props) {
+  //   super(props);
+
+  //   this.toggle = this.bind.toggle(this);
+  //   this.state = {
+  //     isOpen: false
+  //   };
+  // }
+
+  // toggle() {
+  //   this.setState({
+  //     isOpen: !this.state.isOpen
+  //   });
+  // }
+  
   render() {
     return (
-      <Container>
-        <Row>
-          <Col><Link to='/nutella'>nutella</Link></Col>
-        </Row>
-        <Row>
-          <Col><Link to='/fish'>fish</Link></Col>
-        </Row>
-        <Row>
-          <Col><Link to='/hamburger'>hamburger</Link></Col>
-        </Row>
-        <Row>
-          <Col><Link to='/milk'>milk</Link></Col>
-        </Row>
-        <Row>
-          <Col><Link to='/avocado'>avocado</Link></Col>
-        </Row>
-      </Container>
+      <div>
+        {/* <Navbar color='light'>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className='ml-auto' navbar>
+              <NavItem>
+                Blah blah text
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar> */}
+        <Container>
+          <Row>
+            <Col sm={12} md={4} lg={3}>
+              <Link to='/nutella'>nutella</Link>
+            </Col>
+            <Col sm={12} md={4} lg={3}>
+              <Link to='/fish'>fish</Link>
+            </Col>
+            <Col sm={12} md={4} lg={3}>
+              <Link to='/hamburger'>hamburger</Link>
+            </Col>
+            <Col sm={12} md={4} lg={3}>
+              <Link to='/milk'>milk</Link>
+            </Col>
+            <Col sm={12} md={4} lg={3}>
+              <Link to='/avocado'>avocado</Link>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     )
   }
 }
