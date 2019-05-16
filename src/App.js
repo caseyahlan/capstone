@@ -63,7 +63,6 @@ class HomePage extends Component {
   
   render() {
     return (
-<<<<<<< HEAD
       <div>
         {/* <Navbar color='light'>
           <NavbarToggler onClick={this.toggle} />
