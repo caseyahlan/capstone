@@ -6,7 +6,6 @@ import soDelicious from '../imgs/soDelicious-02.svg';
 import oatly from '../imgs/oatly-02.svg';
 import ripple from '../imgs/ripple-02.svg';
 import tempt from '../imgs/tempt-02.svg';
-import cow from '../imgs/cow-02.svg';
 import milk from '../imgs/milk-02.svg';
 import milk1 from '../imgs/milk1-01.svg';
 import milk2 from '../imgs/milk2-01.svg';
