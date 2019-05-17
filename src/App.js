@@ -28,6 +28,7 @@ import fishImg from './imgs/cookedfish-02.svg';
 import hamburgerImg from './imgs/hamburger.svg';
 import milkImg from './imgs/milk-02.svg';
 import avocadoImg from './imgs/avocado.svg';
+import coffeeImg from './imgs/coffee.svg';
 
 class App extends Component {
   constructor(props) {
@@ -115,6 +116,13 @@ class HomePage extends Component {
               <Link to='/avocado'>
                 <Card>
                   <CardImg src={avocadoImg} alt='avocado'/>  
+                </Card>
+              </Link>
+            </Col>
+            <Col sm={12} md={4} lg={3}>
+              <Link to='/coffee'>
+                <Card>
+                  <CardImg src={coffeeImg} alt='coffee'/>  
                 </Card>
               </Link>
             </Col>
