@@ -2,17 +2,19 @@ import React, { Component } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
-import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
-import apple from '../imgs/apple-03.svg';
-import crepe from '../imgs/crepe-05.svg';
-import strawberry from '../imgs/strawberry-02.svg';
-import orangutanTrees from '../imgs/orangutanTrees-07.svg';
+import soDelicious from '../imgs/soDelicious-02.svg';
+import oatly from '../imgs/oatly-02.svg';
+import ripple from '../imgs/ripple-02.svg';
+import tempt from '../imgs/tempt-02.svg';
 import cow from '../imgs/cow-02.svg';
 import milk from '../imgs/milk-02.svg';
 import milk1 from '../imgs/milk1-01.svg';
 import milk2 from '../imgs/milk2-01.svg';
 import milk3 from '../imgs/milk3-01.svg';
 import milk4 from '../imgs/milk4-01.svg';
+import river from '../imgs/contaminatedRiver-02.svg';
+import x from '../imgs/x-02.svg';
+import plus from '../imgs/+-02.svg';
 
 class Milk extends Component {
   render() {
@@ -83,16 +85,16 @@ class MilkDesktop extends Component {
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impacts of Milk</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
-            <img src={milk1} style={{height: '25%', width: '25%', marginLeft: '5%' }}></img>
+            <img src={milk4} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.3} speed={2.8}>
-            <img src={milk2} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '30%' }}></img>
+            <img src={milk3} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1}>
-            <img src={milk3} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '50%' }}></img>
+            <img src={milk2} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={milk4} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '70%' }}></img>
+            <img src={milk1} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -111,7 +113,7 @@ class MilkDesktop extends Component {
             </Container>
           </ParallaxLayer>
           <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={orangutanTrees} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }}></img>
+            <img src={river} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Five */}
@@ -130,14 +132,17 @@ class MilkDesktop extends Component {
                   <Container>
                     <ListGroup>
                       <ListGroupItem>
+                        <img src={x} className='align-self-center' height="5%" width="5%"></img>
                         <ListGroupItemHeading>Almond milk</ListGroupItemHeading>
                         <ListGroupItemText>Almond milk is a $1 billion+ industry. But, it takes a little over a gallon to grow just one almond! Plus, many almonds come from California, which has suffered from droughts in recent years. This alternative is not suggested. </ListGroupItemText>
                       </ListGroupItem>
                       <ListGroupItem>
+                      <img src={plus} className='align-self-center' height="5%" width="5%"></img>
                         <ListGroupItemHeading>Hemp milk</ListGroupItemHeading>
                         <ListGroupItemText>Hemp is hardy, so less pesticides and sprays are needed to combat weeds. Hemp filters out carbon dioxide to combat greenhouse gases. Just about every part of the hemp plant is usable, resulting in less waste. This is a great alternative!</ListGroupItemText>
                       </ListGroupItem>
                       <ListGroupItem>
+                      <img src={plus} className='align-self-center' height="5%" width="5%"></img>
                         <ListGroupItemHeading>Coconut milk</ListGroupItemHeading>
                         <ListGroupItemText>Coconut farms are eco-friendly and use small amounts of water. Coconut trees can also filter out carbon dioxide to combat greenhouse gases. This is a great alternative!</ListGroupItemText>
                       </ListGroupItem>
@@ -172,9 +177,10 @@ class MilkDesktop extends Component {
                       <ListGroupItem>
                         <ListGroupItemHeading>Consider trying these brands:</ListGroupItemHeading>
                         <ListGroupItemText>
-                        <img src={crepe} className='img-fluid' height="25%" width="25%"></img>
-                        <img src={apple} className='img-fluid' height="25%" width="25%"></img>
-                        <img src={strawberry} className='img-fluid' height="25%" width="25%"></img>
+                        <img src={oatly} className='img-fluid' height="25%" width="25%"></img>
+                        <img src={tempt} className='img-fluid' height="25%" width="25%"></img>
+                        <img src={soDelicious} className='img-fluid' height="25%" width="25%"></img>
+                        <img src={ripple} className='img-fluid' height="25%" width="25%"></img>
                         </ListGroupItemText>
                       </ListGroupItem>
                     </ListGroup>
@@ -300,7 +306,7 @@ class MilkMobile extends Component {
                 <Col xs='12'>
                   <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Dairy Impacted Groundwater?</h1>
                   <Row className='justify-content-center'>
-                    <img src={orangutanTrees} className='img-fluid'></img>
+                    <img src={river} className='img-fluid'></img>
                   </Row>
                   <p className='text-monospace font-italic'>
                     <br></br>
@@ -327,14 +333,17 @@ class MilkMobile extends Component {
                   <ListGroup>
                     <br></br><br></br>
                     <ListGroupItem>
+                      <img src={x} className='align-self-center' height="5%" width="5%"></img>
                       <ListGroupItemHeading>Almond milk</ListGroupItemHeading>
                       <ListGroupItemText>Almond milk is a $1 billion+ industry. But, it takes a little over a gallon to grow just one almond! Plus, many almonds come from California, which has suffered from droughts in recent years. This alternative is not suggested.</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
+                      <img src={plus} className='align-self-center' height="5%" width="5%"></img>
                       <ListGroupItemHeading>Hemp milk</ListGroupItemHeading>
                       <ListGroupItemText>Hemp is hardy, so less pesticides and sprays are needed to combat weeds. Hemp filters out carbon dioxide to combat greenhouse gases. Just about every part of the hemp plant is usable, resulting in less waste. This is a great alternative!</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
+                      <img src={plus} className='align-self-center' height="5%" width="5%"></img>
                       <ListGroupItemHeading>Coconut milk</ListGroupItemHeading>
                       <ListGroupItemText>Coconut farms are eco-friendly and use small amounts of water. Coconut trees can also filter out carbon dioxide to combat greenhouse gases. This is a great alternative!</ListGroupItemText>
                     </ListGroupItem>
@@ -368,9 +377,10 @@ class MilkMobile extends Component {
                     <ListGroupItem>
                       <ListGroupItemHeading>Consider trying these brands:</ListGroupItemHeading>
                       <ListGroupItemText>
-                      <img src={crepe} className='img-fluid' height="25%" width="25%"></img>
-                      <img src={apple} className='img-fluid' height="25%" width="25%"></img>
-                      <img src={strawberry} className='img-fluid' height="25%" width="25%"></img>
+                      <img src={oatly} className='img-fluid' height="25%" width="25%"></img>
+                      <img src={tempt} className='img-fluid' height="25%" width="25%"></img>
+                      <img src={soDelicious} className='img-fluid' height="25%" width="25%"></img>
+                      <img src={ripple} className='img-fluid' height="25%" width="25%"></img>
                       </ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>

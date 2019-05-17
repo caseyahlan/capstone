@@ -9,7 +9,7 @@ import fishnet from '../imgs/fishnet-02.svg';
 import fish01 from '../imgs/fish-01.svg';
 import fish02 from '../imgs/fish-02.svg';
 import fish03 from '../imgs/fish-03.svg';
-import fish04 from '../imgs/fish04.svg';
+import fish04 from '../imgs/fish-04.svg';
 
 class Fish extends Component {
   render() {
@@ -78,16 +78,16 @@ class FishDesktop extends Component {
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impacts of Overfishing</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
-            <img src={fish01} style={{ display: 'block', height: '50%', width: 'auto', marginLeft: '70%' }}></img>
+            <img src={fish04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.3} speed={2.8}>
-            <img src={fish02} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '50%' }}></img>
+            <img src={fish03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1}>
-            <img src={fish03} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '30%' }}></img>
+            <img src={fish02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={fish04} style={{ display: 'block', height: '50%', width: 'auto', marginLeft: '10%' }}></img>
+            <img src={fish01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -95,16 +95,21 @@ class FishDesktop extends Component {
             <Container>
               <div className='media'>
                 <div className='media-body px-3'>
+                  <br></br>
                   <h1 className='text-left mt-4'>How has the Fishing Industry Impacted Coral Reefs?</h1>
                   <p className='text-monospace font-italic'>
-                    <br></br>
+                    <br></br><br></br><br></br>
                     “Impacts from unsustainable fishing on coral reef areas can lead to the depletion of key reed species in many locations… Additionally, certain types of fishing gear can inflict serious physical damage to coral reefs, seagrass beds, and other important marine habitats” - oceanservice.noaa.gov
                   </p>
                 </div>
-                <img src={alivecoral} className='align-self-center' height="25%" width="25%"></img>
-                <img src={deadcoral} className='align-self-center' height="25%" width="25%"></img>
               </div>
             </Container>
+          </ParallaxLayer>
+          <ParallaxLayer offset={3.53} speed={0.4}>
+            <img src={alivecoral} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={3.54} speed={1.7}>
+            <img src={deadcoral} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Five */}
@@ -152,7 +157,6 @@ class FishDesktop extends Component {
               <Row>
                 <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center'>
                   <h1 className='px-3'>What can you do to help?</h1>
-                  <img src={cookedfish} className='align-self-center' height="25%" width="25%"></img>
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
