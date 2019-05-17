@@ -3,7 +3,7 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
 import cow from '../imgs/cow-02.svg';
-import orangutanTrees from '../imgs/orangutanTrees-07.svg';
+import amazon from '../imgs/amazon.svg';
 import hamburger1 from '../imgs/hamburger1-01.svg';
 import hamburger2 from '../imgs/hamburger2-01.svg';
 import hamburger3 from '../imgs/hamburger3-01.svg';
@@ -99,7 +99,7 @@ class HamburgerDesktop extends Component {
                     “Each year, millions of hectares of forest are cleared for beef pasture, releasing carbon into the atmosphere and destroying habitat of endangered species. The deforestation impact of beef is greatest in South America, where beef was responsible for nearly three-quarters of total deforestation between 1990 and 2005.” - www.ucsusa.org
                   </p>
                 </div>
-                <img src={orangutanTrees} className='align-self-center' height="25%" width="25%"></img>
+                <img src={amazon} className='align-self-center' height="25%" width="25%"></img>
               </div>
             </Container>
           </ParallaxLayer>
@@ -248,7 +248,7 @@ class HamburgerMobile extends Component {
                 <Col xs='12'>
                   <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has the Beef Industry Impacted the Amazon Rainforest?</h1>
                   <Row className='justify-content-center'>
-                    <img src={orangutanTrees} className='img-fluid'></img>
+                    <img src={amazon} className='img-fluid'></img>
                   </Row>
                   <p className='text-monospace font-italic'>
                     <br></br>
