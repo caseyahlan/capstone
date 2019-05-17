@@ -9,6 +9,7 @@ import fishnet from '../imgs/fishnet-02.svg';
 import fish01 from '../imgs/fish-01.svg';
 import fish02 from '../imgs/fish-02.svg';
 import fish03 from '../imgs/fish-03.svg';
+import fish04 from '../imgs/fish04.svg';
 
 class Fish extends Component {
   render() {
@@ -77,16 +78,16 @@ class FishDesktop extends Component {
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impacts of Overfishing</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
-            <img src={fish01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
+            <img src={fish01} style={{ display: 'block', height: '50%', width: 'auto', marginLeft: '70%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.3} speed={2.8}>
-            <img src={fish02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
+            <img src={fish02} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '50%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1}>
-            <img src={fish03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
+            <img src={fish03} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '30%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={fish01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
+            <img src={fish04} style={{ display: 'block', height: '50%', width: 'auto', marginLeft: '10%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -281,7 +282,7 @@ class FishMobile extends Component {
             <img src={fish03} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '50%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={fish01} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '70%' }}></img>
+            <img src={fish04} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '70%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}

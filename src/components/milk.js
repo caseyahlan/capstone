@@ -2,18 +2,17 @@ import React, { Component } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
-import circles from '../imgs/circles.svg';
 import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
 import apple from '../imgs/apple-03.svg';
 import crepe from '../imgs/crepe-05.svg';
 import strawberry from '../imgs/strawberry-02.svg';
-import toast from '../imgs/toast-06.svg';
-import orangutanStumps from '../imgs/orangutanStumps-07.svg';
 import orangutanTrees from '../imgs/orangutanTrees-07.svg';
-import pinkCircle from '../imgs/pink-circle.svg';
-import blueCircle from '../imgs/blue-circle.svg';
-import house from '../imgs/house-w-line-03.svg';
-import deadPalm from '../imgs/dead-palm-07.svg';
+import cow from '../imgs/cow-02.svg';
+import milk from '../imgs/milk-02.svg';
+import milk1 from '../imgs/milk1-01.svg';
+import milk2 from '../imgs/milk2-01.svg';
+import milk3 from '../imgs/milk3-01.svg';
+import milk4 from '../imgs/milk4-01.svg';
 
 class Milk extends Component {
   render() {
@@ -58,7 +57,7 @@ class MilkDesktop extends Component {
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
           <ParallaxLayer offset={1.3} speed={4}>
-            <img src={hazelnutSpread} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
+            <img src={milk} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={1.2} speed={0.1}>
             <Container>
@@ -83,8 +82,17 @@ class MilkDesktop extends Component {
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impacts of Milk</h1>
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={0.1}>
-            <img src={circles} className='py-5 my-5 mx-3'></img>
+          <ParallaxLayer offset={2.4} speed={6}>
+            <img src={milk1} style={{height: '25%', width: '25%', marginLeft: '5%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.3} speed={2.8}>
+            <img src={milk2} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '30%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.5} speed={1}>
+            <img src={milk3} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '50%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.2} speed={-0.2}>
+            <img src={milk4} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '70%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -105,9 +113,6 @@ class MilkDesktop extends Component {
           <ParallaxLayer offset={3.53} speed={0.4}>
             <img src={orangutanTrees} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }}></img>
           </ParallaxLayer>
-          <ParallaxLayer offset={3.54} speed={1.7}>
-            <img src={orangutanStumps} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '50%' }}></img>
-          </ParallaxLayer>
 
           {/* Slide Five */}
           <ParallaxLayer offset={4} speed={0.5}>
@@ -123,10 +128,6 @@ class MilkDesktop extends Component {
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
-                  <img src={crepe} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={apple} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={strawberry} className='align-self-center' height="25%" width="25%"></img>
-                  <img src={toast} className='align-self-center' height="25%" width="25%"></img>
                     <ListGroup>
                       <ListGroupItem>
                         <ListGroupItemHeading>Almond milk</ListGroupItemHeading>
@@ -171,10 +172,9 @@ class MilkDesktop extends Component {
                       <ListGroupItem>
                         <ListGroupItemHeading>Consider trying these brands:</ListGroupItemHeading>
                         <ListGroupItemText>
-                        <img src={apple} className='align-self-center' height="25%" width="25%"></img>
-                        <img src={strawberry} className='align-self-center' height="25%" width="25%"></img>
-                        <img src={toast} className='align-self-center' height="25%" width="25%"></img>
-                        <img src={toast} className='align-self-center' height="25%" width="25%"></img>
+                        <img src={crepe} className='img-fluid' height="25%" width="25%"></img>
+                        <img src={apple} className='img-fluid' height="25%" width="25%"></img>
+                        <img src={strawberry} className='img-fluid' height="25%" width="25%"></img>
                         </ListGroupItemText>
                       </ListGroupItem>
                     </ListGroup>
@@ -260,7 +260,7 @@ class MilkMobile extends Component {
                 <Col xs='12'>
                   <h1 className='text-center text-md-left pt-2 pt-lg-5'>About the Dairy Industry</h1>
                   <Row className='justify-content-center'>
-                      <img src={hazelnutSpread} className='img-fluid' height="35%" width="35%"></img>
+                      <img src={milk} className='img-fluid' height="35%" width="35%"></img>
                   </Row>
                   <p className='text-monospace'>
                     <br></br>
@@ -280,10 +280,17 @@ class MilkMobile extends Component {
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impacts of Milk</h1>
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={0.1}>
-            <Container>
-              <img src={circles}></img>
-            </Container>
+          <ParallaxLayer offset={2.4} speed={6}>
+            <img src={milk1} style={{height: '25%', width: '25%', marginLeft: '5%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.3} speed={2.8}>
+            <img src={milk2} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '30%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.5} speed={1}>
+            <img src={milk3} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '50%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.2} speed={-0.2}>
+            <img src={milk4} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '70%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -294,7 +301,6 @@ class MilkMobile extends Component {
                   <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Dairy Impacted Groundwater?</h1>
                   <Row className='justify-content-center'>
                     <img src={orangutanTrees} className='img-fluid'></img>
-                    <img src={orangutanStumps} className='img-fluid'></img>
                   </Row>
                   <p className='text-monospace font-italic'>
                     <br></br>
@@ -365,7 +371,6 @@ class MilkMobile extends Component {
                       <img src={crepe} className='img-fluid' height="25%" width="25%"></img>
                       <img src={apple} className='img-fluid' height="25%" width="25%"></img>
                       <img src={strawberry} className='img-fluid' height="25%" width="25%"></img>
-                      <img src={toast} className='img-fluid' height="25%" width="25%"></img>
                       </ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>
