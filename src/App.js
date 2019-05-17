@@ -14,13 +14,20 @@ import {
   DropdownMenu, 
   DropdownToggle, 
   DropdownItem, 
-  Collapse } from 'reactstrap';
+  Collapse,
+  Card,
+  CardImg } from 'reactstrap';
 import Nutella from './components/nutella';
 import Fish from './components/fish';
 import Hamburger from './components/hamburger';
 import Milk from './components/milk';
 import Avocado from './components/avocado';
 import Coffee from './components/coffee';
+import hazelnutSpreadImg from './imgs/hazelnutSpread-04.svg';
+import fishImg from './imgs/cookedfish-02.svg';
+import hamburgerImg from './imgs/hamburger.svg';
+import milkImg from './imgs/milk-02.svg';
+import avocadoImg from './imgs/avocado.svg';
 
 class App extends Component {
   constructor(props) {
@@ -77,19 +84,39 @@ class HomePage extends Component {
         <Container>
           <Row>
             <Col sm={12} md={4} lg={3}>
-              <Link to='/nutella'>nutella</Link>
+              <Link to='/nutella'>
+                <Card>
+                  <CardImg src={hazelnutSpreadImg} alt='nutella'/>  
+                </Card>
+              </Link>
             </Col>
             <Col sm={12} md={4} lg={3}>
-              <Link to='/fish'>fish</Link>
+              <Link to='/fish'>
+                <Card>
+                  <CardImg src={fishImg} alt='fish'/>  
+                </Card>
+              </Link>
             </Col>
             <Col sm={12} md={4} lg={3}>
-              <Link to='/hamburger'>hamburger</Link>
+              <Link to='/hamburger'>
+                <Card>
+                  <CardImg src={hamburgerImg} alt='hamburger'/>  
+                </Card>
+              </Link>
             </Col>
             <Col sm={12} md={4} lg={3}>
-              <Link to='/milk'>milk</Link>
+              <Link to='/milk'>
+                <Card>
+                  <CardImg src={milkImg} alt='milk'/>  
+                </Card>
+              </Link>
             </Col>
             <Col sm={12} md={4} lg={3}>
-              <Link to='/avocado'>avocado</Link>
+              <Link to='/avocado'>
+                <Card>
+                  <CardImg src={avocadoImg} alt='avocado'/>  
+                </Card>
+              </Link>
             </Col>
           </Row>
         </Container>

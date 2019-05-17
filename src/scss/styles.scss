@@ -76,3 +76,30 @@ html {
 	font-size: 0;
 	line-height: 0;
 }
+
+.card {
+  transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  transition: 0.15s all ease-out;
+  opacity: 0;
+  border-radius: 5px;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
