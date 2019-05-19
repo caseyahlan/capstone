@@ -79,16 +79,16 @@ class AvocadoDesktop extends Component {
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impacts of Avocados</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
-            <img src={avocado01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
+            <img src={avocado04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.3} speed={2.8}>
-            <img src={avocado02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
+            <img src={avocado03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1}>
-            <img src={avocado03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
+            <img src={avocado02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={avocado04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
+            <img src={avocado01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
