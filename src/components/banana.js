@@ -112,7 +112,7 @@ class BananaDesktop extends Component {
           </ParallaxLayer>
 
           {/* Slide Five */}
-          <ParallaxLayer offset={5} speed={0.1}>
+          <ParallaxLayer offset={4} speed={0.1}>
             <Container fluid={true}>
               <Row>
                 <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap'>
@@ -277,7 +277,7 @@ class BananaMobile extends Component {
           </ParallaxLayer>
 
           {/* Slide Five */}
-          <ParallaxLayer offset={5} speed={0.1}>
+          <ParallaxLayer offset={4} speed={0.1}>
             <Container fluid={true}>
               <Row>
                 <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
