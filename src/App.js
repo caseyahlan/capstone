@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch, NavLink} from 'react-router-dom';
 // import MediaQuery from 'react-responsive';
-import { 
-  Container, 
-  Row, 
-  Col, 
-  Navbar, 
-  Nav, 
-  NavItem, 
-  NavbarToggler, 
-  NavbarBrand, 
-  UncontrolledDropdown, 
-  DropdownMenu, 
-  DropdownToggle, 
-  DropdownItem, 
+import {
+  Container,
+  Row,
+  Col,
+  Navbar,
+  Nav,
+  NavItem,
+  NavbarToggler,
+  NavbarBrand,
+  UncontrolledDropdown,
+  DropdownMenu,
+  DropdownToggle,
+  DropdownItem,
   Collapse,
   Card,
   CardImg } from 'reactstrap';
@@ -23,12 +23,14 @@ import Hamburger from './components/hamburger';
 import Milk from './components/milk';
 import Avocado from './components/avocado';
 import Coffee from './components/coffee';
+import Banana from './components/banana';
 import hazelnutSpreadImg from './imgs/hazelnutSpread-04.svg';
 import fishImg from './imgs/cookedfish-02.svg';
 import hamburgerImg from './imgs/hamburger.svg';
 import milkImg from './imgs/milk-02.svg';
 import avocadoImg from './imgs/avocado.svg';
 import coffeeImg from './imgs/coffee.svg';
+import bananaImg from './imgs/banana.svg';
 
 class App extends Component {
   constructor(props) {
@@ -48,6 +50,7 @@ class App extends Component {
         <Route path='/milk' component={Milk}/>
         <Route path='/avocado' component={Avocado}/>
         <Route path='/coffee' component={Coffee}/>
+        <Route path='/banana' component={Banana}/>
       </Switch>
     );
   }
@@ -68,7 +71,7 @@ class HomePage extends Component {
   //     isOpen: !this.state.isOpen
   //   });
   // }
-  
+
   render() {
     return (
       <div>
@@ -87,42 +90,49 @@ class HomePage extends Component {
             <Col sm={12} md={4} lg={3}>
               <Link to='/nutella'>
                 <Card>
-                  <CardImg src={hazelnutSpreadImg} alt='nutella'/>  
+                  <CardImg src={hazelnutSpreadImg} alt='nutella'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3}>
               <Link to='/fish'>
                 <Card>
-                  <CardImg src={fishImg} alt='fish'/>  
+                  <CardImg src={fishImg} alt='fish'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3}>
               <Link to='/hamburger'>
                 <Card>
-                  <CardImg src={hamburgerImg} alt='hamburger'/>  
+                  <CardImg src={hamburgerImg} alt='hamburger'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3}>
               <Link to='/milk'>
                 <Card>
-                  <CardImg src={milkImg} alt='milk'/>  
+                  <CardImg src={milkImg} alt='milk'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3}>
               <Link to='/avocado'>
                 <Card>
-                  <CardImg src={avocadoImg} alt='avocado'/>  
+                  <CardImg src={avocadoImg} alt='avocado'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3}>
               <Link to='/coffee'>
                 <Card>
-                  <CardImg src={coffeeImg} alt='coffee'/>  
+                  <CardImg src={coffeeImg} alt='coffee'/>
+                </Card>
+              </Link>
+            </Col>
+            <Col sm={12} md={4} lg={3}>
+              <Link to='/banana'>
+                <Card>
+                  <CardImg src={bananaImg} alt='banana'/>
                 </Card>
               </Link>
             </Col>
