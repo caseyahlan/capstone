@@ -2,19 +2,14 @@ import React, { Component } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
-import circles from '../imgs/circles.svg';
 import coffeeCup from '../imgs/coffee.svg';
-import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
-import apple from '../imgs/apple-03.svg';
-import crepe from '../imgs/crepe-05.svg';
-import strawberry from '../imgs/strawberry-02.svg';
-import toast from '../imgs/toast-06.svg';
-import orangutanStumps from '../imgs/orangutanStumps-07.svg';
-import orangutanTrees from '../imgs/orangutanTrees-07.svg';
-import avocado01 from '../imgs/avocado1-01.svg';
-import avocado02 from '../imgs/avocado2-01.svg';
-import avocado03 from '../imgs/avocado3-01.svg';
-import avocado04 from '../imgs/avocado4-01.svg';
+import toucan from '../imgs/toucan-02.svg';
+import fairTrade from '../imgs/fair-trade-02.svg';
+import rainForestAlliance from '../imgs/rainforest-alliance-02.svg';
+import coffee01 from '../imgs/coffee1-01.svg';
+import coffee02 from '../imgs/coffee2-01.svg';
+import coffee03 from '../imgs/coffee3-01.svg';
+import coffee04 from '../imgs/coffee4-01.svg';
 
 class Coffee extends Component {
   render() {
@@ -84,16 +79,16 @@ class CoffeeDesktop extends Component {
             <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Coffee</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
-            <img src={avocado04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
+            <img src={coffee04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.3} speed={2.8}>
-            <img src={avocado03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
+            <img src={coffee03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1}>
-            <img src={avocado02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
+            <img src={coffee02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={avocado01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
+            <img src={coffee01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -110,7 +105,7 @@ class CoffeeDesktop extends Component {
                     Researchers found that coffee farms offering some tree shade are still experiencing species decline and are no substitute for large swaths of protected forest. Across coffee farms and all sizes and types of forest, researchers found 61 percent more bird species’ populations declined as grew or remained steady.” -nationalgeographic.com
                   </p>
                 </div>
-                <img src={orangutanTrees} className='align-self-center' height="35%" width="35%"></img>
+                <img src={toucan} className='align-self-center' height="35%" width="35%"></img>
               </div>
             </Container>
           </ParallaxLayer>
@@ -132,6 +127,7 @@ class CoffeeDesktop extends Component {
                     <ListGroup>
                       <ListGroupItem>
                         <ListGroupItemHeading>Fair Trade</ListGroupItemHeading>
+                        <img src={fairTrade} height="8%" width="8%"></img>
                         <ListGroupItemText>
                           Rigorous Fairtrade Standards support farmers and their communities and protect the environment. Every bean can be traced back to the cooperative of small-scale farmers who grew it.
                           <br></br><br></br>
@@ -152,6 +148,7 @@ class CoffeeDesktop extends Component {
                       </ListGroupItem>
                       <ListGroupItem>
                         <ListGroupItemHeading>Rainforest Alliance</ListGroupItemHeading>
+                        <img src={rainForestAlliance} height="8%" width="8%"></img>
                         <ListGroupItemText>
                         The Rainforest Alliance works at the intersection of business, agriculture, and forests to make responsible business the new normal. An alliance of companies, farmers, foresters, communities, and consumers committed to creating a world where people and nature thrive in harmony.
                         <br></br><br></br>
@@ -308,10 +305,17 @@ class CoffeeMobile extends Component {
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impact of Coffee</h1>
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={0.1}>
-            <Container>
-              <img src={circles}></img>
-            </Container>
+          <ParallaxLayer offset={2.4} speed={6}>
+            <img src={coffee01} style={{height: '25%', width: '25%', marginLeft: '5%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.3} speed={2.8}>
+            <img src={coffee02} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '30%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.5} speed={1}>
+            <img src={coffee03} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '50%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.2} speed={-0.2}>
+            <img src={coffee04} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '70%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -321,8 +325,7 @@ class CoffeeMobile extends Component {
                 <Col xs='12'>
                   <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Coffee Impacted Birds in Costa Rica?</h1>
                   <Row className='justify-content-center'>
-                    <img src={orangutanTrees} className='img-fluid'></img>
-                    <img src={orangutanStumps} className='img-fluid'></img>
+                    <img src={toucan} className='img-fluid'></img>
                   </Row>
                   <p className='text-monospace font-italic'>
                     <br></br>

@@ -3,10 +3,7 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
 import avocadopic from '../imgs/avocado.svg';
-import cookedfish from '../imgs/cookedfish-02.svg';
-import alivecoral from '../imgs/coral-02.svg';
-import deadcoral from '../imgs/deadcoral-02.svg';
-import fishnet from '../imgs/fishnet-02.svg';
+import butterfly from '../imgs/butterfly.jpg';
 import avocado01 from '../imgs/avocado1-01.svg';
 import avocado02 from '../imgs/avocado2-01.svg';
 import avocado03 from '../imgs/avocado3-01.svg';
@@ -102,15 +99,11 @@ class AvocadoDesktop extends Component {
                     "Apútzio de Juárez, Mexico fills with swarms of migrating monarch butterflies each year. But downhill from the monarchs’ mountain roost, there lurks a new threat to their winter habitat: a lust to grow the lucrative avocados that are being consumed at record rates in the United States. Spurred by soaring demand for the creamy fruit, farmers here in the western state of Michoacán are clearing land to make room for avocado orchards, cutting oak and pine trees that form a vital buffer around the mountain forests where the monarchs nest. The trees cool the air from Michoacán’s warm western plains. If the temperature at the heart of the reserve, were to rise, the forest could suffer, and thus the butterflies would suffer, too." -nytimes.com
                   </p>
                 </div>
+                <img src={butterfly} className='align-self-center' height="35%" width="35%"></img>
               </div>
             </Container>
           </ParallaxLayer>
-          <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={alivecoral} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.54} speed={1.7}>
-            <img src={deadcoral} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
-          </ParallaxLayer>
+
 
           {/* Slide Five */}
           <ParallaxLayer offset={4} speed={0.5}>
@@ -119,7 +112,6 @@ class AvocadoDesktop extends Component {
                 <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap'>
                   <Row className='px-3'>
                     <h1>Alternatives to Avocados</h1>
-                    <img src={cookedfish} className='align-self-center' height="25%" width="25%"></img>
                     <p className='text-monospace pt-3'>
                       There are many health benefits to eating avocados. Try these alternative foods that give similar benefits.
                     </p>
@@ -161,7 +153,6 @@ class AvocadoDesktop extends Component {
               <Row>
                 <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center'>
                   <h1 className='px-3'>What can you do to help?</h1>
-                  <img src={cookedfish} className='align-self-center' height="25%" width="25%"></img>
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
@@ -307,8 +298,7 @@ class AvocadoMobile extends Component {
                 <Col xs='12'>
                   <h1 className='text-center text-md-left pt-2 pt-lg-5'>How have Avocados Impacted Monarch Butterflies?</h1>
                   <Row className='justify-content-center'>
-                    <img src={alivecoral} className='img-fluid'></img>
-                    <img src={deadcoral} className='img-fluid'></img>
+                    <img src={butterfly} className='img-fluid'></img>
                   </Row>
                   <p className='text-monospace font-italic'>
                     <br></br>
