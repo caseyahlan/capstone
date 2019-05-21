@@ -73,6 +73,7 @@ class CoffeeDesktop extends Component {
                       After oil, coffee is the world’s most tradable commodity and the increased demand for convenient coffee has led coffee farmers to find new, more efficient ways to grow the crop. While some of these methods result in higher yields, they have also significantly contributed to deforestation and other environmental threats.
                     </p>
                 </div>
+                <img src={coffeeCup} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
               </div>
             </Container>
           </ParallaxLayer>

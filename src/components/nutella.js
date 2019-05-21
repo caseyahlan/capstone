@@ -67,7 +67,7 @@ class NutellaDesktop extends Component {
                     <p className='text-monospace body-text'>
                       <br></br>
                       Nutella is a popular hazelnut spread that is commonly used in many food products. Currently, there are 7
-                      well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla (Citation 1).
+                      well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla.
                       <br></br><br></br>
                       Just by looking at the ingredients, nutella seems like a perfect choice for many recipes. However, nutella’s
                       heavy use of palm oil spreads damage to the environment.
@@ -84,16 +84,16 @@ class NutellaDesktop extends Component {
             <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
-            <img src={nutella01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
+            <img src={nutella04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.3} speed={2.8}>
-            <img src={nutella02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
+            <img src={nutella03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1}>
-            <img src={nutella03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
+            <img src={nutella02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={nutella04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
+            <img src={nutella01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}

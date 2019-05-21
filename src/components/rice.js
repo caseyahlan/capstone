@@ -2,30 +2,29 @@ import React, { Component } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
-import banana from '../imgs/banana.svg';
-import fairTradeBanana from '../imgs/fair-trade-banana.svg';
-import crocodile from '../imgs/alligator-02.svg';
-import banana01 from '../imgs/banana1-01.svg';
-import banana02 from '../imgs/banana2-01.svg';
-import banana03 from '../imgs/banana3-01.svg';
-import banana04 from '../imgs/banana4-01.svg';
+import rice from '../imgs/rice-bowl.svg';
+import clouds from '../imgs/vietnamese-clouds-country.jpg';
+import rice01 from '../imgs/rice1-01.svg';
+import rice02 from '../imgs/rice2-01.svg';
+import rice03 from '../imgs/rice3-01.svg';
+import rice04 from '../imgs/milk4-01.svg';
 
-class Banana extends Component {
+class Rice extends Component {
   render() {
     return (
       <div>
         <MediaQuery query='(min-device-width: 991px)'>
-          <BananaDesktop />
+          <RiceDesktop />
         </MediaQuery>
         <MediaQuery query='(max-device-width: 991px)'>
-          <BananaMobile />
+          <RiceMobile />
         </MediaQuery>
       </div>
     )
   }
 }
 
-class BananaDesktop extends Component {
+class RiceDesktop extends Component {
   render() {
     return (
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
@@ -38,7 +37,7 @@ class BananaDesktop extends Component {
             <Container fluid={true}>
               <Row>
                 <Col xs='12' className='split-horizontal light-green-background d-flex justify-content-center align-items-end'>
-                  <h1 className='text-white pb-3'>Banana</h1>
+                  <h1 className='text-white pb-3'>Rice</h1>
                 </Col>
                 <Col xs='12' className='d-flex justify-content-center'>
                   <div className='arrow-down'></div>
@@ -53,18 +52,18 @@ class BananaDesktop extends Component {
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
           <ParallaxLayer offset={1.3} speed={4}>
-            <img src={banana} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
+            <img src={rice} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={1.2} speed={0.1}>
             <Container>
               <div className='media'>
                 <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Bananas</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Rice</h1>
                     <p className='text-monospace body-text'>
                       <br></br>
-                      Bananas are a staple food that a lot of cultures depend on. Bananas are generally inexpensive and have a lot of healthy nutrients. However, there are significant environmental impacts from banana production.
+                      Rice is a nutritious staple food that many communities depend on to survive. However, growing rice produces methane, a greenhouse gas. The methane from rice production contributes to 1.5% of total greenhouse gas emissions, and could continue to grow.
                       <br></br><br></br>
-                      Did you know that bananas have to be flown into western countries, which releases CO2? Or that tropical rainforests are impacted by deforestation to make room for banana plantations? The world’s ecosystem is being impacted by banana production, but there are ways to help lessen this impact.
+                      Rice is a unique food that produces a lot of methane, but is necessary in communities that grow it and for those that lack a lot of resources for food. Rice production also helps biodiversity for wetland habitats, so it cannot be eliminated without other environmental harm. Therefore, it is crucial to find the balance between competing environmental factors and human need for rice.
                     </p>
                 </div>
               </div>
@@ -78,16 +77,16 @@ class BananaDesktop extends Component {
             <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Bananas</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
-            <img src={banana04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
+            <img src={rice04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.3} speed={2.8}>
-            <img src={banana03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
+            <img src={rice03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1}>
-            <img src={banana02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
+            <img src={rice02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={banana01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
+            <img src={rice01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -96,20 +95,21 @@ class BananaDesktop extends Component {
             <Container>
               <div className='media'>
                 <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How have Bananas Impacted Crocodiles?</h1>
+                  <h1 className='text-left mt-4'>How has Rice Impacted Asian Wetland habitats?</h1>
                   <p className='text-monospace font-italic'>
                     <br></br>
-                    “In the past, I have witnessed and a lot of the locals have pointed out that there have been massive fish kills as a result of pesticide exposure in high levels. A lot of the pesticides will wind up at the top of the food chain. What was revealing to me was the fact that the caiman [crocodiles] that were near the banana plantations had not only higher concentrations of pesticides, but also they were in a poorer state of health relative to the caiman in more pristine, remote areas.
+                    “In Asia, wetland habitats are at grave risk globally and as a result, there are great concerns on the rates of loss of biological diversity. Rice agricultural systems provide important human-modified wetlands for wildlife. In the ecosystem service context, flooded rice environments provide important ‘supporting services’ for wildlife through their extensive water networks. In turn, the abundance of diverse species supported by the rice ecosystem provides a number of ecosystem services to humanity.” www.irri.org
                     <br></br><br></br>
-                    You know, we're now reckoning with the problem left by past use of highly toxic, highly persistent pesticides. So, what plantations must avoid now is leaving similar toxic legacies for the next generation to deal with.” - www.npr.org
-
+                    So, what do we do?
+                    <br></br><br></br>
+                    “Feeding the world and saving the planet have to become mutual goals if we are to meet the demands of a billion extra people by 2030, while keeping global warming below the 1.5°C critical risk threshold.” - www.eco-business.com
                   </p>
                 </div>
               </div>
             </Container>
           </ParallaxLayer>
           <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={crocodile} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }}></img>
+            <img src={clouds} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Five */}
@@ -128,16 +128,15 @@ class BananaDesktop extends Component {
                   <Container>
                     <ListGroup>
                       <ListGroupItem>
-                        <ListGroupItemHeading>Buy locally-grown fruit</ListGroupItemHeading>
+                        <ListGroupItemHeading>Buy rice alternatives</ListGroupItemHeading>
                         <ListGroupItemText>
-                          You can minimize the impact from banana production by switching from buying bananas to buying locally-grown fruit. Buying fruit that is grown locally not only reduces carbon emissions, but it strengthens your local economy.
+                          There are many alternatives available for rice such as quinoa, barley, amaranth, and cauliflower. Although it is not necessary to completely stop consumption of rice, eating rice alternatives can lower the demand of rice, so less is produced.
                         </ListGroupItemText>
                       </ListGroupItem>
                       <ListGroupItem>
-                        <ListGroupItemHeading>Buy Fairtrade bananas</ListGroupItemHeading>
+                        <ListGroupItemHeading>Reduce rice consumption</ListGroupItemHeading>
                         <ListGroupItemText>
-                          <img src={fairTradeBanana} height="5%" width="5%"></img>
-                          If you continue purchasing bananas, purchase Fairtrade bananas. Fairtrade bananas focus on improving the lives of banana farmers by giving more of the money back to them that is gained from selling bananas.
+                          By reducing rice consumption, demand may lower and therefore less methane may be produced. While it is important to reduce methane pollution from rice, rice is still an important crop. It is important to find the balance between its importance and harm, so reducing consumption, without completely eliminating it is a good way to start.
                         </ListGroupItemText>
                       </ListGroupItem>
                     </ListGroup>
@@ -190,7 +189,7 @@ class BananaDesktop extends Component {
   }
 }
 
-class BananaMobile extends Component {
+class RiceMobile extends Component {
   render() {
     return (
         <Parallax ref={ref => (this.parallax = ref)} pages={9}>
@@ -203,7 +202,7 @@ class BananaMobile extends Component {
             <Container fluid={true}>
               <Row>
                 <Col xs='12' className='split-horizontal light-green-background d-flex justify-content-center align-items-end'>
-                  <h1 className='text-white pb-3'>Banana</h1>
+                  <h1 className='text-white pb-3'>Rice</h1>
                 </Col>
                 <Col xs='12' className='d-flex justify-content-center'>
                   <div className='arrow-down'></div>
@@ -221,16 +220,15 @@ class BananaMobile extends Component {
             <Container>
               <Row>
                 <Col xs='12'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Bananas</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Rice</h1>
                   <Row className='justify-content-center'>
-                      <img src={banana} className='img-fluid' height="35%" width="35%"></img>
+                      <img src={rice} className='img-fluid' height="35%" width="35%"></img>
                   </Row>
                   <p className='text-monospace'>
                     <br></br>
-                    Bananas are a staple food that a lot of cultures depend on. Bananas are generally inexpensive and have a lot of healthy nutrients. However, there are significant environmental impacts from banana production.
+                    Rice is a nutritious staple food that many communities depend on to survive. However, growing rice produces methane, a greenhouse gas. The methane from rice production contributes to 1.5% of total greenhouse gas emissions, and could continue to grow.
                     <br></br><br></br>
-                    Did you know that bananas have to be flown into western countries, which releases CO2? Or that tropical rainforests are impacted by deforestation to make room for banana plantations? The world’s ecosystem is being impacted by banana production, but there are ways to help lessen this impact.
-
+                    Rice is a unique food that produces a lot of methane, but is necessary in communities that grow it and for those that lack a lot of resources for food. Rice production also helps biodiversity for wetland habitats, so it cannot be eliminated without other environmental harm. Therefore, it is crucial to find the balance between competing environmental factors and human need for rice.
                   </p>
                 </Col>
               </Row>
@@ -245,16 +243,16 @@ class BananaMobile extends Component {
             <h1 style={{ width: '70%', marginLeft: '5%' }}>Impact of Bananas</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
-            <img src={banana04} style={{height: '25%', width: '25%', marginLeft: '5%' }}></img>
+            <img src={rice04} style={{height: '25%', width: '25%', marginLeft: '5%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.3} speed={2.8}>
-            <img src={banana03} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '30%' }}></img>
+            <img src={rice03} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '30%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1}>
-            <img src={banana02} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '50%' }}></img>
+            <img src={rice02} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '50%' }}></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={banana01} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '70%' }}></img>
+            <img src={rice01} style={{ display: 'block', height: '25%', width: '25%', marginLeft: '70%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -262,16 +260,16 @@ class BananaMobile extends Component {
             <Container>
               <Row>
                 <Col xs='12'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>How have Bananas Impacted Crocodiles?</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Rice Impacted Asian Wetland habitats?</h1>
                   <Row className='justify-content-center'>
-                    <img src={crocodile} className='img-fluid'></img>
                   </Row>
                   <p className='text-monospace font-italic'>
                     <br></br>
-                    “In the past, I have witnessed and a lot of the locals have pointed out that there have been massive fish kills as a result of pesticide exposure in high levels. A lot of the pesticides will wind up at the top of the food chain. What was revealing to me was the fact that the caiman [crocodiles] that were near the banana plantations had not only higher concentrations of pesticides, but also they were in a poorer state of health relative to the caiman in more pristine, remote areas.
+                    “In Asia, wetland habitats are at grave risk globally and as a result, there are great concerns on the rates of loss of biological diversity. Rice agricultural systems provide important human-modified wetlands for wildlife. In the ecosystem service context, flooded rice environments provide important ‘supporting services’ for wildlife through their extensive water networks. In turn, the abundance of diverse species supported by the rice ecosystem provides a number of ecosystem services to humanity.” www.irri.org
                     <br></br><br></br>
-                    You know, we're now reckoning with the problem left by past use of highly toxic, highly persistent pesticides. So, what plantations must avoid now is leaving similar toxic legacies for the next generation to deal with.” - www.npr.org
-
+                    So, what do we do?
+                    <br></br><br></br>
+                    “Feeding the world and saving the planet have to become mutual goals if we are to meet the demands of a billion extra people by 2030, while keeping global warming below the 1.5°C critical risk threshold.” - www.eco-business.com
                   </p>
                 </Col>
               </Row>
@@ -294,15 +292,15 @@ class BananaMobile extends Component {
                   <ListGroup>
                     <br></br><br></br>
                     <ListGroupItem>
-                      <ListGroupItemHeading>Buy locally-grown fruit</ListGroupItemHeading>
+                      <ListGroupItemHeading>Buy rice alternatives</ListGroupItemHeading>
                       <ListGroupItemText>
-                        You can minimize the impact from banana production by switching from buying bananas to buying locally-grown fruit. Buying fruit that is grown locally not only reduces carbon emissions, but it strengthens your local economy.
+                        There are many alternatives available for rice such as quinoa, barley, amaranth, and cauliflower. Although it is not necessary to completely stop consumption of rice, eating rice alternatives can lower the demand of rice, so less is produced.
                       </ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
-                      <ListGroupItemHeading>Buy Fairtrade bananas</ListGroupItemHeading>
+                      <ListGroupItemHeading>Reduce rice consumption</ListGroupItemHeading>
                       <ListGroupItemText>
-                        If you continue purchasing bananas, purchase Fairtrade bananas. Fairtrade bananas focus on improving the lives of banana farmers by giving more of the money back to them that is gained from selling bananas.
+                        By reducing rice consumption, demand may lower and therefore less methane may be produced. While it is important to reduce methane pollution from rice, rice is still an important crop. It is important to find the balance between its importance and harm, so reducing consumption, without completely eliminating it is a good way to start.
                       </ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>
@@ -364,4 +362,4 @@ class BananaMobile extends Component {
   }
 }
 
-export default Banana;
+export default Rice;

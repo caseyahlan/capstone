@@ -24,6 +24,7 @@ import Milk from './components/milk';
 import Avocado from './components/avocado';
 import Coffee from './components/coffee';
 import Banana from './components/banana';
+import Rice from './components/rice';
 import hazelnutSpreadImg from './imgs/hazelnutSpread-04.svg';
 import fishImg from './imgs/cookedfish-02.svg';
 import hamburgerImg from './imgs/hamburger.svg';
@@ -31,6 +32,7 @@ import milkImg from './imgs/milk-02.svg';
 import avocadoImg from './imgs/avocado.svg';
 import coffeeImg from './imgs/coffee.svg';
 import bananaImg from './imgs/banana.svg';
+import riceImg from './imgs/rice-bowl.svg';
 
 class App extends Component {
   constructor(props) {
@@ -51,6 +53,7 @@ class App extends Component {
         <Route path='/avocado' component={Avocado}/>
         <Route path='/coffee' component={Coffee}/>
         <Route path='/banana' component={Banana}/>
+        <Route path='/rice' component={Rice}/>
       </Switch>
     );
   }
@@ -133,6 +136,13 @@ class HomePage extends Component {
               <Link to='/banana'>
                 <Card>
                   <CardImg src={bananaImg} alt='banana'/>
+                </Card>
+              </Link>
+            </Col>
+            <Col sm={12} md={4} lg={3}>
+              <Link to='/rice'>
+                <Card>
+                  <CardImg src={riceImg} alt='rice'/>
                 </Card>
               </Link>
             </Col>
