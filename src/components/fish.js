@@ -98,7 +98,7 @@ class FishDesktop extends Component {
                   <br></br>
                   <h1 className='text-left mt-4'>How has the Fishing Industry Impacted Coral Reefs?</h1>
                   <p className='text-monospace font-italic'>
-                    <br></br><br></br><br></br>
+                    <br></br><br></br>
                     “Impacts from unsustainable fishing on coral reef areas can lead to the depletion of key reed species in many locations… Additionally, certain types of fishing gear can inflict serious physical damage to coral reefs, seagrass beds, and other important marine habitats” - oceanservice.noaa.gov
                   </p>
                 </div>

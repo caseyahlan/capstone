@@ -102,10 +102,14 @@ class AvocadoDesktop extends Component {
                     "Apútzio de Juárez, Mexico fills with swarms of migrating monarch butterflies each year. But downhill from the monarchs’ mountain roost, there lurks a new threat to their winter habitat: a lust to grow the lucrative avocados that are being consumed at record rates in the United States. Spurred by soaring demand for the creamy fruit, farmers here in the western state of Michoacán are clearing land to make room for avocado orchards, cutting oak and pine trees that form a vital buffer around the mountain forests where the monarchs nest. The trees cool the air from Michoacán’s warm western plains. If the temperature at the heart of the reserve, were to rise, the forest could suffer, and thus the butterflies would suffer, too." -nytimes.com
                   </p>
                 </div>
-                <img src={alivecoral} className='align-self-center' height="25%" width="25%"></img>
-                <img src={deadcoral} className='align-self-center' height="25%" width="25%"></img>
               </div>
             </Container>
+          </ParallaxLayer>
+          <ParallaxLayer offset={3.53} speed={0.4}>
+            <img src={alivecoral} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }}></img>
+          </ParallaxLayer>
+          <ParallaxLayer offset={3.54} speed={1.7}>
+            <img src={deadcoral} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Five */}

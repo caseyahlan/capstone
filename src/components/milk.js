@@ -112,7 +112,7 @@ class MilkDesktop extends Component {
             </Container>
           </ParallaxLayer>
           <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={river} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }}></img>
+            <img src={river} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '35%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Five */}

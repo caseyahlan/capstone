@@ -93,15 +93,18 @@ class HamburgerDesktop extends Component {
             <Container>
               <div className='media'>
                 <div className='media-body px-3'>
+                  <br></br>
                   <h1 className='text-left mt-4'>How has the Beef Industry Impacted the Amazon Rainforest?</h1>
                   <p className='text-monospace font-italic'>
-                    <br></br>
+                    <br></br><br></br>
                     “Each year, millions of hectares of forest are cleared for beef pasture, releasing carbon into the atmosphere and destroying habitat of endangered species. The deforestation impact of beef is greatest in South America, where beef was responsible for nearly three-quarters of total deforestation between 1990 and 2005.” - www.ucsusa.org
                   </p>
                 </div>
-                <img src={amazon} className='align-self-center' height="25%" width="25%"></img>
               </div>
             </Container>
+          </ParallaxLayer>
+          <ParallaxLayer offset={3.53} speed={0.4}>
+            <img src={amazon} style={{ display: 'block', height: '35%', width: 'auto', marginLeft: '40%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Five */}

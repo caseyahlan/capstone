@@ -3,7 +3,6 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import MediaQuery from 'react-responsive';
 import rice from '../imgs/rice-bowl.svg';
-import clouds from '../imgs/vietnamese-clouds-country.jpg';
 import rice01 from '../imgs/rice1-01.svg';
 import rice02 from '../imgs/rice2-01.svg';
 import rice03 from '../imgs/rice3-01.svg';
@@ -107,9 +106,6 @@ class RiceDesktop extends Component {
                 </div>
               </div>
             </Container>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={clouds} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }}></img>
           </ParallaxLayer>
 
           {/* Slide Five */}
