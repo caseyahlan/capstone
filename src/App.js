@@ -141,21 +141,21 @@ class HomePage extends Component {
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
-              <Link to='/rice'>
+              <Link to='/bread'>
                 <Card className='card-img-top'>
                   <CardImg src={avocadoImg} alt='bread'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
-              <Link to='/rice'>
+              <Link to='/oreo'>
                 <Card className='card-img-top'>
                   <CardImg src={coffeeImg} alt='oreo'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
-              <Link to='/rice'>
+              <Link to='/cocacola'>
                 <Card className='card-img-top'>
                   <CardImg src={hamburgerImg} alt='cocacola'/>
                 </Card>
