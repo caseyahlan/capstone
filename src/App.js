@@ -314,19 +314,17 @@ class Sources extends Component {
         <br></br><br></br>
         Soda sources
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://medium.com/@danielle_67565/is-soda-as-bad-for-the-environment-as-it-is-for-your-health-249ef3e3fa05" target="_top">Is Soda as Bad for the Environment as it is for Your Health?</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://inews.co.uk/news/environment/always-coca-cola-fizzy-drinks-giants-shocking-impact-oceans/" target="_top">Revealed: Coca-Cola sells 3,500 environmentally damaging plastic bottles every second</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.theguardian.com/commentisfree/2017/may/02/plastic-bottles-coca-cola-recycling-coke" target="_top">Plastic bottles are a recycling disaster. Coca-Cola should have known better</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.greenlivingtips.com/articles/soda-and-the-environment.html" target="_top">Making soda at home – lessening environmental impact</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://vinepair.com/articles/environment-soda-beer/" target="_top">What’s Worse for the Environment, Soda or Beer?</a>
         <br></br>
-        <a href="" target="_top"></a>
-        <br></br>
-        <a href="" target="_top"></a>
+        <a href="http://woundednature.org/environmental-issues/cola-wars-impact-on-marine-life/" target="_top">Cola Wars Impact on Marine Life</a>
         <br></br><br></br>
       </div>
     )
