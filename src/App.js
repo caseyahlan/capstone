@@ -82,6 +82,12 @@ class HomePage extends Component {
     return (
       <div>
         <NavBar></NavBar>
+        <div class="jumbotron jumbotron-fluid">
+          <Container>
+            <h1 class="display-4">Welcome to foodfluence</h1>
+            <p class="lead">Choose a food to learn about its environmental impact!</p>
+          </Container>
+        </div>
         <Container>
           <Row>
             <Col sm={12} md={4} lg={3} className='py-3'>

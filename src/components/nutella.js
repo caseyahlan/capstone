@@ -133,7 +133,7 @@ class NutellaDesktop extends Component {
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
-                    <ListGroup>
+                    <ListGroup flush>
                       <ListGroupItem>
                         <ListGroupItemHeading>Nutella</ListGroupItemHeading>
                         <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
@@ -167,7 +167,7 @@ class NutellaDesktop extends Component {
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
-                    <ListGroup>
+                    <ListGroup flush>
                       <ListGroupItem>
                         <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
                         <ListGroupItemText>
