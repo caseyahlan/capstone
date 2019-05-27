@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
-import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
+import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
 import orangutanStumps from '../imgs/orangutanStumps-07.svg';
@@ -224,7 +225,16 @@ class NutellaDesktop extends Component {
             speed={0.1}
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
             onClick={() => this.parallax.scrollTo(0)}>
-            <img src='https://cdn11.bigcommerce.com/s-hii7479o/images/stencil/original/products/10545/26845/fish_1__56306.1526673301.png?c=2' style={{ width: '20%' }} alt='a fish'/>
+            <Row>
+              <Col sm={12} className='text-center my-3'>
+                <h1 className='text-monospace'>Learn about more foods!</h1>
+                <Link to='/'><Button color='success'>Back to home</Button></Link>
+              </Col>
+              <Col sm={12} className='text-center my-3'>
+                <h2 className='text-monospace'>Curious where we got our information from?</h2>
+                <Link to='/sources'><Button color='secondary'>Sources</Button></Link>
+              </Col>
+            </Row>
           </ParallaxLayer>
         </Parallax>
     )
