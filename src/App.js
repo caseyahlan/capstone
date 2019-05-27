@@ -274,43 +274,43 @@ class Sources extends Component {
         <br></br><br></br>
         Nutella sources
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.planetforward.org/idea/facing-the-facts-about-nutella-palm-oil-the-environment" target="_top">Facing the facts about Nutella, palm oil & the environment</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.bbc.com/news/world-europe-33163534 " target="_top">French minister says Nutella spread 'damages environment'</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.orangutantrekkingtours.com/orangutan-blog/palm-oil-products-are-killing-orangutans/" target="_top">How Everyday Palm Oil Products Are Killing Orangutans</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.epicurious.com/archive/blogs/editor/2014/03/nutella-alternatives.html " target="_top">Move Over, Nutella: Nine Alternative Chocolate-Hazelnut Spreads</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.onegreenplanet.org/vegan-food/15-palm-oil-free-products-for-more-eco-friendly-snacking/ " target="_top">15 Palm-Oil Free Products for More Eco-Friendly Snacking</a>
         <br></br><br></br>
         Oreo sources
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.sunshineguerrilla.com/2016/06/dont-buy-oreos-instead-try.html" target="_top">Don't Buy Oreos, Instead Try...</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.forbes.com/sites/lanabandoim/2018/10/16/mondelez-will-make-all-of-its-packaging-recyclable-by-2025/#57d9d3d87484" target="_top">Mondelēz Will Make All Of Its Packaging Recyclable By 2025</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://slate.com/technology/2014/12/palm-tree-oil-and-the-environment-skip-the-cookies-to-fight-climate-change.html" target="_top">Hold the Cookies, Save the Climate</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.bloomberg.com/news/articles/2018-11-14/oreo-cookie-maker-targeted-by-greenpeace-to-save-orangutans" target="_top">Oreo Cookie Maker Targeted by Greenpeace to Save Orangutans</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.huffpost.com/entry/oreos-orangutans-and-unin_b_7894" target="_top">Oreos, Orangutans and Unintended Consequences</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://news.mongabay.com/2018/11/oreo-maker-linked-to-destruction-of-orangutan-habitat-in-indonesia/" target="_top">Oreo maker linked to destruction of orangutan habitat in Indonesia</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.fastcompany.com/90267040/greenpeace-unveils-a-new-oreo-flavor-deforestation" target="_top">Greenpeace unveils a new Oreo flavor: Deforestation</a>
         <br></br><br></br>
         Rice sources
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.wri.org/blog/2014/12/more-rice-less-methane" target="_top">More Rice, Less Methane</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.sciencedaily.com/releases/2012/10/121021154455.htm" target="_top">Rice agriculture accelerates global warming: More greenhouse gas per grain of rice</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.irri.org/our-work/outcome-themes/developing-environmentally-sustainable-solutions-rice-systems" target="_top">Developing environmentally sustainable solutions for rice systems</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.eco-business.com/opinion/in-addressing-climate-change-rice-production-needs-more-attention-and-urgent-action/" target="_top">In addressing climate change, rice production needs more attention and urgent action</a>
         <br></br>
-        <a href="" target="_top"></a>
+        <a href="https://www.care2.com/greenliving/when-to-avoid-rice-8-alternatives-to-try-instead.html" target="_top">When to Avoid Rice + 8 Healthy Alternatives to Try Instead</a>
         <br></br><br></br>
         Soda sources
         <br></br>
