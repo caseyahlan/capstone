@@ -63,14 +63,12 @@ class OreoDesktop extends Component {
             <Container>
               <div className='media'>
                 <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Nutella</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Oreo</h1>
                     <p className='text-monospace body-text'>
                       <br></br>
-                      Nutella is a popular hazelnut spread that is commonly used in many food products. Currently, there are 7
-                      well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla.
+                      Oreo is an iconic brand in the United States and is the world’s best selling cookie. Oreo’s parent company, Mondelēz, has not kept its promise of keeping deforestation out of its supply chain. Making palm oil doesn’t need to destroy forests, but Mondelēz has not dropped dirty palm oil suppliers. This lack of action means time is running out for species that call the forest home.
                       <br></br><br></br>
-                      Just by looking at the ingredients, nutella seems like a perfect choice for many recipes. However, nutella’s
-                      heavy use of palm oil spreads damage to the environment.
+                      Orangutans are literally dying for cookies.
                     </p>
                 </div>
               </div>
@@ -81,7 +79,7 @@ class OreoDesktop extends Component {
 
           {/* Slide Three */}
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
-            <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
+            <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Oreos</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
             <img src={nutella04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
@@ -102,14 +100,10 @@ class OreoDesktop extends Component {
             <Container>
               <div className='media'>
                 <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How has Nutella Impacted Orangutans?</h1>
+                  <h1 className='text-left mt-4'>How have Oreos Impacted Orangutans?</h1>
                   <p className='text-monospace font-italic'>
                     <br></br>
-                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
-                    Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
-                    where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
-                    45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
-                    -orangutantrekkingtours.com
+                    “22 of Mondelēz’s (the parent company of Oreo) palm oil suppliers cleared more than 270 square miles of rainforest — an area larger than the city of San Francisco. Of that area, 96 square miles constituted the habitat of critically endangered orangutans. Palm oil can be made without destroying forests, yet Mondelēz suppliers are still trashing forests and wrecking orangutan habitat, pushing these beautiful and intelligent creatures to the brink of extinction. They’re literally dying for a cookie.” -news.mongabay.com
                   </p>
                 </div>
               </div>
@@ -138,15 +132,19 @@ class OreoDesktop extends Component {
                   <Container>
                     <ListGroup>
                       <ListGroupItem>
-                        <ListGroupItemHeading>Nutella</ListGroupItemHeading>
+                        <ListGroupItemHeading>Instead of Oreo...</ListGroupItemHeading>
+                        <ListGroupItemText>Try <a href="https://products.wholefoodsmarket.com/product/365-everyday-value-chocolate-sandwich-cremes-c9fd86" target="_top">365 Everyday Value Chocolate Sandwich Cremes</a>; this product is also vegan</ListGroupItemText>
+                      </ListGroupItem>
+                      <ListGroupItem>
+                        <ListGroupItemHeading>Instead of Nutella...</ListGroupItemHeading>
                         <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
                       </ListGroupItem>
                       <ListGroupItem>
-                        <ListGroupItemHeading>Clif Bar</ListGroupItemHeading>
+                        <ListGroupItemHeading>Instead of Clif Bar...</ListGroupItemHeading>
                         <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_top">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
                       </ListGroupItem>
                       <ListGroupItem>
-                        <ListGroupItemHeading>JIF Peanut Butter</ListGroupItemHeading>
+                        <ListGroupItemHeading>Instead of JIF Peanut Butter...</ListGroupItemHeading>
                         <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_top">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free</ListGroupItemText>
                       </ListGroupItem>
                     </ListGroup>
@@ -163,14 +161,25 @@ class OreoDesktop extends Component {
                 <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap'>
                   <Row className='px-3'>
                     <h1>What can you do to help?</h1>
-                    <p className='text-monospace pt-3'>
-                      There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.
-                    </p>
                   </Row>
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
                     <ListGroup>
+                      <ListGroupItem>
+                        <ListGroupItemHeading>Make your own Oreos</ListGroupItemHeading>
+                        <ListGroupItemText>
+                        Baking is a fun way to relax, plus you know exactly what ingredients are going into your food. And you’ll avoid the extra packaging.
+                        Try a recipe: <a href="https://topsecretrecipes.com/nabisco-oreo-cookies-copycat-recipe.html" target="_top">Top Secret Recipes</a> or <a href="https://www.foodnetwork.com/recipes/oreo-cookies-recipe-1972673#!" target="_top">Food Network</a>
+                        </ListGroupItemText>
+                      </ListGroupItem>
+                      <ListGroupItem>
+                        <ListGroupItemHeading>Eat local cookies</ListGroupItemHeading>
+                        <ListGroupItemText>
+                        Satisfy your cookie craving and support local businesses that use local ingredients. Two great companies that are local to Seattle are:
+                        <a href="http://www.cmbc.com/" target="_top">Cougar Mountain Baking Company</a> <a href="http://www.cowchipcookies.com/bestcookies/" target="_top">Cow Chip Cookies</a>
+                        </ListGroupItemText>
+                      </ListGroupItem>
                       <ListGroupItem>
                         <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
                         <ListGroupItemText>
@@ -266,17 +275,15 @@ class OreoMobile extends Component {
             <Container>
               <Row>
                 <Col xs='12'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Nutella</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Oreo</h1>
                   <Row className='justify-content-center'>
                       <img src={hazelnutSpread} className='img-fluid' height="35%" width="35%"></img>
                   </Row>
                   <p className='text-monospace'>
                     <br></br>
-                    Nutella is a popular hazelnut spread that is commonly used in many food products. Currently, there are 7
-                    well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla (Citation 1).
+                    Oreo is an iconic brand in the United States and is the world’s best selling cookie. Oreo’s parent company, Mondelēz, has not kept its promise of keeping deforestation out of its supply chain. Making palm oil doesn’t need to destroy forests, but Mondelēz has not dropped dirty palm oil suppliers. This lack of action means time is running out for species that call the forest home.
                     <br></br><br></br>
-                    Just by looking at the ingredients, nutella seems like a perfect choice for many recipes. However, nutella’s
-                    heavy use of palm oil spreads damage to the environment.
+                    Orangutans are literally dying for cookies.
                   </p>
                 </Col>
               </Row>
@@ -288,7 +295,7 @@ class OreoMobile extends Component {
 
           {/* Slide Three */}
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
-            <h1 style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
+            <h1 style={{ width: '70%', marginLeft: '5%' }}>Impact of Oreos</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
             <img src={nutella01} style={{height: '25%', width: '25%', marginLeft: '5%' }}></img>
@@ -308,18 +315,14 @@ class OreoMobile extends Component {
             <Container>
               <Row>
                 <Col xs='12'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Nutella Impacted Orangutans?</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>How have Oreos Impacted Orangutans?</h1>
                   <Row className='justify-content-center'>
                     <img src={orangutanTrees} className='img-fluid'></img>
                     <img src={orangutanStumps} className='img-fluid'></img>
                   </Row>
                   <p className='text-monospace font-italic'>
                     <br></br>
-                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
-                    Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
-                    where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
-                    45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
-                    -orangutantrekkingtours.com
+                    “22 of Mondelēz’s (the parent company of Oreo) palm oil suppliers cleared more than 270 square miles of rainforest — an area larger than the city of San Francisco. Of that area, 96 square miles constituted the habitat of critically endangered orangutans. Palm oil can be made without destroying forests, yet Mondelēz suppliers are still trashing forests and wrecking orangutan habitat, pushing these beautiful and intelligent creatures to the brink of extinction. They’re literally dying for a cookie.” -news.mongabay.com
                   </p>
                 </Col>
               </Row>
@@ -342,15 +345,19 @@ class OreoMobile extends Component {
                   <ListGroup>
                     <br></br><br></br>
                     <ListGroupItem>
-                      <ListGroupItemHeading>Nutella</ListGroupItemHeading>
+                      <ListGroupItemHeading>Instead of Oreo...</ListGroupItemHeading>
+                      <ListGroupItemText>Try <a href="https://products.wholefoodsmarket.com/product/365-everyday-value-chocolate-sandwich-cremes-c9fd86" target="_top">365 Everyday Value Chocolate Sandwich Cremes</a>; this product is also vegan</ListGroupItemText>
+                    </ListGroupItem>
+                    <ListGroupItem>
+                      <ListGroupItemHeading>Instead of Nutella...</ListGroupItemHeading>
                       <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
-                      <ListGroupItemHeading>Clif Bar</ListGroupItemHeading>
+                      <ListGroupItemHeading>Instead of Clif Bar...</ListGroupItemHeading>
                       <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_top">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
-                      <ListGroupItemHeading>JIF Peanut Butter</ListGroupItemHeading>
+                      <ListGroupItemHeading>Instead of JIF Peanut Butter...</ListGroupItemHeading>
                       <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_top">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free</ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>
@@ -365,15 +372,26 @@ class OreoMobile extends Component {
               <Row>
                 <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
-                    <h1>How can you help?</h1>
-                    <br></br>
-                    <p>There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.</p>
-                    <br></br><br></br>
+                    <h1>What can you do to help?</h1>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
                     <br></br><br></br>
+                    <ListGroupItem>
+                      <ListGroupItemHeading>Make your own Oreos</ListGroupItemHeading>
+                      <ListGroupItemText>
+                      Baking is a fun way to relax, plus you know exactly what ingredients are going into your food. And you’ll avoid the extra packaging.
+                      Try a recipe: <a href="https://topsecretrecipes.com/nabisco-oreo-cookies-copycat-recipe.html" target="_top">Top Secret Recipes</a> or <a href="https://www.foodnetwork.com/recipes/oreo-cookies-recipe-1972673#!" target="_top">Food Network</a>
+                      </ListGroupItemText>
+                    </ListGroupItem>
+                    <ListGroupItem>
+                      <ListGroupItemHeading>Eat local cookies</ListGroupItemHeading>
+                      <ListGroupItemText>
+                      Satisfy your cookie craving and support local businesses that use local ingredients. Two great companies that are local to Seattle are:
+                      <a href="http://www.cmbc.com/" target="_top">Cougar Mountain Baking Company</a> <a href="http://www.cowchipcookies.com/bestcookies/" target="_top">Cow Chip Cookies</a>
+                      </ListGroupItemText>
+                    </ListGroupItem>
                     <ListGroupItem>
                       <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
                       <ListGroupItemText>
