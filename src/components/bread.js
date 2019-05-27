@@ -63,14 +63,13 @@ class BreadDesktop extends Component {
             <Container>
               <div className='media'>
                 <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Nutella</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Bread</h1>
                     <p className='text-monospace body-text'>
                       <br></br>
-                      Nutella is a popular hazelnut spread that is commonly used in many food products. Currently, there are 7
-                      well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla.
+                      Did you know that almost 50% of people in the United States eat a sandwich every day? That’s a lot of bread! Bread in its many forms is widely loved all over the world.
                       <br></br><br></br>
-                      Just by looking at the ingredients, nutella seems like a perfect choice for many recipes. However, nutella’s
-                      heavy use of palm oil spreads damage to the environment.
+                      With the high consumption of this tasty food comes a significant impact to the environment. The production of wheat currently relies heavily on fertilizers, which release harmful emissions and contribute to greenhouse gases. It might be time to think twice before making PB&J for your midnight snack.
+
                     </p>
                 </div>
               </div>
@@ -81,7 +80,7 @@ class BreadDesktop extends Component {
 
           {/* Slide Three */}
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
-            <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
+            <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of BreadDesktop</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
             <img src={nutella04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
@@ -102,14 +101,14 @@ class BreadDesktop extends Component {
             <Container>
               <div className='media'>
                 <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How has Nutella Impacted Orangutans?</h1>
+                  <h1 className='text-left mt-4'>How has Bread Impacted the Gulf of Mexico?</h1>
                   <p className='text-monospace font-italic'>
                     <br></br>
-                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
-                    Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
-                    where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
-                    45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
-                    -orangutantrekkingtours.com
+                    “The enormous “dead zone” in the Gulf of Mexico will take decades to recover even if the flow of farming chemicals that is causing the damage is completely halted, new research has warned.
+                    <br></br>
+                    Intensive agriculture has led to fertilizers leeching into the river, and ultimately the Gulf of Mexico, via soils and waterways. This has resulted in a huge oxygen-deprived dead zone in the Gulf that is now at its largest ever extent, covering an area greater than the state of New Jersey.
+                    <br></br>
+                    Fertilizers spilling into the oceans promote the growth of algae, which can trigger toxic blooms harmful to fish, shellfish, marine mammals and birds. These outbreaks can discolour water and befoul beaches. It also depletes oxygen in the water, leading to further damage to marine creatures and dwindling supplies for the people who rely upon them for food.” - www.theguardian.com
                   </p>
                 </div>
               </div>
@@ -123,66 +122,27 @@ class BreadDesktop extends Component {
           </ParallaxLayer>
 
           {/* Slide Five */}
-          <ParallaxLayer offset={4} speed={0.5}>
-            <Container fluid={true}>
-              <Row>
-                <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap'>
-                  <Row className='px-3'>
-                    <h1>Alternatives to popular products that use palm oil</h1>
-                    <p className='text-monospace pt-3'>
-                      There are many products that use palm oil. Below is a small list of those products and possible alternatives for them.
-                    </p>
-                  </Row>
-                </Col>
-                <Col md='6' className='split-vertical d-flex align-items-center'>
-                  <Container>
-                    <ListGroup>
-                      <ListGroupItem>
-                        <ListGroupItemHeading>Nutella</ListGroupItemHeading>
-                        <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
-                      </ListGroupItem>
-                      <ListGroupItem>
-                        <ListGroupItemHeading>Clif Bar</ListGroupItemHeading>
-                        <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_top">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
-                      </ListGroupItem>
-                      <ListGroupItem>
-                        <ListGroupItemHeading>JIF Peanut Butter</ListGroupItemHeading>
-                        <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_top">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free</ListGroupItemText>
-                      </ListGroupItem>
-                    </ListGroup>
-                  </Container>
-                </Col>
-              </Row>
-            </Container>
-          </ParallaxLayer>
-
-          {/* Slide Six */}
-          <ParallaxLayer offset={5} speed={0.1}>
+          <ParallaxLayer offset={4} speed={0.1}>
             <Container fluid={true}>
               <Row>
                 <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap'>
                   <Row className='px-3'>
                     <h1>What can you do to help?</h1>
-                    <p className='text-monospace pt-3'>
-                      There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.
-                    </p>
                   </Row>
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
                     <ListGroup>
                       <ListGroupItem>
-                        <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
+                        <ListGroupItemHeading>Buy from local bakeries</ListGroupItemHeading>
                         <ListGroupItemText>
-                          Consider buying alternative products that do not use palm oil. While it is impossible to completely avoid palm oil products,
-                          reducing purchases of these products is a start to reducing demand of palm oil products.
+                          Buying from local bakeries that use clean ingredients is a good place to start in reducing the impact your bread has on the environment. Buying locally reduces emissions from the transportation of ingredients and is a good way to start a conversation with farmers about how they are growing their crops.
                         </ListGroupItemText>
                       </ListGroupItem>
                       <ListGroupItem>
-                        <ListGroupItemHeading>Research alternatives</ListGroupItemHeading>
+                        <ListGroupItemHeading>Reduce food waste</ListGroupItemHeading>
                         <ListGroupItemText>
-                          Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research
-                          the ingredients in products you use and try to find alternatives.
+                          If bread is something you can’t eliminate from your diet (let’s be realistic here), then be sure to be a responsible buyer and eater. Plan how you’re going to finish the loaf before it gets moldy by meal planning or sharing the loaf with your roommates or family.
                         </ListGroupItemText>
                       </ListGroupItem>
                     </ListGroup>
@@ -266,17 +226,16 @@ class BreadMobile extends Component {
             <Container>
               <Row>
                 <Col xs='12'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Nutella</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Bread</h1>
                   <Row className='justify-content-center'>
                       <img src={hazelnutSpread} className='img-fluid' height="35%" width="35%"></img>
                   </Row>
                   <p className='text-monospace'>
                     <br></br>
-                    Nutella is a popular hazelnut spread that is commonly used in many food products. Currently, there are 7
-                    well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla (Citation 1).
+                    Did you know that almost 50% of people in the United States eat a sandwich every day? That’s a lot of bread! Bread in its many forms is widely loved all over the world.
                     <br></br><br></br>
-                    Just by looking at the ingredients, nutella seems like a perfect choice for many recipes. However, nutella’s
-                    heavy use of palm oil spreads damage to the environment.
+                    With the high consumption of this tasty food comes a significant impact to the environment. The production of wheat currently relies heavily on fertilizers, which release harmful emissions and contribute to greenhouse gases. It might be time to think twice before making PB&J for your midnight snack.
+
                   </p>
                 </Col>
               </Row>
@@ -288,7 +247,7 @@ class BreadMobile extends Component {
 
           {/* Slide Three */}
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
-            <h1 style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
+            <h1 style={{ width: '70%', marginLeft: '5%' }}>Impact of Bread</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
             <img src={nutella01} style={{height: '25%', width: '25%', marginLeft: '5%' }}></img>
@@ -308,18 +267,18 @@ class BreadMobile extends Component {
             <Container>
               <Row>
                 <Col xs='12'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Nutella Impacted Orangutans?</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Bread Impacted the Gulf of Mexico?</h1>
                   <Row className='justify-content-center'>
                     <img src={orangutanTrees} className='img-fluid'></img>
                     <img src={orangutanStumps} className='img-fluid'></img>
                   </Row>
                   <p className='text-monospace font-italic'>
                     <br></br>
-                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
-                    Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
-                    where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
-                    45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
-                    -orangutantrekkingtours.com
+                    “The enormous “dead zone” in the Gulf of Mexico will take decades to recover even if the flow of farming chemicals that is causing the damage is completely halted, new research has warned.
+                    <br></br>
+                    Intensive agriculture has led to fertilizers leeching into the river, and ultimately the Gulf of Mexico, via soils and waterways. This has resulted in a huge oxygen-deprived dead zone in the Gulf that is now at its largest ever extent, covering an area greater than the state of New Jersey.
+                    <br></br>
+                    Fertilizers spilling into the oceans promote the growth of algae, which can trigger toxic blooms harmful to fish, shellfish, marine mammals and birds. These outbreaks can discolour water and befoul beaches. It also depletes oxygen in the water, leading to further damage to marine creatures and dwindling supplies for the people who rely upon them for food.” - www.theguardian.com
                   </p>
                 </Col>
               </Row>
@@ -327,47 +286,12 @@ class BreadMobile extends Component {
           </ParallaxLayer>
 
           {/* Slide Five */}
-          <ParallaxLayer offset={4} speed={0.5}>
-            <Container>
-              <Row>
-                <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
-                  <Row>
-                    <h1>Alternatives to popular products that use palm oil</h1>
-                    <br></br>
-                    <p>There are many products that use palm oil. Below is a small list of those products and possible alternatives for them.</p>
-                    <br></br><br></br>
-                  </Row>
-                </Col>
-                <Col className='split-horizontal d-flex justify-content-center'>
-                  <ListGroup>
-                    <br></br><br></br>
-                    <ListGroupItem>
-                      <ListGroupItemHeading>Nutella</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
-                    </ListGroupItem>
-                    <ListGroupItem>
-                      <ListGroupItemHeading>Clif Bar</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_top">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
-                    </ListGroupItem>
-                    <ListGroupItem>
-                      <ListGroupItemHeading>JIF Peanut Butter</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_top">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free</ListGroupItemText>
-                    </ListGroupItem>
-                  </ListGroup>
-                </Col>
-              </Row>
-            </Container>
-          </ParallaxLayer>
-
-          {/* Slide Six */}
-          <ParallaxLayer offset={5} speed={0.1}>
+          <ParallaxLayer offset={4} speed={0.1}>
             <Container fluid={true}>
               <Row>
                 <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>How can you help?</h1>
-                    <br></br>
-                    <p>There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.</p>
                     <br></br><br></br>
                   </Row>
                 </Col>
@@ -375,17 +299,15 @@ class BreadMobile extends Component {
                   <ListGroup>
                     <br></br><br></br>
                     <ListGroupItem>
-                      <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
+                      <ListGroupItemHeading>Buy from local bakeries</ListGroupItemHeading>
                       <ListGroupItemText>
-                        Consider buying alternative products that do not use palm oil. While it is impossible to completely avoid palm oil products,
-                        reducing purchases of these products is a start to reducing demand of palm oil products.
+                        Buying from local bakeries that use clean ingredients is a good place to start in reducing the impact your bread has on the environment. Buying locally reduces emissions from the transportation of ingredients and is a good way to start a conversation with farmers about how they are growing their crops.
                       </ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
-                      <ListGroupItemHeading>Research alternatives</ListGroupItemHeading>
+                      <ListGroupItemHeading>Reduce food waste</ListGroupItemHeading>
                       <ListGroupItemText>
-                        Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research
-                        the ingredients in products you use and try to find alternatives.
+                        If bread is something you can’t eliminate from your diet (let’s be realistic here), then be sure to be a responsible buyer and eater. Plan how you’re going to finish the loaf before it gets moldy by meal planning or sharing the loaf with your roommates or family.
                       </ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>
