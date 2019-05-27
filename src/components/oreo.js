@@ -63,7 +63,7 @@ class OreoDesktop extends Component {
             <Container>
               <div className='media'>
                 <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Oreo</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Oreos</h1>
                     <p className='text-monospace body-text'>
                       <br></br>
                       Oreo is an iconic brand in the United States and is the world’s best selling cookie. Oreo’s parent company, Mondelēz, has not kept its promise of keeping deforestation out of its supply chain. Making palm oil doesn’t need to destroy forests, but Mondelēz has not dropped dirty palm oil suppliers. This lack of action means time is running out for species that call the forest home.
@@ -275,7 +275,7 @@ class OreoMobile extends Component {
             <Container>
               <Row>
                 <Col xs='12'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Oreo</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Oreos</h1>
                   <Row className='justify-content-center'>
                       <img src={hazelnutSpread} className='img-fluid' height="35%" width="35%"></img>
                   </Row>

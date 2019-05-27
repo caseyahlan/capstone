@@ -42,7 +42,7 @@ class CocacolaDesktop extends Component {
             <Container fluid={true}>
               <Row>
                 <Col xs='12' className='split-horizontal light-green-background d-flex justify-content-center align-items-end'>
-                  <h1 className='text-white pb-3'>Cocacola</h1>
+                  <h1 className='text-white pb-3'>Soda</h1>
                 </Col>
                 <Col xs='12' className='d-flex justify-content-center'>
                   <div className='arrow-down'></div>
@@ -63,14 +63,12 @@ class CocacolaDesktop extends Component {
             <Container>
               <div className='media'>
                 <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Cocacola</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Soda</h1>
                     <p className='text-monospace body-text'>
                       <br></br>
-                      Nutella is a popular hazelnut spread that is commonly used in many food products. Currently, there are 7
-                      well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla.
+                      You already know the impact soda can have on your health (it’s bad for your blood pressure, teeth, heart, kidney...), but still nothing beats an ice-cold soda on a hot day. Have you thought about the impact each bottle of soda has on the environment though? Coca-Cola alone sells around 3,500 single-use bottles every second! One way or another, most of these bottles end up in the ocean, impacting marine animals.
                       <br></br><br></br>
-                      Just by looking at the ingredients, nutella seems like a perfect choice for many recipes. However, nutella’s
-                      heavy use of palm oil spreads damage to the environment.
+                      It’s predicted that, if nothing changes, by 2050 plastic in the ocean may outweigh fish.
                     </p>
                 </div>
               </div>
@@ -81,7 +79,7 @@ class CocacolaDesktop extends Component {
 
           {/* Slide Three */}
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
-            <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
+            <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Soda</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
             <img src={nutella04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
@@ -102,14 +100,10 @@ class CocacolaDesktop extends Component {
             <Container>
               <div className='media'>
                 <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How has Nutella Impacted Orangutans?</h1>
+                  <h1 className='text-left mt-4'>How has Soda Impacted Marine Life?</h1>
                   <p className='text-monospace font-italic'>
                     <br></br>
-                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
-                    Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
-                    where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
-                    45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
-                    -orangutantrekkingtours.com
+                    “Many people think that plastic soft drink bottles are killing wildlife, and it is a contributor as it breaks down into small pieces. However, plastic bottles are not the main reason for plastics killing wildlife, it is the colorful plastic caps that become separated from the bottles. These colorful plastic caps act as lures, attract animals, and become bite size appetizers for sea turtles, dolphins and fish. The plastic can neither be digested nor passed through by most species. Instead, it clogs their intestinal tract and they die a slow and painful death at sea.” - www.woundednature.org
                   </p>
                 </div>
               </div>
@@ -123,66 +117,34 @@ class CocacolaDesktop extends Component {
           </ParallaxLayer>
 
           {/* Slide Five */}
-          <ParallaxLayer offset={4} speed={0.5}>
-            <Container fluid={true}>
-              <Row>
-                <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap'>
-                  <Row className='px-3'>
-                    <h1>Alternatives to popular products that use palm oil</h1>
-                    <p className='text-monospace pt-3'>
-                      There are many products that use palm oil. Below is a small list of those products and possible alternatives for them.
-                    </p>
-                  </Row>
-                </Col>
-                <Col md='6' className='split-vertical d-flex align-items-center'>
-                  <Container>
-                    <ListGroup>
-                      <ListGroupItem>
-                        <ListGroupItemHeading>Nutella</ListGroupItemHeading>
-                        <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
-                      </ListGroupItem>
-                      <ListGroupItem>
-                        <ListGroupItemHeading>Clif Bar</ListGroupItemHeading>
-                        <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_top">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
-                      </ListGroupItem>
-                      <ListGroupItem>
-                        <ListGroupItemHeading>JIF Peanut Butter</ListGroupItemHeading>
-                        <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_top">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free</ListGroupItemText>
-                      </ListGroupItem>
-                    </ListGroup>
-                  </Container>
-                </Col>
-              </Row>
-            </Container>
-          </ParallaxLayer>
-
-          {/* Slide Six */}
-          <ParallaxLayer offset={5} speed={0.1}>
+          <ParallaxLayer offset={4} speed={0.1}>
             <Container fluid={true}>
               <Row>
                 <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap'>
                   <Row className='px-3'>
                     <h1>What can you do to help?</h1>
-                    <p className='text-monospace pt-3'>
-                      There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.
-                    </p>
                   </Row>
                 </Col>
                 <Col md='6' className='split-vertical d-flex align-items-center'>
                   <Container>
                     <ListGroup>
                       <ListGroupItem>
-                        <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
+                        <ListGroupItemHeading>Recycle, recycle, recycle</ListGroupItemHeading>
                         <ListGroupItemText>
-                          Consider buying alternative products that do not use palm oil. While it is impossible to completely avoid palm oil products,
-                          reducing purchases of these products is a start to reducing demand of palm oil products.
+                          Instead of being recycled, 70% of plastic containers end up in landfills or go directly into the environment. Recycling plastic bottles helps conserve natural resources and energy, while keeping plastic out of the stomachs of marine animals. Aluminum cans and glass bottles are also easily recycled.
                         </ListGroupItemText>
                       </ListGroupItem>
                       <ListGroupItem>
-                        <ListGroupItemHeading>Research alternatives</ListGroupItemHeading>
+                        <ListGroupItemHeading>Drink fountain-style or bring a reusable cup</ListGroupItemHeading>
                         <ListGroupItemText>
-                          Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research
-                          the ingredients in products you use and try to find alternatives.
+                          Rather than buying a bottle or can of soda, choose fountain-style. Better yet, bring your own water in a reusable water bottle. Tap water is free, and you’ll be preventing another bottle or can from ending up in the environment.
+                        </ListGroupItemText>
+                      </ListGroupItem>
+                      <ListGroupItem>
+                        <ListGroupItemHeading>Invest in at-home soda machines</ListGroupItemHeading>
+                        <ListGroupItemText>
+                        At-home soda machines allow you to make your own sparkling water and soft drinks. These machines significantly reduce plastic bottle use and at a cost of around 50 cents per liter, will save you money.
+                        Try the <a href="https://sodastream.com/" target="_top">SodaStream</a>
                         </ListGroupItemText>
                       </ListGroupItem>
                     </ListGroup>
@@ -248,7 +210,7 @@ class CocacolaMobile extends Component {
             <Container fluid={true}>
               <Row>
                 <Col xs='12' className='split-horizontal light-green-background d-flex justify-content-center align-items-end'>
-                  <h1 className='text-white pb-3'>Cocacola</h1>
+                  <h1 className='text-white pb-3'>Soda</h1>
                 </Col>
                 <Col xs='12' className='d-flex justify-content-center'>
                   <div className='arrow-down'></div>
@@ -266,17 +228,15 @@ class CocacolaMobile extends Component {
             <Container>
               <Row>
                 <Col xs='12'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Cocacola</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Soda</h1>
                   <Row className='justify-content-center'>
                       <img src={hazelnutSpread} className='img-fluid' height="35%" width="35%"></img>
                   </Row>
                   <p className='text-monospace'>
                     <br></br>
-                    Nutella is a popular hazelnut spread that is commonly used in many food products. Currently, there are 7
-                    well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla (Citation 1).
+                    You already know the impact soda can have on your health (it’s bad for your blood pressure, teeth, heart, kidney...), but still nothing beats an ice-cold soda on a hot day. Have you thought about the impact each bottle of soda has on the environment though? Coca-Cola alone sells around 3,500 single-use bottles every second! One way or another, most of these bottles end up in the ocean, impacting marine animals.
                     <br></br><br></br>
-                    Just by looking at the ingredients, nutella seems like a perfect choice for many recipes. However, nutella’s
-                    heavy use of palm oil spreads damage to the environment.
+                    It’s predicted that, if nothing changes, by 2050 plastic in the ocean may outweigh fish.
                   </p>
                 </Col>
               </Row>
@@ -288,7 +248,7 @@ class CocacolaMobile extends Component {
 
           {/* Slide Three */}
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
-            <h1 style={{ width: '70%', marginLeft: '5%' }}>Impact of Palm Oil</h1>
+            <h1 style={{ width: '70%', marginLeft: '5%' }}>Impact of Soda</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
             <img src={nutella01} style={{height: '25%', width: '25%', marginLeft: '5%' }}></img>
@@ -308,18 +268,14 @@ class CocacolaMobile extends Component {
             <Container>
               <Row>
                 <Col xs='12'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Nutella Impacted Orangutans?</h1>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Soda Impacted Marine Life?</h1>
                   <Row className='justify-content-center'>
                     <img src={orangutanTrees} className='img-fluid'></img>
                     <img src={orangutanStumps} className='img-fluid'></img>
                   </Row>
                   <p className='text-monospace font-italic'>
                     <br></br>
-                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
-                    Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
-                    where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
-                    45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
-                    -orangutantrekkingtours.com
+                    “Many people think that plastic soft drink bottles are killing wildlife, and it is a contributor as it breaks down into small pieces. However, plastic bottles are not the main reason for plastics killing wildlife, it is the colorful plastic caps that become separated from the bottles. These colorful plastic caps act as lures, attract animals, and become bite size appetizers for sea turtles, dolphins and fish. The plastic can neither be digested nor passed through by most species. Instead, it clogs their intestinal tract and they die a slow and painful death at sea.” - www.woundednature.org
                   </p>
                 </Col>
               </Row>
@@ -327,65 +283,34 @@ class CocacolaMobile extends Component {
           </ParallaxLayer>
 
           {/* Slide Five */}
-          <ParallaxLayer offset={4} speed={0.5}>
-            <Container>
-              <Row>
-                <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
-                  <Row>
-                    <h1>Alternatives to popular products that use palm oil</h1>
-                    <br></br>
-                    <p>There are many products that use palm oil. Below is a small list of those products and possible alternatives for them.</p>
-                    <br></br><br></br>
-                  </Row>
-                </Col>
-                <Col className='split-horizontal d-flex justify-content-center'>
-                  <ListGroup>
-                    <br></br><br></br>
-                    <ListGroupItem>
-                      <ListGroupItemHeading>Nutella</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
-                    </ListGroupItem>
-                    <ListGroupItem>
-                      <ListGroupItemHeading>Clif Bar</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_top">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
-                    </ListGroupItem>
-                    <ListGroupItem>
-                      <ListGroupItemHeading>JIF Peanut Butter</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_top">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free</ListGroupItemText>
-                    </ListGroupItem>
-                  </ListGroup>
-                </Col>
-              </Row>
-            </Container>
-          </ParallaxLayer>
-
-          {/* Slide Six */}
-          <ParallaxLayer offset={5} speed={0.1}>
+          <ParallaxLayer offset={4} speed={0.1}>
             <Container fluid={true}>
               <Row>
                 <Col xs='12' className='split-horizontal-mobile light-green-background text-white d-flex justify-content-center'>
                   <Row>
                     <h1>How can you help?</h1>
-                    <br></br>
-                    <p>There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.</p>
-                    <br></br><br></br>
                   </Row>
                 </Col>
                 <Col className='split-horizontal d-flex justify-content-center'>
                   <ListGroup>
                     <br></br><br></br>
                     <ListGroupItem>
-                      <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
+                      <ListGroupItemHeading>Recycle, recycle, recycle</ListGroupItemHeading>
                       <ListGroupItemText>
-                        Consider buying alternative products that do not use palm oil. While it is impossible to completely avoid palm oil products,
-                        reducing purchases of these products is a start to reducing demand of palm oil products.
+                        Instead of being recycled, 70% of plastic containers end up in landfills or go directly into the environment. Recycling plastic bottles helps conserve natural resources and energy, while keeping plastic out of the stomachs of marine animals. Aluminum cans and glass bottles are also easily recycled.
                       </ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
-                      <ListGroupItemHeading>Research alternatives</ListGroupItemHeading>
+                      <ListGroupItemHeading>Drink fountain-style or bring a reusable cup</ListGroupItemHeading>
                       <ListGroupItemText>
-                        Palm oil is used in other products such as soaps, shampoos, detergents, etc. Research
-                        the ingredients in products you use and try to find alternatives.
+                        Rather than buying a bottle or can of soda, choose fountain-style. Better yet, bring your own water in a reusable water bottle. Tap water is free, and you’ll be preventing another bottle or can from ending up in the environment.
+                      </ListGroupItemText>
+                    </ListGroupItem>
+                    <ListGroupItem>
+                      <ListGroupItemHeading>Invest in at-home soda machines</ListGroupItemHeading>
+                      <ListGroupItemText>
+                      At-home soda machines allow you to make your own sparkling water and soft drinks. These machines significantly reduce plastic bottle use and at a cost of around 50 cents per liter, will save you money.
+                      Try the <a href="https://sodastream.com/" target="_top">SodaStream</a>
                       </ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>

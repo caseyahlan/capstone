@@ -80,7 +80,7 @@ class BreadDesktop extends Component {
 
           {/* Slide Three */}
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
-            <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of BreadDesktop</h1>
+            <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Bread</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
             <img src={nutella04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }}></img>
