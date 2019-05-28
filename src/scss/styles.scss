@@ -1,4 +1,11 @@
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/utilities";
+// $link-color:                 #f00; //red
+// $link-hover-color:           #0f0; //green
+
+// Core variables and mixins
 
 html {
   font-size: 1rem;
@@ -110,3 +117,12 @@ html {
   object-fit: cover;
   border: none;
 }
+
+// Utility classes
+.nav-link {
+ color: #7a7b7b; //light grey
+
+  @include hover-focus {
+    color: #4a4a4a; //dark grey
+  }  
+}  
