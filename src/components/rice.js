@@ -50,24 +50,30 @@ class RiceDesktop extends Component {
 
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={1.3} speed={4}>
-            <img src={rice} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.2} speed={0.1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Rice</h1>
-                    <p className='text-monospace body-text'>
-                      <br></br>
-                      Rice is a nutritious staple food that many communities depend on to survive. However, growing rice produces methane, a greenhouse gas. The methane from rice production contributes to 1.5% of total greenhouse gas emissions, and could continue to grow.
-                      <br></br><br></br>
-                      Rice is a unique food that produces a lot of methane, but is necessary in communities that grow it and for those that lack a lot of resources for food. Rice production also helps biodiversity for wetland habitats, so it cannot be eliminated without other environmental harm. Therefore, it is crucial to find the balance between competing environmental factors and human need for rice.
-                    </p>
-                </div>
-              </div>
-            </Container>
-          </ParallaxLayer>
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={1.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Rice</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            Rice is a nutritious staple food that many communities depend on to survive. However, growing rice produces methane, a greenhouse gas. The methane from rice production contributes to 1.5% of total greenhouse gas emissions, and could continue to grow.
+                            <br></br><br></br>
+                            Rice is a unique food that produces a lot of methane, but is necessary in communities that grow it and for those that lack a lot of resources for food. Rice production also helps biodiversity for wetland habitats, so it cannot be eliminated without other environmental harm. Therefore, it is crucial to find the balance between competing environmental factors and human need for rice.
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={4}>
+                <ParallaxLayer offset={1.1} speed={4}>
+                  <img src={rice} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='rice'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
           <ParallaxLayer offset={1.1} speed={2}>
           </ParallaxLayer>
 

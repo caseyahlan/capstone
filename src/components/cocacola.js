@@ -56,24 +56,30 @@ class CocacolaDesktop extends Component {
 
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={1.3} speed={4}>
-            <img src={hazelnutSpread} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.2} speed={0.1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Soda</h1>
-                    <p className='text-monospace body-text'>
-                      <br></br>
-                      You already know the impact soda can have on your health (it’s bad for your blood pressure, teeth, heart, kidney...), but still nothing beats an ice-cold soda on a hot day. Have you thought about the impact each bottle of soda has on the environment though? Coca-Cola alone sells around 3,500 single-use bottles every second! One way or another, most of these bottles end up in the ocean, impacting marine animals.
-                      <br></br><br></br>
-                      It’s predicted that, if nothing changes, by 2050 plastic in the ocean may outweigh fish.
-                    </p>
-                </div>
-              </div>
-            </Container>
-          </ParallaxLayer>
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={1.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Soda</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            You already know the impact soda can have on your health (it’s bad for your blood pressure, teeth, heart, kidney...), but still nothing beats an ice-cold soda on a hot day. Have you thought about the impact each bottle of soda has on the environment though? Coca-Cola alone sells around 3,500 single-use bottles every second! One way or another, most of these bottles end up in the ocean, impacting marine animals.
+                            <br></br><br></br>
+                            It’s predicted that, if nothing changes, by 2050 plastic in the ocean may outweigh fish.
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={4}>
+                <ParallaxLayer offset={1.1} speed={4}>
+                  <img src={hazelnutSpread} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='soda'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
           <ParallaxLayer offset={1.1} speed={2}>
           </ParallaxLayer>
 

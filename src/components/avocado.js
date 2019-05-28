@@ -51,23 +51,30 @@ class AvocadoDesktop extends Component {
 
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={1} speed={0.1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Avocados</h1>
-                    <p className='text-monospace body-text'>
-                      <br></br>
-                      In recent years, avocados have gained popularity in the United States for their mild, yummy taste and health benefits. From avocado toast, to guacamole, and even avocado smoothies, millions of these green fruits are eaten every day.
-                      <br></br><br></br>
-                      While avocados are good for the health of humans, the health of forests and animal habitats suffer due to the high demand for the crop and the amount of water this fruit requires to grow.
-                    </p>
-                </div>
-                <img src={avocadopic} className='align-self-center' height="25%" width="25%"></img>
-              </div>
-            </Container>
-          </ParallaxLayer>
-
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={1.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Avocados</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            In recent years, avocados have gained popularity in the United States for their mild, yummy taste and health benefits. From avocado toast, to guacamole, and even avocado smoothies, millions of these green fruits are eaten every day.
+                            <br></br><br></br>
+                            While avocados are good for the health of humans, the health of forests and animal habitats suffer due to the high demand for the crop and the amount of water this fruit requires to grow.
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={4}>
+                <ParallaxLayer offset={1.1} speed={4}>
+                  <img src={avocadopic} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='avocado'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
           <ParallaxLayer offset={1.1} speed={2}>
           </ParallaxLayer>
 

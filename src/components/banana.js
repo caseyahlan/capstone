@@ -52,24 +52,30 @@ class BananaDesktop extends Component {
 
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={1.3} speed={4}>
-            <img src={banana} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.2} speed={0.1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Bananas</h1>
-                    <p className='text-monospace body-text'>
-                      <br></br>
-                      Bananas are a staple food that a lot of cultures depend on. Bananas are generally inexpensive and have a lot of healthy nutrients. However, there are significant environmental impacts from banana production.
-                      <br></br><br></br>
-                      Did you know that bananas have to be flown into western countries, which releases CO2? Or that tropical rainforests are impacted by deforestation to make room for banana plantations? The world’s ecosystem is being impacted by banana production, but there are ways to help lessen this impact.
-                    </p>
-                </div>
-              </div>
-            </Container>
-          </ParallaxLayer>
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={1.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Bananas</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            Bananas are a staple food that a lot of cultures depend on. Bananas are generally inexpensive and have a lot of healthy nutrients. However, there are significant environmental impacts from banana production.
+                            <br></br><br></br>
+                            Did you know that bananas have to be flown into western countries, which releases CO2? Or that tropical rainforests are impacted by deforestation to make room for banana plantations? The world’s ecosystem is being impacted by banana production, but there are ways to help lessen this impact.
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={4}>
+                <ParallaxLayer offset={1.1} speed={4}>
+                  <img src={banana} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='banana'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
           <ParallaxLayer offset={1.1} speed={2}>
           </ParallaxLayer>
 

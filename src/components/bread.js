@@ -56,25 +56,30 @@ class BreadDesktop extends Component {
 
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={1.3} speed={4}>
-            <img src={hazelnutSpread} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.2} speed={0.1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Bread</h1>
-                    <p className='text-monospace body-text'>
-                      <br></br>
-                      Did you know that almost 50% of people in the United States eat a sandwich every day? That’s a lot of bread! Bread in its many forms is widely loved all over the world.
-                      <br></br><br></br>
-                      With the high consumption of this tasty food comes a significant impact to the environment. The production of wheat currently relies heavily on fertilizers, which release harmful emissions and contribute to greenhouse gases. It might be time to think twice before making PB&J for your midnight snack.
-
-                    </p>
-                </div>
-              </div>
-            </Container>
-          </ParallaxLayer>
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={1.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Bread</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            Did you know that almost 50% of people in the United States eat a sandwich every day? That’s a lot of bread! Bread in its many forms is widely loved all over the world.
+                            <br></br><br></br>
+                            With the high consumption of this tasty food comes a significant impact to the environment. The production of wheat currently relies heavily on fertilizers, which release harmful emissions and contribute to greenhouse gases. It might be time to think twice before making PB&J for your midnight snack.
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={4}>
+                <ParallaxLayer offset={1.1} speed={4}>
+                  <img src={hazelnutSpread} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='bread'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
           <ParallaxLayer offset={1.1} speed={2}>
           </ParallaxLayer>
 

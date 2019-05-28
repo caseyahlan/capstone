@@ -51,23 +51,30 @@ class HamburgerDesktop extends Component {
 
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={1} speed={0.1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About the Beef Industry</h1>
-                    <p className='text-monospace body-text'>
-                      <br></br>
-                      Hamburgers are a staple food from barbecues to 3-star restaurants. In the United States, people eat over 50 billion hamburgers every year! What you might not realize is that eating meat has more of an environmental impact than almost any other food we eat.
-                      <br></br><br></br>
-                      Raising cows requires a lot of food, water, land, and energy.
-                    </p>
-                </div>
-                <img src={cow} className='align-self-center' height="35%" width="35%"></img>
-              </div>
-            </Container>
-          </ParallaxLayer>
-
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={1.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About the Beef Industry</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            Hamburgers are a staple food from barbecues to 3-star restaurants. In the United States, people eat over 50 billion hamburgers every year! What you might not realize is that eating meat has more of an environmental impact than almost any other food we eat.
+                            <br></br><br></br>
+                            Raising cows requires a lot of food, water, land, and energy.
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={4}>
+                <ParallaxLayer offset={1.1} speed={4}>
+                  <img src={cow} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='cow'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
           <ParallaxLayer offset={1.1} speed={2}>
           </ParallaxLayer>
 
@@ -104,38 +111,41 @@ class HamburgerDesktop extends Component {
             </Container>
           </ParallaxLayer>
           <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={amazon} style={{ display: 'block', height: '35%', width: 'auto', marginLeft: '40%' }}></img>
+            <img src={amazon} style={{ display: 'block', height: '35%', width: 'auto', marginLeft: '40%' }} alt='amazon'></img>
           </ParallaxLayer>
 
           {/* Slide Five */}
-          <ParallaxLayer offset={4} speed={0.5}>
-            <Container fluid={true}>
-              <Row>
-                <Col md='6' className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap'>
+          <Row>
+            <Col md='6'>
+              <ParallaxLayer offset={4} speed={0.5}>
+                <div className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap container'>
                   <Row className='px-3'>
                     <h1>What can you do to help?</h1>
                   </Row>
-                </Col>
-                <Col md='6' className='split-vertical d-flex align-items-center'>
-                  <Container>
-                    <ListGroup>
-                      <ListGroupItem>
-                        <ListGroupItemHeading>Reduce consumption of beef</ListGroupItemHeading>
-                        <ListGroupItemText>Reduce your portion size or try a blended burger. Blended burgers combine mushroom and beef to create a patty with less fat and fewer calories than a beef burger.</ListGroupItemText>
-                      </ListGroupItem>
-                      <ListGroupItem>
-                        <ListGroupItemHeading>Choose beef alternatives</ListGroupItemHeading>
-                        <ListGroupItemText>The Impossible™ burger and Beyond Burger® are made from plants, but have the flavor, smell, and look of beef.
-                        <br></br>
-                        Find a grocery store that sells Impossible™ burgers: impossiblefoods.com/locations/
-                        Here’s a Beyond Burger® location finder: impossiblefoods.com/locations/</ListGroupItemText>
-                      </ListGroupItem>
-                    </ListGroup>
-                  </Container>
-                </Col>
-              </Row>
-            </Container>
-          </ParallaxLayer>
+                </div>
+              </ParallaxLayer>
+            </Col>
+            <Col md='6'>
+              <ParallaxLayer offset={4} speed={1.5}>
+                <div className='split-vertical d-flex align-items-center container'>
+                  <ListGroup flush>
+                    <ListGroupItem>
+                      <ListGroupItemHeading>Reduce consumption of beef</ListGroupItemHeading>
+                      <ListGroupItemText>Reduce your portion size or try a blended burger. Blended burgers combine mushroom and beef to create a patty with less fat and fewer calories than a beef burger.</ListGroupItemText>
+                    </ListGroupItem>
+                    <ListGroupItem>
+                      <ListGroupItemHeading>Choose beef alternatives</ListGroupItemHeading>
+                      <ListGroupItemText>The Impossible™ burger and Beyond Burger® are made from plants, but have the flavor, smell, and look of beef.
+                      <br></br>
+                      Find a grocery store that sells Impossible™ burgers: impossiblefoods.com/locations/
+                      Here’s a Beyond Burger® location finder: impossiblefoods.com/locations/</ListGroupItemText>
+                    </ListGroupItem>
+                  </ListGroup>
+                </div>
+              </ParallaxLayer>
+            </Col>
+          </Row>
+
 
           <ParallaxLayer
             offset={1}

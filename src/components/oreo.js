@@ -56,24 +56,30 @@ class OreoDesktop extends Component {
 
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={1.3} speed={4}>
-            <img src={hazelnutSpread} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.2} speed={0.1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Oreos</h1>
-                    <p className='text-monospace body-text'>
-                      <br></br>
-                      Oreo is an iconic brand in the United States and is the world’s best selling cookie. Oreo’s parent company, Mondelēz, has not kept its promise of keeping deforestation out of its supply chain. Making palm oil doesn’t need to destroy forests, but Mondelēz has not dropped dirty palm oil suppliers. This lack of action means time is running out for species that call the forest home.
-                      <br></br><br></br>
-                      Orangutans are literally dying for cookies.
-                    </p>
-                </div>
-              </div>
-            </Container>
-          </ParallaxLayer>
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={1.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Oreos</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            Oreo is an iconic brand in the United States and is the world’s best selling cookie. Oreo’s parent company, Mondelēz, has not kept its promise of keeping deforestation out of its supply chain. Making palm oil doesn’t need to destroy forests, but Mondelēz has not dropped dirty palm oil suppliers. This lack of action means time is running out for species that call the forest home.
+                            <br></br><br></br>
+                            Orangutans are literally dying for cookies.
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={4}>
+                <ParallaxLayer offset={1.1} speed={4}>
+                  <img src={hazelnutSpread} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='oreo'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
           <ParallaxLayer offset={1.1} speed={2}>
           </ParallaxLayer>
 

@@ -53,24 +53,30 @@ class CoffeeDesktop extends Component {
 
           {/* Slide Two */}
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={1.3} speed={4}>
-            <img src={coffeeCup} height="35%" width="35%" style={{ display: 'block', marginLeft: '65%' }}></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.2} speed={0.1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body'>
-                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Coffee</h1>
-                    <p className='text-monospace body-text'>
-
-                      Did you know, throughout the world 1.1 billion cups of coffee are consumed daily? That’s over 400 billion cups a year! You can find countless varieties and flavors of this universally loved drink.
-                      <br></br><br></br>
-                      After oil, coffee is the world’s most tradable commodity and the increased demand for convenient coffee has led coffee farmers to find new, more efficient ways to grow the crop. While some of these methods result in higher yields, they have also significantly contributed to deforestation and other environmental threats.
-                    </p>
-                </div>
-              </div>
-            </Container>
-          </ParallaxLayer>
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={1.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Coffee</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            Did you know, throughout the world 1.1 billion cups of coffee are consumed daily? That’s over 400 billion cups a year! You can find countless varieties and flavors of this universally loved drink.
+                            <br></br><br></br>
+                            After oil, coffee is the world’s most tradable commodity and the increased demand for convenient coffee has led coffee farmers to find new, more efficient ways to grow the crop. While some of these methods result in higher yields, they have also significantly contributed to deforestation and other environmental threats.
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={4}>
+                <ParallaxLayer offset={1.1} speed={4}>
+                  <img src={coffeeCup} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='coffee cup'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
           <ParallaxLayer offset={1.1} speed={2}>
           </ParallaxLayer>
 
