@@ -80,77 +80,77 @@ class HomePage extends Component {
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/nutella'>
                 <Card className='card-img-top'>
-                  <CardImg src={hazelnutSpreadImg} alt='nutella'/>
+                  <CardImg src={hazelnutSpreadImg} className='my-auto'  alt='nutella'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/fish'>
                 <Card className='card-img-top'>
-                  <CardImg src={fishImg} alt='fish'/>
+                  <CardImg src={fishImg} className='my-auto' alt='fish'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/hamburger'>
                 <Card className='card-img-top'>
-                  <CardImg src={hamburgerImg} alt='hamburger' />
+                  <CardImg src={hamburgerImg} className='my-auto' alt='hamburger' />
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/milk'>
                 <Card className='card-img-top'>
-                  <CardImg src={milkImg} alt='milk'/>
+                  <CardImg src={milkImg} className='my-auto' alt='milk'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/avocado'>
                 <Card className='card-img-top'>
-                  <CardImg src={avocadoImg} alt='avocado'/>
+                  <CardImg src={avocadoImg} className='my-auto' alt='avocado'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/coffee'>
                 <Card className='card-img-top'>
-                  <CardImg src={coffeeImg} alt='coffee'/>
+                  <CardImg src={coffeeImg} className='my-auto' alt='coffee'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/banana'>
                 <Card className='card-img-top'>
-                  <CardImg src={bananaImg} alt='banana'/>
+                  <CardImg src={bananaImg} className='my-auto' alt='banana'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/rice'>
                 <Card className='card-img-top'>
-                  <CardImg src={riceImg} alt='rice'/>
+                  <CardImg src={riceImg} className='my-auto' alt='rice'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/bread'>
                 <Card className='card-img-top'>
-                  <CardImg src={avocadoImg} alt='bread'/>
+                  <CardImg src={avocadoImg} className='my-auto' alt='bread'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/oreo'>
                 <Card className='card-img-top'>
-                  <CardImg src={coffeeImg} alt='oreo'/>
+                  <CardImg src={coffeeImg} className='my-auto' alt='oreo'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/cocacola'>
                 <Card className='card-img-top'>
-                  <CardImg src={hamburgerImg} alt='cocacola'/>
+                  <CardImg src={hamburgerImg} className='my-auto' alt='cocacola'/>
                 </Card>
               </Link>
             </Col>
