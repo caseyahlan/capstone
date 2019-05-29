@@ -25,6 +25,7 @@ import Rice from './components/rice';
 import Bread from './components/bread';
 import Oreo from './components/oreo';
 import Cocacola from './components/cocacola';
+import Candybar from './components/candybar';
 import hazelnutSpreadImg from './imgs/hazelnutSpread-04.svg';
 import fishImg from './imgs/cookedfish-02.svg';
 import hamburgerImg from './imgs/hamburger.svg';
@@ -61,6 +62,7 @@ class App extends Component {
         <Route path='/bread' component={Bread}/>
         <Route path='/oreo' component={Oreo}/>
         <Route path='/cocacola' component={Cocacola}/>
+        <Route path='/candybar' component={Cocacola}/>
         <Route path='/sources' component={Sources}/>
       </Switch>
     );
@@ -154,6 +156,13 @@ class HomePage extends Component {
               <Link to='/cocacola'>
                 <Card className='card-img-top'>
                   <CardImg src={sodaImg} className='my-auto' alt='cocacola'/>
+                </Card>
+              </Link>
+            </Col>
+            <Col sm={12} md={4} lg={3} className='py-3'>
+              <Link to='/candybar'>
+                <Card className='card-img-top'>
+                  <CardImg src={oreoImg} className='my-auto' alt='candybar'/>
                 </Card>
               </Link>
             </Col>
