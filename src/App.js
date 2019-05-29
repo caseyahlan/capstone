@@ -33,6 +33,7 @@ import avocadoImg from './imgs/avocado.svg';
 import coffeeImg from './imgs/coffee.svg';
 import bananaImg from './imgs/banana.svg';
 import riceImg from './imgs/rice-bowl.svg';
+import breadImg from './imgs/bread-01.svg';
 import strawberryImg from './imgs/strawberry-02.svg'
 
 class App extends Component {
@@ -136,7 +137,7 @@ class HomePage extends Component {
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/bread'>
                 <Card className='card-img-top'>
-                  <CardImg src={avocadoImg} className='my-auto' alt='bread'/>
+                  <CardImg src={breadImg} className='my-auto' alt='bread'/>
                 </Card>
               </Link>
             </Col>
@@ -205,7 +206,7 @@ class Sources extends Component {
                 </NavItem>
               </Nav>
             </Col>
-            
+
             <Col sm={10}>
               <h1 className='mt-3'>Our Sources</h1>
               <p>Some blurb about our sources and how we are impartial and pulled from a variety of different sources</p>
@@ -249,7 +250,7 @@ class Sources extends Component {
                   <a href="https://www.fairtrade.org.uk/Media-Centre/Blog/2018/August/Top-12-Facts-about-Fairtrade-Bananas" target="_top">Top 12 Facts about Fairtrade Bananas</a>
                 </ListGroupItem>
               </ListGroup>
-              
+
               <br></br><br></br>
 
               <h2 id='bread-sources'>Bread sources</h2>
@@ -351,7 +352,7 @@ class Sources extends Component {
                 <a href="https://www.ucsusa.org/global-warming/stop-deforestation/beef-deforestation-scorecard" target="_top">Cattle, Cleared Forests, and Climate Change: Scoring Global Companies on their Deforestation-Free Beef Commitments and Practices</a>
               </ListGroupItem>
               </ListGroup>
-              
+
               <br></br><br></br>
 
               <h2 id='milk-sources'>Milk sources</h2>
@@ -378,7 +379,7 @@ class Sources extends Component {
                   <a href="https://www.americandairy.com/dairy-farms/dairy-farming.stml" target="_top">Dairy Farming History</a>
                 </ListGroupItem>
               </ListGroup>
-              
+
               <br></br><br></br>
 
               <h2 id='nutella-sources'>Nutella sources</h2>
@@ -399,7 +400,7 @@ class Sources extends Component {
                   <a href="https://www.onegreenplanet.org/vegan-food/15-palm-oil-free-products-for-more-eco-friendly-snacking/ " target="_top">15 Palm-Oil Free Products for More Eco-Friendly Snacking</a>
                 </ListGroupItem>
               </ListGroup>
-              
+
               <br></br><br></br>
 
               <h2 id='oreo-sources'>Oreo sources</h2>
@@ -447,7 +448,7 @@ class Sources extends Component {
                   <a href="https://www.care2.com/greenliving/when-to-avoid-rice-8-alternatives-to-try-instead.html" target="_top">When to Avoid Rice + 8 Healthy Alternatives to Try Instead</a>
                 </ListGroupItem>
               </ListGroup>
-              
+
               <br></br><br></br>
 
               <h2 id='soda-sources'>Soda sources</h2>
