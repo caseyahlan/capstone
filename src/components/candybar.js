@@ -35,7 +35,7 @@ class candybarDesktop extends Component {
             <Container fluid={true}>
               <Row>
                 <Col xs='12' className='split-horizontal light-green-background d-flex justify-content-center align-items-end'>
-                  <h1 className='text-white pb-3'>Soda</h1>
+                  <h1 className='text-white pb-3'>Chocolate</h1>
                 </Col>
                 <Col xs='12' className='d-flex justify-content-center'>
                   <div className='arrow-down'></div>
@@ -55,7 +55,7 @@ class candybarDesktop extends Component {
                 <ParallaxLayer offset={1.2} speed={0.1}>
                     {/* <div className='media'> */}
                       {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Soda</h1>
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Chocolate</h1>
                           <p className='text-monospace body-text'>
                             <br></br>
                             You already know the impact soda can have on your health (it’s bad for your blood pressure, teeth, heart, kidney...), but still nothing beats an ice-cold soda on a hot day. Have you thought about the impact each bottle of soda has on the environment though? Coca-Cola alone sells around 3,500 single-use bottles every second! One way or another, most of these bottles end up in the ocean, impacting marine animals.
@@ -78,7 +78,7 @@ class candybarDesktop extends Component {
 
           {/* Slide Three */}
           <ParallaxLayer offset={2.05} speed={1.5} style={{ pointerEvents: 'none' }}>
-            <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Soda</h1>
+            <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Chocolate</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
             <img src={soda04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }} alt='informational circle'></img>
@@ -101,7 +101,7 @@ class candybarDesktop extends Component {
                 <ParallaxLayer offset={3.2} speed={0.1}>
                     {/* <div className='media'> */}
                       {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Soda Impacted Marine Life?</h1>
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Chocolate Impacted Marine Life?</h1>
                           <p className='text-monospace body-text'>
                             <br></br>
                             “Many people think that plastic soft drink bottles are killing wildlife, and it is a contributor as it breaks down into small pieces. However, plastic bottles are not the main reason for plastics killing wildlife, it is the colorful plastic caps that become separated from the bottles. These colorful plastic caps act as lures, attract animals, and become bite size appetizers for sea turtles, dolphins and fish. The plastic can neither be digested nor passed through by most species. Instead, it clogs their intestinal tract and they die a slow and painful death at sea.” - www.woundednature.org

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Link, Switch} from 'react-router-dom';
 // import MediaQuery from 'react-responsive';
 import Scrollspy from 'react-scrollspy'
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import {
   Container,
   Row,
@@ -77,7 +78,10 @@ class HomePage extends Component {
         <Jumbotron fluid>
           <Container>
             <h1 class="display-4">Welcome to foodfluence</h1>
-            <p class="lead">Choose a food to learn about its environmental impact!</p>
+            <p class="lead">
+              <br></br>
+              Choose a food to learn about its environmental impact and what you can do to help!
+            </p>
           </Container>
         </Jumbotron>
         <Container>
@@ -168,6 +172,13 @@ class HomePage extends Component {
             </Col>
           </Row>
         </Container>
+        <MDBFooter className="font-small pt-4 mt-4 grey-background">
+          <MDBContainer fluid className="text-center text-md-left">
+            <p className='text-center'>
+              We do not endorse any of the products we suggest as alternates.
+            </p>
+          </MDBContainer>
+        </MDBFooter>
       </div>
     )
   }
@@ -214,6 +225,9 @@ class Sources extends Component {
                 </NavItem>
                 <NavItem>
                   <NavLink href="#soda-sources">Soda</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="#chocolate-sources">Chocolate</NavLink>
                 </NavItem>
               </Nav>
             </Col>
@@ -481,6 +495,30 @@ class Sources extends Component {
                 </ListGroupItem>
                 <ListGroupItem>
                   <a href="http://woundednature.org/environmental-issues/cola-wars-impact-on-marine-life/" target="_top">Cola Wars Impact on Marine Life</a>
+                </ListGroupItem>
+              </ListGroup>
+
+              <br></br><br></br>
+
+              <h2 id='chocolate-sources'>Chocolate sources</h2>
+              <ListGroup flush>
+                <ListGroupItem>
+                  <a href="" target="_top">Is</a>
+                </ListGroupItem>
+                <ListGroupItem>
+                  <a href="" target="_top">Revealed</a>
+                </ListGroupItem>
+                <ListGroupItem>
+                  <a href="" target="_top">Plastic</a>
+                </ListGroupItem>
+                <ListGroupItem>
+                  <a href="" target="_top">Making</a>
+                </ListGroupItem>
+                <ListGroupItem>
+                  <a href="" target="_top">What’s</a>
+                </ListGroupItem>
+                <ListGroupItem>
+                  <a href="" target="_top">Cola</a>
                 </ListGroupItem>
               </ListGroup>
 
