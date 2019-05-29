@@ -3,17 +3,11 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
-import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
-import apple from '../imgs/apple-03.svg';
-import crepe from '../imgs/crepe-05.svg';
-import strawberry from '../imgs/strawberry-02.svg';
-import toast from '../imgs/toast-06.svg';
-import orangutanStumps from '../imgs/orangutanStumps-07.svg';
-import orangutanTrees from '../imgs/orangutanTrees-07.svg';
-import nutella01 from '../imgs/nutella1.svg';
-import nutella02 from '../imgs/nutella2.svg';
-import nutella03 from '../imgs/nutella3-01.svg';
-import nutella04 from '../imgs/nutella4-01.svg';
+import bread from '../imgs/bread-01.svg';
+import bread01 from '../imgs/bread1-01.svg';
+import bread02 from '../imgs/bread2-01.svg';
+import bread03 from '../imgs/bread3-01.svg';
+import bread04 from '../imgs/bread4-01.svg';
 
 class Bread extends Component {
   render() {
@@ -73,7 +67,7 @@ class BreadDesktop extends Component {
               </Col>
               <Col sm={4}>
                 <ParallaxLayer offset={1.1} speed={4}>
-                  <img src={hazelnutSpread} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='bread'></img>
+                  <img src={bread} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='bread'></img>
                 </ParallaxLayer>
               </Col>
             </Row>
@@ -86,16 +80,16 @@ class BreadDesktop extends Component {
             <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Bread</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
-            <img src={nutella04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }} alt='informational circle'></img>
+            <img src={bread04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }} alt='informational circle'></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.3} speed={2.8}>
-            <img src={nutella03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }} alt='informational circle'></img>
+            <img src={bread03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }} alt='informational circle'></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1}>
-            <img src={nutella02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }} alt='informational circle'></img>
+            <img src={bread02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }} alt='informational circle'></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={nutella01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }} alt='informational circle'></img>
+            <img src={bread01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }} alt='informational circle'></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
@@ -118,10 +112,7 @@ class BreadDesktop extends Component {
             </Container>
           </ParallaxLayer>
           <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={orangutanTrees} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }} alt='trees with orangutanse'></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.54} speed={1.7}>
-            <img src={orangutanStumps} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '50%' }} alt='stumps of cut down trees with sad orangutans'></img>
+            <img src={bread} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }} alt='trees with orangutanse'></img>
           </ParallaxLayer>
 
           {/* Slide Five */}
