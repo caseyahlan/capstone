@@ -101,21 +101,29 @@ class MilkDesktop extends Component {
 
           {/* Slide Four */}
           <ParallaxLayer offset={3} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={3.15} speed={1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How has Dairy Impacted Groundwater?</h1>
-                  <p className='text-monospace font-italic'>
-                    <br></br>
-                    “In Yakima, Washington, the Community Association for Restoration of the Environment and the Center for Food Safety allege in an ongoing lawsuit now in federal court that manure spreading by five large dairies has caused nitrate and other contamination of groundwater and violates the federal Resource Conservation and Recovery Act (RCRA).” - e360.yale.edu
-                  </p>
-                </div>
-              </div>
-            </Container>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={river} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '35%' }}></img>
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={3.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Dairy Impacted Groundwater?</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            “In Yakima, Washington, the Community Association for Restoration of the Environment and the Center for Food Safety allege in an ongoing lawsuit now in federal court that manure spreading by five large dairies has caused nitrate and other contamination of groundwater and violates the federal Resource Conservation and Recovery Act (RCRA).” - e360.yale.edu
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={4}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={river} height="85%" width="85%" style={{ display: 'block', marginLeft: '35%' }} alt='contaminated river'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
+          <ParallaxLayer offset={3.1} speed={2}>
           </ParallaxLayer>
 
           {/* Slide Five */}

@@ -8,6 +8,7 @@ import rice01 from '../imgs/rice1-01.svg';
 import rice02 from '../imgs/rice2-01.svg';
 import rice03 from '../imgs/rice3-01.svg';
 import rice04 from '../imgs/milk4-01.svg';
+import wetland from '../imgs/wetlands-04.svg';
 
 class Rice extends Component {
   render() {
@@ -50,7 +51,7 @@ class RiceDesktop extends Component {
           <ParallaxLayer offset={1} speed={1} className='grey-background'/>
           <Container>
             <Row>
-              <Col sm={8}>
+              <Col sm={9}>
                 <ParallaxLayer offset={1.2} speed={0.1}>
                     {/* <div className='media'> */}
                       {/* <div className='media-body'> */}
@@ -65,9 +66,9 @@ class RiceDesktop extends Component {
                     {/* </div> */}
                 </ParallaxLayer>
               </Col>
-              <Col sm={4}>
+              <Col sm={3}>
                 <ParallaxLayer offset={1.1} speed={4}>
-                  <img src={rice} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='rice'></img>
+                  <img src={rice} height="100%" width="100%" style={{ display: 'block', marginLeft: '35%' }} alt='rice'></img>
                 </ParallaxLayer>
               </Col>
             </Row>
@@ -94,22 +95,33 @@ class RiceDesktop extends Component {
 
           {/* Slide Four */}
           <ParallaxLayer offset={3} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={3.15} speed={1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How has Rice Impacted Asian Wetland habitats?</h1>
-                  <p className='text-monospace font-italic'>
-                    <br></br>
-                    “In Asia, wetland habitats are at grave risk globally and as a result, there are great concerns on the rates of loss of biological diversity. Rice agricultural systems provide important human-modified wetlands for wildlife. In the ecosystem service context, flooded rice environments provide important ‘supporting services’ for wildlife through their extensive water networks. In turn, the abundance of diverse species supported by the rice ecosystem provides a number of ecosystem services to humanity.” www.irri.org
-                    <br></br><br></br>
-                    So, what do we do?
-                    <br></br><br></br>
-                    “Feeding the world and saving the planet have to become mutual goals if we are to meet the demands of a billion extra people by 2030, while keeping global warming below the 1.5°C critical risk threshold.” - www.eco-business.com
-                  </p>
-                </div>
-              </div>
-            </Container>
+          <Container>
+            <Row>
+              <Col sm={9}>
+                <ParallaxLayer offset={3.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Rice Impacted Asian Wetland habitats?</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            “In Asia, wetland habitats are at grave risk globally and as a result, there are great concerns on the rates of loss of biological diversity. Rice agricultural systems provide important human-modified wetlands for wildlife... Flooded rice environments provide important ‘supporting services’ for wildlife through their extensive water networks.” - www.irri.org
+                            <br></br><br></br>
+                            So, what do we do?
+                            <br></br><br></br>
+                            “Feeding the world and saving the planet have to become mutual goals if we are to meet the demands of a billion extra people by 2030, while keeping global warming below the 1.5°C critical risk threshold.” - www.eco-business.com
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={3}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={wetland} height="100%" width="100%" style={{ display: 'block', marginLeft: '35%' }} alt='wetlands'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
+          <ParallaxLayer offset={3.1} speed={2}>
           </ParallaxLayer>
 
           {/* Slide Five */}

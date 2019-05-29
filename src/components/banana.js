@@ -96,19 +96,29 @@ class BananaDesktop extends Component {
 
           {/* Slide Four */}
           <ParallaxLayer offset={3} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={3.15} speed={1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How have Bananas Impacted Crocodiles?</h1>
-                  <p className='text-monospace font-italic'>
-                    <br></br>
-                    “In the past, I have witnessed and a lot of the locals have pointed out that there have been massive fish kills as a result of pesticide exposure in high levels. A lot of the pesticides will wind up at the top of the food chain. What was revealing to me was the fact that the caiman [crocodiles] that were near the banana plantations had not only higher concentrations of pesticides, but also they were in a poorer state of health relative to the caiman in more pristine, remote areas.You know, we're now reckoning with the problem left by past use of highly toxic, highly persistent pesticides. So, what plantations must avoid now is leaving similar toxic legacies for the next generation to deal with.” - www.npr.org
-                  </p>
-                </div>
-                <img src={crocodile} className='align-self-center' height="35%" width="35%" alt='crocodile'></img>
-              </div>
-            </Container>
+          <Container>
+            <Row>
+              <Col sm={9}>
+                <ParallaxLayer offset={3.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How have Bananas Impacted Crocodiles?</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            “In the past, I have witnessed and a lot of the locals have pointed out that there have been massive fish kills as a result of pesticide exposure in high levels. A lot of the pesticides will wind up at the top of the food chain. What was revealing to me was the fact that the caiman [crocodiles] that were near the banana plantations had not only higher concentrations of pesticides, but also they were in a poorer state of health relative to the caiman in more pristine, remote areas.You know, we're now reckoning with the problem left by past use of highly toxic, highly persistent pesticides. So, what plantations must avoid now is leaving similar toxic legacies for the next generation to deal with.” - www.npr.org
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={3}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={crocodile} height="100%" width="100%" style={{ display: 'block', marginLeft: '35%' }} alt='crocodile'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
+          <ParallaxLayer offset={3.1} speed={2}>
           </ParallaxLayer>
 
           {/* Slide Five */}

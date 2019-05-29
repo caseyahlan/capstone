@@ -70,7 +70,7 @@ class FishDesktop extends Component {
               </Col>
               <Col sm={4}>
                 <ParallaxLayer offset={1.1} speed={4}>
-                  <img src={fishnet} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='fishnet'></img>
+                  <img src={fishnet} height="85%" width="85%" style={{ display: 'block', marginLeft: '35%' }} alt='fishnet'></img>
                 </ParallaxLayer>
               </Col>
             </Row>
@@ -96,25 +96,35 @@ class FishDesktop extends Component {
           </ParallaxLayer>
 
           {/* Slide Four */}
-          <ParallaxLayer offset={3} speed={1} className='grey-background'>
-            <Container>
-              <div className='media'>
-                <div className='media-body px-3'>
-                  <br></br>
-                  <h1 className='text-left mt-4'>How has the Fishing Industry Impacted Coral Reefs?</h1>
-                  <p className='text-monospace font-italic'>
-                    <br></br><br></br>
-                    “Impacts from unsustainable fishing on coral reef areas can lead to the depletion of key reed species in many locations… Additionally, certain types of fishing gear can inflict serious physical damage to coral reefs, seagrass beds, and other important marine habitats” - oceanservice.noaa.gov
-                  </p>
-                </div>
-              </div>
-            </Container>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={alivecoral} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }} alt='healthy coral reef'></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.54} speed={1.7}>
-            <img src={deadcoral} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }} alt='dead coral reef'></img>
+          <ParallaxLayer offset={3} speed={1} className='grey-background'/>
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={3.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has the Fishing Industry Impacted Coral Reefs?</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            “Impacts from unsustainable fishing on coral reef areas can lead to the depletion of key reed species in many locations… Additionally, certain types of fishing gear can inflict serious physical damage to coral reefs, seagrass beds, and other important marine habitats” - oceanservice.noaa.gov
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={2}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={alivecoral} height="100%" width="100%" style={{ display: 'block', marginLeft: '35%' }} alt='healthy coral reef'></img>
+                </ParallaxLayer>
+              </Col>
+              <Col sm={2}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={deadcoral} height="100%" width="100%" style={{ display: 'block', marginLeft: '35%' }} alt='dead coral reef'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
+          <ParallaxLayer offset={3.1} speed={2}>
           </ParallaxLayer>
 
           {/* Slide Five */}

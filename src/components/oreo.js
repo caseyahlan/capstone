@@ -3,17 +3,13 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
-import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
-import apple from '../imgs/apple-03.svg';
-import crepe from '../imgs/crepe-05.svg';
-import strawberry from '../imgs/strawberry-02.svg';
-import toast from '../imgs/toast-06.svg';
+import oreo from '../imgs/oreo-04.svg';
+import oreo01 from '../imgs/oreo1-01.svg';
+import oreo02 from '../imgs/oreo2-01.svg';
+import oreo03 from '../imgs/oreo3-01.svg';
+import oreo04 from '../imgs/oreo4-01.svg';
 import orangutanStumps from '../imgs/orangutanStumps-07.svg';
 import orangutanTrees from '../imgs/orangutanTrees-07.svg';
-import nutella01 from '../imgs/nutella1.svg';
-import nutella02 from '../imgs/nutella2.svg';
-import nutella03 from '../imgs/nutella3-01.svg';
-import nutella04 from '../imgs/nutella4-01.svg';
 
 class Oreo extends Component {
   render() {
@@ -73,7 +69,7 @@ class OreoDesktop extends Component {
               </Col>
               <Col sm={4}>
                 <ParallaxLayer offset={1.1} speed={4}>
-                  <img src={hazelnutSpread} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='oreo'></img>
+                  <img src={oreo} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='oreo'></img>
                 </ParallaxLayer>
               </Col>
             </Row>
@@ -86,38 +82,48 @@ class OreoDesktop extends Component {
             <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Oreos</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
-            <img src={nutella04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }} alt='informational circle'></img>
+            <img src={oreo04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }} alt='informational circle'></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.3} speed={2.8}>
-            <img src={nutella03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }} alt='informational circle'></img>
+            <img src={oreo03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }} alt='informational circle'></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1}>
-            <img src={nutella02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }} alt='informational circle'></img>
+            <img src={oreo02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }} alt='informational circle'></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={nutella01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }} alt='informational circle'></img>
+            <img src={oreo01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }} alt='informational circle'></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
           <ParallaxLayer offset={3} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={3.15} speed={1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How have Oreos Impacted Orangutans?</h1>
-                  <p className='text-monospace font-italic'>
-                    <br></br>
-                    “22 of Mondelēz’s (the parent company of Oreo) palm oil suppliers cleared more than 270 square miles of rainforest — an area larger than the city of San Francisco. Of that area, 96 square miles constituted the habitat of critically endangered orangutans. Palm oil can be made without destroying forests, yet Mondelēz suppliers are still trashing forests and wrecking orangutan habitat, pushing these beautiful and intelligent creatures to the brink of extinction. They’re literally dying for a cookie.” -news.mongabay.com
-                  </p>
-                </div>
-              </div>
-            </Container>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={orangutanTrees} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }} alt='trees with orangutanse'></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.54} speed={1.7}>
-            <img src={orangutanStumps} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '50%' }} alt='stumps of cut down trees with sad orangutans'></img>
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={3.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How have Oreos Impacted Orangutans?</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            “22 of Mondelēz’s (the parent company of Oreo) palm oil suppliers cleared more than 270 square miles of rainforest — an area larger than the city of San Francisco. Of that area, 96 square miles constituted the habitat of critically endangered orangutans. Palm oil can be made without destroying forests, yet Mondelēz suppliers are still trashing forests and wrecking orangutan habitat, pushing these beautiful and intelligent creatures to the brink of extinction. They’re literally dying for a cookie.” -news.mongabay.com
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={2}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={orangutanTrees} height="100%" width="100%" style={{ display: 'block', marginLeft: '35%' }} alt='trees with orangutans'></img>
+                </ParallaxLayer>
+              </Col>
+              <Col sm={2}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={orangutanStumps} height="100%" width="100%" style={{ display: 'block', marginLeft: '35%' }} alt='stumps of cut down trees with sad orangutans'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
+          <ParallaxLayer offset={3.1} speed={2}>
           </ParallaxLayer>
 
           {/* Slide Five */}

@@ -98,28 +98,38 @@ class NutellaDesktop extends Component {
 
           {/* Slide Four */}
           <ParallaxLayer offset={3} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={3.15} speed={1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How has Nutella Impacted Orangutans?</h1>
-                  <p className='text-monospace font-italic'>
-                    <br></br>
-                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
-                    Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
-                    where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
-                    45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
-                    -orangutantrekkingtours.com
-                  </p>
-                </div>
-              </div>
-            </Container>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={orangutanTrees} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }} alt='trees with orangutans'></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.54} speed={1.7}>
-            <img src={orangutanStumps} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '50%' }} alt='stumps of cut down trees with sad orangutans'></img>
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={3.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Nutella Impacted Orangutans?</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
+                            Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
+                            where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
+                            45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
+                            -orangutantrekkingtours.com
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={2}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={orangutanTrees} height="100%" width="100%" style={{ display: 'block', marginLeft: '35%' }} alt='trees with orangutans'></img>
+                </ParallaxLayer>
+              </Col>
+              <Col sm={2}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={orangutanStumps} height="100%" width="100%" style={{ display: 'block', marginLeft: '35%' }} alt='stumps of cut down trees with sad orangutans'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
+          <ParallaxLayer offset={3.1} speed={2}>
           </ParallaxLayer>
 
           {/* Slide Five */}

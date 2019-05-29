@@ -4,7 +4,7 @@ import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, Li
 import { Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 import avocadopic from '../imgs/avocado.svg';
-import butterfly from '../imgs/butterfly.jpg';
+import butterfly from '../imgs/butterfly-01.svg';
 import avocado01 from '../imgs/avocado1-01.svg';
 import avocado02 from '../imgs/avocado2-01.svg';
 import avocado03 from '../imgs/avocado3-01.svg';
@@ -94,21 +94,31 @@ class AvocadoDesktop extends Component {
           </ParallaxLayer>
 
           {/* Slide Four */}
-          <ParallaxLayer offset={3} speed={1} className='grey-background'>
-            <Container>
-              <div className='media'>
-                <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How have Avocados Impacted Monarch Butterflies?</h1>
-                  <p className='text-monospace font-italic'>
-                    <br></br>
-                    "Apútzio de Juárez, Mexico fills with swarms of migrating monarch butterflies each year. But downhill from the monarchs’ mountain roost, there lurks a new threat to their winter habitat: a lust to grow the lucrative avocados that are being consumed at record rates in the United States. Spurred by soaring demand for the creamy fruit, farmers here in the western state of Michoacán are clearing land to make room for avocado orchards, cutting oak and pine trees that form a vital buffer around the mountain forests where the monarchs nest. The trees cool the air from Michoacán’s warm western plains. If the temperature at the heart of the reserve, were to rise, the forest could suffer, and thus the butterflies would suffer, too." -nytimes.com
-                  </p>
-                </div>
-                <img src={butterfly} className='align-self-center' height="35%" width="35%" alt='butterfly'></img>
-              </div>
-            </Container>
+          <ParallaxLayer offset={3} speed={1} className='grey-background'/>
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={3.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How have Avocados Impacted Monarch Butterflies?</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            "Apútzio de Juárez, Mexico fills with swarms of migrating monarch butterflies each year. But downhill from the monarchs’ mountain roost, there lurks a new threat to their winter habitat: a lust to grow the lucrative avocados... Farmers here in the western state of Michoacán are clearing land to make room for avocado orchards, cutting oak and pine trees that form a vital buffer around the mountain forests where the monarchs nest. The trees cool the air from Michoacán’s warm western plains. If the temperature at the heart of the reserve, were to rise, the forest could suffer, and thus the butterflies would suffer, too." -nytimes.com
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={4}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={butterfly} height="85%" width="85%" style={{ display: 'block', marginLeft: '35%' }} alt='butterfly'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
+          <ParallaxLayer offset={3.1} speed={2}>
           </ParallaxLayer>
-
 
           {/* Slide Five */}
           <Row>

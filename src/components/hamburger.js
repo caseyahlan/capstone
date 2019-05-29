@@ -94,22 +94,30 @@ class HamburgerDesktop extends Component {
           </ParallaxLayer>
 
           {/* Slide Four */}
-          <ParallaxLayer offset={3} speed={1} className='grey-background'>
-            <Container>
-              <div className='media'>
-                <div className='media-body px-3'>
-                  <br></br>
-                  <h1 className='text-left mt-4'>How has the Beef Industry Impacted the Amazon Rainforest?</h1>
-                  <p className='text-monospace font-italic'>
-                    <br></br><br></br>
-                    “Each year, millions of hectares of forest are cleared for beef pasture, releasing carbon into the atmosphere and destroying habitat of endangered species. The deforestation impact of beef is greatest in South America, where beef was responsible for nearly three-quarters of total deforestation between 1990 and 2005.” - www.ucsusa.org
-                  </p>
-                </div>
-              </div>
-            </Container>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={amazon} style={{ display: 'block', height: '35%', width: 'auto', marginLeft: '40%' }} alt='amazon'></img>
+          <ParallaxLayer offset={3} speed={1} className='grey-background'/>
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={3.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has the Beef Industry Impacted the Amazon Rainforest?</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            “Each year, millions of hectares of forest are cleared for beef pasture, releasing carbon into the atmosphere and destroying habitat of endangered species. The deforestation impact of beef is greatest in South America, where beef was responsible for nearly three-quarters of total deforestation between 1990 and 2005.” - www.ucsusa.org
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={4}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={amazon} height="85%" width="85%" style={{ display: 'block', marginLeft: '35%' }} alt='amazon'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
+          <ParallaxLayer offset={3.1} speed={2}>
           </ParallaxLayer>
 
           {/* Slide Five */}
@@ -175,7 +183,7 @@ class HamburgerDesktop extends Component {
           </ParallaxLayer>
 
           <ParallaxLayer
-            offset={6}
+            offset={5}
             speed={0.1}
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
             onClick={() => this.parallax.scrollTo(0)}>

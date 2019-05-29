@@ -97,21 +97,31 @@ class CoffeeDesktop extends Component {
 
           {/* Slide Four */}
           <ParallaxLayer offset={3} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={3.15} speed={1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How has Coffee Impacted Birds in Costa Rica?</h1>
-                  <p className='text-monospace font-italic'>
-                    <br></br>
-                    “A 12-year study of 57,255 individually banded birds representing 265 species at 19 Costa Rican sites sheds new light on how tropical birds, a key indicator of ecosystem health, are faring across a patchwork of habitats in a changing agricultural countryside. The study compared bird populations on primarily open coffee farms (with small amounts of shade) with those in remaining forested areas. The study reveals that even a small increase in coffee farm tree cover, from 7 to 13 percent, can provide a significant boost to birds.
-                    <br></br><br></br>
-                    Researchers found that coffee farms offering some tree shade are still experiencing species decline and are no substitute for large swaths of protected forest. Across coffee farms and all sizes and types of forest, researchers found 61 percent more bird species’ populations declined as grew or remained steady.” -nationalgeographic.com
-                  </p>
-                </div>
-                <img src={toucan} className='align-self-center' height="35%" width="35%"  alt='toucan'></img>
-              </div>
-            </Container>
+          <Container>
+            <Row>
+              <Col sm={9}>
+                <ParallaxLayer offset={3.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Coffee Impacted Birds in Costa Rica?</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            “A study compared bird populations on primarily open coffee farms (with small amounts of shade) with those in remaining forested areas. The study reveals that even a small increase in coffee farm tree cover, from 7 to 13 percent, can provide a significant boost to birds.
+                            <br></br><br></br>
+                            Researchers found that coffee farms offering some tree shade are still experiencing species decline and are no substitute for large swaths of protected forest. Across coffee farms and all sizes and types of forest, researchers found 61 percent more bird species’ populations declined as grew or remained steady.” - nationalgeographic.com
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={3}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={toucan} height="100%" width="100%" style={{ display: 'block', marginLeft: '35%' }} alt='toucan'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
+          <ParallaxLayer offset={3.1} speed={2}>
           </ParallaxLayer>
 
           {/* Slide Five */}

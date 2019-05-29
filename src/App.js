@@ -34,6 +34,8 @@ import coffeeImg from './imgs/coffee.svg';
 import bananaImg from './imgs/banana.svg';
 import riceImg from './imgs/rice-bowl.svg';
 import breadImg from './imgs/bread-01.svg';
+import oreoImg from './imgs/oreo-04.svg';
+import sodaImg from './imgs/soda-02.svg';
 import strawberryImg from './imgs/strawberry-02.svg'
 
 class App extends Component {
@@ -144,14 +146,14 @@ class HomePage extends Component {
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/oreo'>
                 <Card className='card-img-top'>
-                  <CardImg src={coffeeImg} className='my-auto' alt='oreo'/>
+                  <CardImg src={oreoImg} className='my-auto' alt='oreo'/>
                 </Card>
               </Link>
             </Col>
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/cocacola'>
                 <Card className='card-img-top'>
-                  <CardImg src={hamburgerImg} className='my-auto' alt='cocacola'/>
+                  <CardImg src={sodaImg} className='my-auto' alt='cocacola'/>
                 </Card>
               </Link>
             </Col>

@@ -3,17 +3,12 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
-import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
-import apple from '../imgs/apple-03.svg';
-import crepe from '../imgs/crepe-05.svg';
-import strawberry from '../imgs/strawberry-02.svg';
-import toast from '../imgs/toast-06.svg';
-import orangutanStumps from '../imgs/orangutanStumps-07.svg';
-import orangutanTrees from '../imgs/orangutanTrees-07.svg';
-import nutella01 from '../imgs/nutella1.svg';
-import nutella02 from '../imgs/nutella2.svg';
-import nutella03 from '../imgs/nutella3-01.svg';
-import nutella04 from '../imgs/nutella4-01.svg';
+import soda from '../imgs/soda-02.svg';
+import soda01 from '../imgs/soda1-01.svg';
+import soda02 from '../imgs/soda2-01.svg';
+import soda03 from '../imgs/soda3-01.svg';
+import soda04 from '../imgs/soda4-01.svg';
+import turtle from '../imgs/turtle-03.svg';
 
 class Cocacola extends Component {
   render() {
@@ -73,7 +68,7 @@ class CocacolaDesktop extends Component {
               </Col>
               <Col sm={4}>
                 <ParallaxLayer offset={1.1} speed={4}>
-                  <img src={hazelnutSpread} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='soda'></img>
+                  <img src={soda} height="75%" width="75%" style={{ display: 'block', marginLeft: '35%' }} alt='soda'></img>
                 </ParallaxLayer>
               </Col>
             </Row>
@@ -86,38 +81,43 @@ class CocacolaDesktop extends Component {
             <h1 className={'text-monospace'} style={{ width: '70%', marginLeft: '5%' }}>Impact of Soda</h1>
           </ParallaxLayer>
           <ParallaxLayer offset={2.4} speed={6}>
-            <img src={nutella04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }} alt='informational circle'></img>
+            <img src={soda04} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '70%' }} alt='informational circle'></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.3} speed={2.8}>
-            <img src={nutella03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }} alt='informational circle'></img>
+            <img src={soda03} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '50%' }} alt='informational circle'></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1}>
-            <img src={nutella02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }} alt='informational circle'></img>
+            <img src={soda02} style={{ display: 'block', height: '30%', width: 'auto', marginLeft: '30%' }} alt='informational circle'></img>
           </ParallaxLayer>
           <ParallaxLayer offset={2.2} speed={-0.2}>
-            <img src={nutella01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }} alt='informational circle'></img>
+            <img src={soda01} style={{ display: 'block', height: '40%', width: 'auto', marginLeft: '10%' }} alt='informational circle'></img>
           </ParallaxLayer>
 
           {/* Slide Four */}
           <ParallaxLayer offset={3} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={3.15} speed={1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How has Soda Impacted Marine Life?</h1>
-                  <p className='text-monospace font-italic'>
-                    <br></br>
-                    “Many people think that plastic soft drink bottles are killing wildlife, and it is a contributor as it breaks down into small pieces. However, plastic bottles are not the main reason for plastics killing wildlife, it is the colorful plastic caps that become separated from the bottles. These colorful plastic caps act as lures, attract animals, and become bite size appetizers for sea turtles, dolphins and fish. The plastic can neither be digested nor passed through by most species. Instead, it clogs their intestinal tract and they die a slow and painful death at sea.” - www.woundednature.org
-                  </p>
-                </div>
-              </div>
-            </Container>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={orangutanTrees} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }} alt='informational circle'></img>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.54} speed={1.7}>
-            <img src={orangutanStumps} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '50%' }}></img>
+          <Container>
+            <Row>
+              <Col sm={8}>
+                <ParallaxLayer offset={3.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Soda Impacted Marine Life?</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            “Many people think that plastic soft drink bottles are killing wildlife, and it is a contributor as it breaks down into small pieces. However, plastic bottles are not the main reason for plastics killing wildlife, it is the colorful plastic caps that become separated from the bottles. These colorful plastic caps act as lures, attract animals, and become bite size appetizers for sea turtles, dolphins and fish. The plastic can neither be digested nor passed through by most species. Instead, it clogs their intestinal tract and they die a slow and painful death at sea.” - www.woundednature.org
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={4}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={turtle} height="85%" width="85%" style={{ display: 'block', marginLeft: '35%' }} alt='turtle'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
+          <ParallaxLayer offset={3.1} speed={2}>
           </ParallaxLayer>
 
           {/* Slide Five */}

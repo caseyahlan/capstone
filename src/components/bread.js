@@ -8,6 +8,7 @@ import bread01 from '../imgs/bread1-01.svg';
 import bread02 from '../imgs/bread2-01.svg';
 import bread03 from '../imgs/bread3-01.svg';
 import bread04 from '../imgs/bread4-01.svg';
+import wetland from '../imgs/wetlands-04.svg';
 
 class Bread extends Component {
   render() {
@@ -94,25 +95,33 @@ class BreadDesktop extends Component {
 
           {/* Slide Four */}
           <ParallaxLayer offset={3} speed={1} className='grey-background'/>
-          <ParallaxLayer offset={3.15} speed={1}>
-            <Container>
-              <div className='media'>
-                <div className='media-body px-3'>
-                  <h1 className='text-left mt-4'>How has Bread Impacted the Gulf of Mexico?</h1>
-                  <p className='text-monospace font-italic'>
-                    <br></br>
-                    “The enormous “dead zone” in the Gulf of Mexico will take decades to recover even if the flow of farming chemicals that is causing the damage is completely halted, new research has warned.
-                    <br></br>
-                    Intensive agriculture has led to fertilizers leeching into the river, and ultimately the Gulf of Mexico, via soils and waterways. This has resulted in a huge oxygen-deprived dead zone in the Gulf that is now at its largest ever extent, covering an area greater than the state of New Jersey.
-                    <br></br>
-                    Fertilizers spilling into the oceans promote the growth of algae, which can trigger toxic blooms harmful to fish, shellfish, marine mammals and birds. These outbreaks can discolour water and befoul beaches. It also depletes oxygen in the water, leading to further damage to marine creatures and dwindling supplies for the people who rely upon them for food.” - www.theguardian.com
-                  </p>
-                </div>
-              </div>
-            </Container>
-          </ParallaxLayer>
-          <ParallaxLayer offset={3.53} speed={0.4}>
-            <img src={bread} style={{ display: 'block', height: '25%', width: 'auto', marginLeft: '30%' }} alt='trees with orangutanse'></img>
+          <Container>
+            <Row>
+              <Col sm={9}>
+                <ParallaxLayer offset={3.2} speed={0.1}>
+                    {/* <div className='media'> */}
+                      {/* <div className='media-body'> */}
+                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Bread Impacted the Gulf of Mexico?</h1>
+                          <p className='text-monospace body-text'>
+                            <br></br>
+                            “The enormous “dead zone” in the Gulf of Mexico will take decades to recover even if the flow of farming chemicals that is causing the damage is completely halted, new research has warned.
+                            <br></br>
+                            Intensive agriculture has led to fertilizers leeching into the river, and ultimately the Gulf of Mexico, via soils and waterways. 
+                            <br></br>
+                            Fertilizers spilling into the oceans promote the growth of algae, which can trigger toxic blooms harmful to fish, shellfish, marine mammals and birds. These outbreaks can discolour water and befoul beaches. It also depletes oxygen in the water, leading to further damage to marine creatures and dwindling supplies for the people who rely upon them for food.” - www.theguardian.com
+                          </p>
+                      {/* </div> */}
+                    {/* </div> */}
+                </ParallaxLayer>
+              </Col>
+              <Col sm={3}>
+                <ParallaxLayer offset={3.1} speed={4}>
+                  <img src={wetland} height="100%" width="100%" style={{ display: 'block', marginLeft: '35%' }} alt='wetland'></img>
+                </ParallaxLayer>
+              </Col>
+            </Row>
+          </Container>
+          <ParallaxLayer offset={3.1} speed={2}>
           </ParallaxLayer>
 
           {/* Slide Five */}
