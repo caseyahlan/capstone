@@ -38,6 +38,7 @@ import riceImg from './imgs/rice-bowl.svg';
 import breadImg from './imgs/bread-01.svg';
 import oreoImg from './imgs/oreo-04.svg';
 import sodaImg from './imgs/soda-02.svg';
+import chocolateImg from './imgs/chocolate-04.svg';
 import strawberryImg from './imgs/strawberry-02.svg'
 
 class App extends Component {
@@ -63,7 +64,7 @@ class App extends Component {
         <Route path='/bread' component={Bread}/>
         <Route path='/oreo' component={Oreo}/>
         <Route path='/cocacola' component={Cocacola}/>
-        <Route path='/candybar' component={Cocacola}/>
+        <Route path='/candybar' component={Candybar}/>
         <Route path='/sources' component={Sources}/>
       </Switch>
     );
@@ -166,7 +167,7 @@ class HomePage extends Component {
             <Col sm={12} md={4} lg={3} className='py-3'>
               <Link to='/candybar'>
                 <Card className='card-img-top'>
-                  <CardImg src={oreoImg} className='my-auto' alt='candybar'/>
+                  <CardImg src={chocolateImg} className='my-auto' alt='candybar'/>
                 </Card>
               </Link>
             </Col>
@@ -175,7 +176,7 @@ class HomePage extends Component {
         <MDBFooter className="font-small pt-4 mt-4 grey-background">
           <MDBContainer fluid className="text-center text-md-left">
             <p className='text-center'>
-              We do not endorse any of the products we suggest as alternates.
+              We do not endorse any of the products we suggest as alternatives.
             </p>
           </MDBContainer>
         </MDBFooter>
