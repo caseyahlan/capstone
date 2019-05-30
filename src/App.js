@@ -504,22 +504,28 @@ class Sources extends Component {
               <h2 id='chocolate-sources'>Chocolate sources</h2>
               <ListGroup flush>
                 <ListGroupItem>
-                  <a href="" target="_top">Is</a>
+                  <a href="https://foodmaven.io/thechocolatelife/g2c2/the-environmental-impact-of-chocolate-production-VxBSOiuQXkmN-iJ8Sk3LUw/" target="_top">The environmental impact of chocolate production</a>
                 </ListGroupItem>
                 <ListGroupItem>
-                  <a href="" target="_top">Revealed</a>
+                  <a href="https://www.zmescience.com/medicine/nutrition-medicine/study-analyzes-environmental-impact-chocolate-production-not-pretty/" target="_top">Study analyzes the environmental impact of chocolate production — and it’s not pretty</a>
                 </ListGroupItem>
                 <ListGroupItem>
-                  <a href="" target="_top">Plastic</a>
+                  <a href="https://www.terrapass.com/environmental-impact-roses-chocolate" target="_top">Environmental Impact of Roses and Chocolate</a>
                 </ListGroupItem>
                 <ListGroupItem>
-                  <a href="" target="_top">Making</a>
+                  <a href="https://economictimes.indiatimes.com/news/science/chocolate-production-may-be-harming-environment-study/articleshow/63577769.cms" target="_top">Chocolate production may be harming environment</a>
                 </ListGroupItem>
                 <ListGroupItem>
-                  <a href="" target="_top">What’s</a>
+                  <a href="https://www.popsci.com/chocolate-carbon-emissions#page-4" target="_top">Keep your love of chocolate from destroying the planet with this one easy fix</a>
                 </ListGroupItem>
                 <ListGroupItem>
-                  <a href="" target="_top">Cola</a>
+                  <a href="https://www.icco.org/faq/56-environment/120-what-are-the-effects-of-intensive-commercial-production-of-cocoa-on-the-environment.html" target="_top">What are the effects of intensive commercial production of cocoa on the environment?</a>
+                </ListGroupItem>
+                <ListGroupItem>
+                  <a href="https://www.worldwildlife.org/magazine/issues/spring-2017/articles/bittersweet-chocolate-s-impact-on-the-environment" target="_top">Bittersweet: chocolate's impact on the environment</a>
+                </ListGroupItem>
+                <ListGroupItem>
+                  <a href="https://www.nationalgeographic.com/people-and-culture/food/the-plate/2015/04/02/monkeys-pay-for-chocolate-and-war/" target="_top">The Animal Cost of War and Chocolate</a>
                 </ListGroupItem>
               </ListGroup>
 
