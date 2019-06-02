@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
-import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Button } from 'reactstrap';
+import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Button, UncontrolledPopover, PopoverHeader, PopoverBody } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
@@ -26,6 +26,13 @@ class Nutella extends Component {
 class NutellaDesktop extends Component {
   render() {
     return (
+      <div>
+        <Link to='/'><Button close id='PopoverHover' type='button' className='floating'/></Link>
+        <UncontrolledPopover innerClassName='goHomePopover' hideArrow='true' trigger="hover" placement="left" target="PopoverHover">
+          {/* <PopoverHeader>Focus Trigger</PopoverHeader> */}
+          {/* <PopoverBody>go home</PopoverBody> */}
+          <div>go home</div>
+        </UncontrolledPopover>
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
 
           {/* Slide One */}
@@ -252,6 +259,7 @@ class NutellaDesktop extends Component {
             </Row>
           </ParallaxLayer>
         </Parallax>
+      </div>
     )
   }
 }
