@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
-import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Button, UncontrolledPopover, PopoverHeader, PopoverBody } from 'reactstrap';
+import { Container, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Button, UncontrolledPopover } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 import hazelnutSpread from '../imgs/hazelnutSpread-04.svg';
@@ -27,10 +27,8 @@ class NutellaDesktop extends Component {
   render() {
     return (
       <div>
-        <Link to='/'><Button close id='PopoverHover' type='button' className='floating'/></Link>
+        <Link to='/'><Button close id='PopoverHover' type='button' className='floating x-btn'/></Link>
         <UncontrolledPopover innerClassName='goHomePopover' hideArrow='true' trigger="hover" placement="left" target="PopoverHover">
-          {/* <PopoverHeader>Focus Trigger</PopoverHeader> */}
-          {/* <PopoverBody>go home</PopoverBody> */}
           <div>go home</div>
         </UncontrolledPopover>
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
@@ -61,19 +59,15 @@ class NutellaDesktop extends Component {
             <Row>
               <Col sm={8}>
                 <ParallaxLayer offset={1.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Nutella</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            Nutella is a popular hazelnut spread that is commonly used in many food products. Currently, there are 7
-                            well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla.
-                            <br></br><br></br>
-                            Just by looking at the ingredients, nutella seems like a perfect choice for many recipes. However, nutella’s
-                            heavy use of palm oil spreads damage to the environment.
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Nutella</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    Nutella is a popular hazelnut spread that is commonly used in many food products. Currently, there are 7
+                    well known ingredients: sugar, palm oil, hazelnuts, cocoa, milk, soy, and vanilla.
+                    <br></br><br></br>
+                    Just by looking at the ingredients, Nutella seems like a perfect choice for many recipes. However, Nutella’s
+                    heavy use of palm oil spreads damage to the environment.
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={4}>
@@ -109,19 +103,15 @@ class NutellaDesktop extends Component {
             <Row>
               <Col sm={8}>
                 <ParallaxLayer offset={3.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Nutella Impacted Orangutans?</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
-                            Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
-                            where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
-                            45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
-                            -orangutantrekkingtours.com
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Nutella Impacted Orangutans?</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    “Over 50,000 orangutans on the islands of Borneo and Sumatra have died because of palm oil deforestation.
+                    Orangutans whose habitats have been destroyed often enter villages and oil plantations in search of food
+                    where they are captured or killed by farmers who treat them as pests.  In 2016, it was reported that just
+                    45,000 orangutans remained in Borneo and at this rate, they will be extinct in the wild in just 25 years”.
+                    -orangutantrekkingtours.com
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={2}>
@@ -142,32 +132,32 @@ class NutellaDesktop extends Component {
           {/* Slide Five */}
           <Row>
             <Col md='6'>
-              <ParallaxLayer offset={4} speed={0.5}>
+              <ParallaxLayer offset={4} speed={0.5} onClick={() => this.parallax.scrollTo(5)}>
                 <div className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap container'>
                   <Row className='px-3'>
                     <h1>Alternatives to popular products that use palm oil</h1>
                     <p className='text-monospace pt-3'>
-                      There are many products that use palm oil. Below is a small list of those products and possible alternatives for them.
+                      There are many products that use palm oil. This is a small list of those products and possible alternatives for them.
                     </p>
                   </Row>
                 </div>
               </ParallaxLayer>
             </Col>
             <Col md='6'>
-              <ParallaxLayer offset={4} speed={1.5}>
+              <ParallaxLayer offset={4} speed={1.5} onClick={() => this.parallax.scrollTo(5)}>
                 <div className='split-vertical d-flex align-items-center container'>
                   <ListGroup flush>
                     <ListGroupItem>
                       <ListGroupItemHeading>Nutella</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
+                      <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_blank">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
                       <ListGroupItemHeading>Clif Bar</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_top">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
+                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_blank">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
                       <ListGroupItemHeading>JIF Peanut Butter</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_top">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free</ListGroupItemText>
+                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_blank">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free</ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>
                 </div>
@@ -178,12 +168,12 @@ class NutellaDesktop extends Component {
           {/* Slide Six */}
           <Row>
             <Col md='6'>
-              <ParallaxLayer offset={5} speed={0.5}>
+              <ParallaxLayer offset={5} speed={0.5} >
                 <div className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap container'>
                   <Row className='px-3'>
                     <h1>What can you do to help?</h1>
                     <p className='text-monospace pt-3'>
-                      There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.
+                      There are many ways you can reduce your impact. This is a small list of ways you can help reduce your environmental impact.
                     </p>
                   </Row>
                 </div>
@@ -194,7 +184,7 @@ class NutellaDesktop extends Component {
                 <div className='split-vertical d-flex align-items-center container'>
                   <ListGroup flush>
                     <ListGroupItem>
-                      <ListGroupItemHeading>Be a Responsible Shopper and reduce purchase of Palm Oil Products</ListGroupItemHeading>
+                      <ListGroupItemHeading>Be a Responsible Shopper</ListGroupItemHeading>
                       <ListGroupItemText>
                         Consider buying alternative products that do not use palm oil. While it is impossible to completely avoid palm oil products,
                         reducing purchases of these products is a start to reducing demand of palm oil products.
@@ -230,11 +220,11 @@ class NutellaDesktop extends Component {
             onClick={() => this.parallax.scrollTo(4)}>
           </ParallaxLayer>
 
-          <ParallaxLayer
+          {/* <ParallaxLayer
             offset={4}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(5)}>
-          </ParallaxLayer>
+          </ParallaxLayer> */}
 
           <ParallaxLayer
             offset={5}

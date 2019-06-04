@@ -26,6 +26,8 @@ class Banana extends Component {
 class BananaDesktop extends Component {
   render() {
     return (
+      <div>
+        <Link to='/'><Button close id='PopoverHover' type='button' className='floating x-btn'/></Link>
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
 
           {/* Slide One */}
@@ -53,18 +55,14 @@ class BananaDesktop extends Component {
           <Container>
             <Row>
               <Col sm={8}>
-                <ParallaxLayer offset={1.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Bananas</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            Bananas are a staple food that a lot of cultures depend on. Bananas are generally inexpensive and have a lot of healthy nutrients. However, there are significant environmental impacts from banana production.
-                            <br></br><br></br>
-                            Did you know that bananas have to be flown into western countries, which releases CO2? Or that tropical rainforests are impacted by deforestation to make room for banana plantations? The world’s ecosystem is being impacted by banana production, but there are ways to help lessen this impact.
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={1} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Bananas</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    Bananas are a staple food that a lot of cultures depend on. Bananas are generally inexpensive and have a lot of healthy nutrients. However, there are significant environmental impacts from banana production.
+                    <br></br><br></br>
+                    Did you know that bananas have to be flown into western countries, which releases CO2? Or that tropical rainforests are impacted by deforestation to make room for banana plantations? The world’s ecosystem is being impacted by banana production, but there are ways to help lessen this impact.
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={4}>
@@ -99,16 +97,12 @@ class BananaDesktop extends Component {
           <Container>
             <Row>
               <Col sm={9}>
-                <ParallaxLayer offset={3.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How have Bananas Impacted Crocodiles?</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            “In the past, I have witnessed and a lot of the locals have pointed out that there have been massive fish kills as a result of pesticide exposure in high levels. A lot of the pesticides will wind up at the top of the food chain. What was revealing to me was the fact that the caiman [crocodiles] that were near the banana plantations had not only higher concentrations of pesticides, but also they were in a poorer state of health relative to the caiman in more pristine, remote areas.You know, we're now reckoning with the problem left by past use of highly toxic, highly persistent pesticides. So, what plantations must avoid now is leaving similar toxic legacies for the next generation to deal with.” - www.npr.org
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={3} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2'>How have Bananas Impacted Crocodiles?</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    “In the past, I have witnessed and a lot of the locals have pointed out that there have been massive fish kills as a result of pesticide exposure in high levels. A lot of the pesticides will wind up at the top of the food chain. What was revealing to me was the fact that the caiman [crocodiles] that were near the banana plantations had not only higher concentrations of pesticides, but also they were in a poorer state of health relative to the caiman in more pristine, remote areas.You know, we're now reckoning with the problem left by past use of highly toxic, highly persistent pesticides. So, what plantations must avoid now is leaving similar toxic legacies for the next generation to deal with.” - www.npr.org
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={3}>
@@ -129,7 +123,7 @@ class BananaDesktop extends Component {
                   <Row className='px-3'>
                     <h1>What can you do to help?</h1>
                     <p className='text-monospace pt-3'>
-                      There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.
+                      There are many ways you can reduce your impact. Here is a small list of ways you can help reduce your environmental impact.
                     </p>
                   </Row>
                 </div>
@@ -204,6 +198,7 @@ class BananaDesktop extends Component {
             </Row>
           </ParallaxLayer>
         </Parallax>
+      </div>
     )
   }
 }

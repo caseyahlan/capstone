@@ -26,6 +26,8 @@ class Oreo extends Component {
 class OreoDesktop extends Component {
   render() {
     return (
+      <div>
+        <Link to='/'><Button close id='PopoverHover' type='button' className='floating x-btn'/></Link>
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
 
           {/* Slide One */}
@@ -53,18 +55,14 @@ class OreoDesktop extends Component {
           <Container>
             <Row>
               <Col sm={8}>
-                <ParallaxLayer offset={1.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Oreos</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            Oreo is an iconic brand in the United States and is the world’s best selling cookie. Oreo’s parent company, Mondelēz, has not kept its promise of keeping deforestation out of its supply chain. Making palm oil doesn’t need to destroy forests, but Mondelēz has not dropped dirty palm oil suppliers. This lack of action means time is running out for species that call the forest home.
-                            <br></br><br></br>
-                            Orangutans are literally dying for cookies.
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={1.1} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Oreos</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    Oreo is an iconic brand in the United States and is the world’s best selling cookie. Oreo’s parent company, Mondelēz, has not kept its promise of keeping deforestation out of its supply chain. Making palm oil doesn’t need to destroy forests, but Mondelēz has not dropped dirty palm oil suppliers. This lack of action means time is running out for species that call the forest home.
+                    <br></br><br></br>
+                    Orangutans are literally dying for cookies.
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={4}>
@@ -99,16 +97,12 @@ class OreoDesktop extends Component {
           <Container>
             <Row>
               <Col sm={8}>
-                <ParallaxLayer offset={3.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How have Oreos Impacted Orangutans?</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            “22 of Mondelēz’s (the parent company of Oreo) palm oil suppliers cleared more than 270 square miles of rainforest — an area larger than the city of San Francisco. Of that area, 96 square miles constituted the habitat of critically endangered orangutans. Palm oil can be made without destroying forests, yet Mondelēz suppliers are still trashing forests and wrecking orangutan habitat, pushing these beautiful and intelligent creatures to the brink of extinction. They’re literally dying for a cookie.” -news.mongabay.com
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={3} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2 pt-lg-5'>How have Oreos Impacted Orangutans?</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    “22 of Mondelēz’s (the parent company of Oreo) palm oil suppliers cleared more than 270 square miles of rainforest — an area larger than the city of San Francisco. Of that area, 96 square miles constituted the habitat of critically endangered orangutans. Palm oil can be made without destroying forests, yet Mondelēz suppliers are still trashing forests and wrecking orangutan habitat, pushing these beautiful and intelligent creatures to the brink of extinction. They’re literally dying for a cookie.” -news.mongabay.com
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={2}>
@@ -129,36 +123,36 @@ class OreoDesktop extends Component {
           {/* Slide Five */}
           <Row>
             <Col md='6'>
-              <ParallaxLayer offset={4} speed={0.5}>
+              <ParallaxLayer offset={4} speed={0.5} onClick={() => this.parallax.scrollTo(5)}>
                 <div className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap container'>
                   <Row className='px-3'>
                     <h1>Alternatives to popular products that use palm oil</h1>
                     <p className='text-monospace pt-3'>
-                      There are many products that use palm oil. Below is a small list of those products and possible alternatives for them.
+                      There are many products that use palm oil. Here is a small list of those products and possible alternatives for them.
                     </p>
                   </Row>
                 </div>
               </ParallaxLayer>
             </Col>
             <Col md='6'>
-              <ParallaxLayer offset={4} speed={1.5}>
+              <ParallaxLayer offset={4} speed={1.5} onClick={() => this.parallax.scrollTo(5)}>
                 <div className='split-vertical d-flex align-items-center container'>
                   <ListGroup flush>
                     <ListGroupItem>
                       <ListGroupItemHeading>Instead of Oreo...</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://products.wholefoodsmarket.com/product/365-everyday-value-chocolate-sandwich-cremes-c9fd86" target="_top">365 Everyday Value Chocolate Sandwich Cremes</a>; this product is also vegan</ListGroupItemText>
+                      <ListGroupItemText>Try <a href="https://products.wholefoodsmarket.com/product/365-everyday-value-chocolate-sandwich-cremes-c9fd86" target="_blank">365 Everyday Value Chocolate Sandwich Cremes</a>; this product is also vegan</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
                       <ListGroupItemHeading>Instead of Nutella...</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_top">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
+                      <ListGroupItemText>Try <a href="https://rigonidiasiago-usa.com/our-products/nocciolata/organic-hazelnut-spread-with-cocoa-and-milk/" target="_blank">Nicciolata Organic Hazelnut Spread with Cocoa & Milk</a>; this product is also GMO Free</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
                       <ListGroupItemHeading>Instead of Clif Bar...</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_top">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
+                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B01MYU64E4/?tag=onegrepla-20&th=1" target="_blank">Health Warriors Chia Bar</a>; this product is 100 calories and has 3g of sugar</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
                       <ListGroupItemHeading>Instead of JIF Peanut Butter..</ListGroupItemHeading>
-                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_top">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free.</ListGroupItemText>
+                      <ListGroupItemText>Try <a href="https://www.amazon.com/dp/B079Y59DV2/?tag=onegrepla-20&th=1" target="_blank">Wild Friends Foods Chocolate Coconut Peanut Butter</a>; this product is kosher and gluten-free.</ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>
                 </div>
@@ -169,7 +163,7 @@ class OreoDesktop extends Component {
           {/* Slide Six */}
           <Row>
             <Col md='6'>
-              <ParallaxLayer offset={5} speed={0.5}>
+              <ParallaxLayer offset={5} speed={0.5} onClick={() => this.parallax.scrollTo(6)}>
                 <div className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap container'>
                   <Row className='px-3'>
                     <h1>What can you do to help?</h1>
@@ -178,21 +172,21 @@ class OreoDesktop extends Component {
               </ParallaxLayer>
             </Col>
             <Col md='6'>
-              <ParallaxLayer offset={5} speed={1.5}>
+              <ParallaxLayer offset={5} speed={1.5} onClick={() => this.parallax.scrollTo(6)}>
                 <div className='split-vertical d-flex align-items-center container'>
                   <ListGroup flush>
                     <ListGroupItem>
                       <ListGroupItemHeading>Make your own Oreos</ListGroupItemHeading>
                       <ListGroupItemText>
                         Baking is a fun way to relax, plus you know exactly what ingredients are going into your food. And you’ll avoid the extra packaging.
-                        Try a recipe: <a href="https://topsecretrecipes.com/nabisco-oreo-cookies-copycat-recipe.html" target="_top">Top Secret Recipes</a> or <a href="https://www.foodnetwork.com/recipes/oreo-cookies-recipe-1972673#!" target="_top">Food Network</a>
+                        Try a recipe: <a href="https://topsecretrecipes.com/nabisco-oreo-cookies-copycat-recipe.html" target="_blank">Top Secret Recipes</a> or <a href="https://www.foodnetwork.com/recipes/oreo-cookies-recipe-1972673#!" target="_blank">Food Network</a>
                       </ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
                       <ListGroupItemHeading>Eat local cookies</ListGroupItemHeading>
                       <ListGroupItemText>
                         Satisfy your cookie craving and support local businesses that use local ingredients. Two great companies that are local to Seattle are:
-                        <a href="http://www.cmbc.com/" target="_top">Cougar Mountain Baking Company</a> <a href="http://www.cowchipcookies.com/bestcookies/" target="_top">Cow Chip Cookies</a>
+                        <a href="http://www.cmbc.com/" target="_blank">Cougar Mountain Baking Company</a> <a href="http://www.cowchipcookies.com/bestcookies/" target="_blank">Cow Chip Cookies</a>
                       </ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
@@ -233,18 +227,6 @@ class OreoDesktop extends Component {
           </ParallaxLayer>
 
           <ParallaxLayer
-            offset={4}
-            speed={0.1}
-            onClick={() => this.parallax.scrollTo(5)}>
-          </ParallaxLayer>
-
-          <ParallaxLayer
-            offset={5}
-            speed={0.1}
-            onClick={() => this.parallax.scrollTo(6)}>
-          </ParallaxLayer>
-
-          <ParallaxLayer
             offset={6}
             speed={0.1}
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
@@ -261,6 +243,7 @@ class OreoDesktop extends Component {
             </Row>
           </ParallaxLayer>
         </Parallax>
+      </div>
     )
   }
 }

@@ -134,6 +134,11 @@ html {
   z-index: 5;
 }
 
+.x-btn:focus, .x-btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
 .goHomePopover {
   color: #999;
   background-color: #424141;

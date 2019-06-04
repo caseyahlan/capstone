@@ -31,6 +31,8 @@ class Milk extends Component {
 class MilkDesktop extends Component {
   render() {
     return (
+      <div>
+        <Link to='/'><Button close id='PopoverHover' type='button' className='floating x-btn'/></Link>
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
 
           {/* Slide One */}
@@ -134,7 +136,7 @@ class MilkDesktop extends Component {
                   <Row className='px-3'>
                     <h1>Should you try dairy alternatives?</h1>
                     <p className='text-monospace pt-3'>
-                      There are many alternative milk products. Below is a small list of those products and their associated benefits or drawbacks.
+                      There are many alternative milk products. Here is a small list of those products and their associated benefits or drawbacks.
                     </p>
                   </Row>
                 </div>
@@ -147,7 +149,7 @@ class MilkDesktop extends Component {
                     <ListGroupItem>
                       <img src={x} className='align-self-center' height="5%" width="5%" alt='x'></img>
                       <ListGroupItemHeading>Almond milk</ListGroupItemHeading>
-                      <ListGroupItemText>Almond milk is a $1 billion+ industry. But, it takes a little over a gallon to grow just one almond! Plus, many almonds come from California, which has suffered from droughts in recent years. This alternative is not suggested.</ListGroupItemText>
+                      <ListGroupItemText>Almond milk is a $1 billion+ industry. But, it takes a little over a gallon of water to grow just one almond! Plus, many almonds come from California, which has suffered from droughts in recent years. This alternative is not suggested.</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
                       <img src={plus} className='align-self-center' height="5%" width="5%" alt='plus'></img>
@@ -168,19 +170,19 @@ class MilkDesktop extends Component {
           {/* Slide Six */}
           <Row>
             <Col md='6'>
-              <ParallaxLayer offset={5} speed={0.5}>
+              <ParallaxLayer offset={5} speed={0.5} onClick={() => this.parallax.scrollTo(6)}>
                 <div className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap container'>
                   <Row className='px-3'>
-                    <h1>So, what can you do to help?</h1>
+                    <h1>What can you do to help?</h1>
                     <p className='text-monospace pt-3'>
-                      There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.
+                      There are many ways you can reduce your impact. Here is a small list of ways you can help reduce your environmental impact.
                     </p>
                   </Row>
                 </div>
               </ParallaxLayer>
             </Col>
             <Col md='6'>
-              <ParallaxLayer offset={5} speed={1.5}>
+              <ParallaxLayer offset={5} speed={1.5} onClick={() => this.parallax.scrollTo(6)}>
                 <div className='split-vertical d-flex align-items-center container'>
                   <ListGroup flush>
                     <ListGroupItem>
@@ -192,10 +194,10 @@ class MilkDesktop extends Component {
                     <ListGroupItem>
                       <ListGroupItemHeading>Consider trying these brands:</ListGroupItemHeading>
                       <ListGroupItemText>
-                        <img src={oatly} className='img-fluid' height="25%" width="25%" alt='oatly logo'></img>
-                        <img src={tempt} className='img-fluid' height="25%" width="25%" alt='tempt logo'></img>
-                        <img src={soDelicious} className='img-fluid' height="25%" width="25%" alt='so delicious logo'></img>
-                        <img src={ripple} className='img-fluid' height="25%" width="25%" alt='ripple logo'></img>
+                        <a href='https://us.oatly.com/' target='_blank'><img src={oatly} className='img-fluid' height="25%" width="25%" alt='oatly logo'></img></a>
+                        <a href='https://www.amazon.com/Living-Harvest-Unsweetened-32-Ounce-Containers/dp/B003RRBWOG' target='_blank'><img src={tempt} className='img-fluid' height="25%" width="25%" alt='tempt logo'></img></a>
+                        <a href='https://sodeliciousdairyfree.com/' target='_blank'><img src={soDelicious} className='img-fluid' height="25%" width="25%" alt='so delicious logo'></img></a>
+                        <a href='https://www.ripplefoods.com/' target='_blank'><img src={ripple} className='img-fluid' height="25%" width="25%" alt='ripple logo'></img></a>
                       </ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>
@@ -228,12 +230,6 @@ class MilkDesktop extends Component {
           </ParallaxLayer>
 
           <ParallaxLayer
-            offset={5}
-            speed={0.1}
-            onClick={() => this.parallax.scrollTo(6)}>
-          </ParallaxLayer>
-
-          <ParallaxLayer
             offset={6}
             speed={0.1}
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
@@ -250,6 +246,7 @@ class MilkDesktop extends Component {
             </Row>
           </ParallaxLayer>
         </Parallax>
+      </div>
     )
   }
 }

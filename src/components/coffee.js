@@ -27,6 +27,8 @@ class Coffee extends Component {
 class CoffeeDesktop extends Component {
   render() {
     return (
+      <div>
+        <Link to='/'><Button close id='PopoverHover' type='button' className='floating x-btn'/></Link>
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
 
           {/* Slide One */}
@@ -54,18 +56,14 @@ class CoffeeDesktop extends Component {
           <Container>
             <Row>
               <Col sm={8}>
-                <ParallaxLayer offset={1.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Coffee</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            Did you know, throughout the world 1.1 billion cups of coffee are consumed daily? That’s over 400 billion cups a year! You can find countless varieties and flavors of this universally loved drink.
-                            <br></br><br></br>
-                            After oil, coffee is the world’s most tradable commodity and the increased demand for convenient coffee has led coffee farmers to find new, more efficient ways to grow the crop. While some of these methods result in higher yields, they have also significantly contributed to deforestation and other environmental threats.
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={1} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Coffee</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    Did you know, throughout the world 1.1 billion cups of coffee are consumed daily? That’s over 400 billion cups a year! You can find countless varieties and flavors of this universally loved drink.
+                    <br></br><br></br>
+                    After oil, coffee is the world’s most tradable commodity and the increased demand for convenient coffee has led coffee farmers to find new, more efficient ways to grow the crop. While some of these methods result in higher yields, they have also significantly contributed to deforestation and other environmental threats.
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={4}>
@@ -100,18 +98,14 @@ class CoffeeDesktop extends Component {
           <Container>
             <Row>
               <Col sm={9}>
-                <ParallaxLayer offset={3.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Coffee Impacted Birds in Costa Rica?</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            “A study compared bird populations on primarily open coffee farms (with small amounts of shade) with those in remaining forested areas. The study reveals that even a small increase in coffee farm tree cover, from 7 to 13 percent, can provide a significant boost to birds.
-                            <br></br><br></br>
-                            Researchers found that coffee farms offering some tree shade are still experiencing species decline and are no substitute for large swaths of protected forest. Across coffee farms and all sizes and types of forest, researchers found 61 percent more bird species’ populations declined as grew or remained steady.” - nationalgeographic.com
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={3} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Coffee Impacted Birds in Costa Rica?</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    “A study compared bird populations on primarily open coffee farms (with small amounts of shade) with those in remaining forested areas. The study reveals that even a small increase in coffee farm tree cover, from 7 to 13 percent, can provide a significant boost to birds.
+                    <br></br><br></br>
+                    Researchers found that coffee farms offering some tree shade are still experiencing species decline and are no substitute for large swaths of protected forest. Across coffee farms and all sizes and types of forest, researchers found 61 percent more bird species’ populations declined as grew or remained steady.” - nationalgeographic.com
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={3}>
@@ -127,19 +121,19 @@ class CoffeeDesktop extends Component {
           {/* Slide Five */}
           <Row>
             <Col md='6'>
-              <ParallaxLayer offset={4} speed={0.5}>
+              <ParallaxLayer offset={4} speed={0.5} onClick={() => this.parallax.scrollTo(5)}>
                 <div className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap container'>
                   <Row className='px-3'>
                     <h1>Drink sustainably</h1>
                     <p className='text-monospace pt-3'>
-                      Don’t worry - you can still enjoy your daily cup of coffee.
+                      Don’t worry, you can still enjoy your daily cup of coffee!
                     </p>
                   </Row>
                 </div>
               </ParallaxLayer>
             </Col>
             <Col md='6'>
-              <ParallaxLayer offset={4} speed={1.5}>
+              <ParallaxLayer offset={4} speed={1.5} onClick={() => this.parallax.scrollTo(5)}>
                 <div className='split-vertical d-flex align-items-center container'>
                   <ListGroup flush>
                     <ListGroupItem>
@@ -150,17 +144,16 @@ class CoffeeDesktop extends Component {
                         <br></br><br></br>
                         Check out these Fair Trade brands:
                         <br></br>
-                        <a href="https://www.traderjoes.com/" target="_top">Trader Joe's brand Sumatra Blend & Brew-in-the-Bag coffees</a>
+                        <a href="https://www.traderjoes.com/" target="_blank">Trader Joe's brand Sumatra Blend & Brew-in-the-Bag coffees</a>
                         <br></br>
-                        <a href="https://www.starbucks.com/" target="_top">Starbucks Coffee Company</a>
+                        <a href="https://www.starbucks.com/" target="_blank">Starbucks Coffee Company</a>
                         <br></br>
-                        <a href="https://www.costco.com/Kirkland-Signature-House-Blend-Coffee%2c-2-lbs.product.100334966.html" target="_top">Kirkland Coffee</a>
+                        <a href="https://www.costco.com/Kirkland-Signature-House-Blend-Coffee%2c-2-lbs.product.100334966.html" target="_blank">Kirkland Coffee</a>
                         <br></br>
-                        <a href="https://www.gourmesso.com/" target="_top">Gourmesso (coffee pods)</a>
+                        <a href="https://www.gourmesso.com/" target="_blank">Gourmesso (coffee pods)</a>
                         <br></br>
-                        <a href="https://onecoffee.com/us/home/" target="_top">One Coffee (compostable coffee pods)</a>
+                        <a href="https://onecoffee.com/us/home/" target="_blank">One Coffee (compostable coffee pods)</a>
                         <br></br>
-                        And more on <a href="fairtradeamerica.org" target="_top"></a>
                       </ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
@@ -171,13 +164,13 @@ class CoffeeDesktop extends Component {
                         <br></br><br></br>
                         Check out these Rainforest Alliance Certified brands:
                         <br></br>
-                        <a href="https://www.rainforest-alliance.org/find-certified/nescafe" target="_top">Nescafe</a>
+                        <a href="https://www.rainforest-alliance.org/find-certified/nescafe" target="_blank">Nescafe</a>
                         <br></br>
-                        <a href="https://www.rainforest-alliance.org/find-certified/royal-cup" target="_top">Royal Cup</a>
+                        <a href="https://www.rainforest-alliance.org/find-certified/royal-cup" target="_blank">Royal Cup</a>
                         <br></br>
-                        <a href="https://www.rainforest-alliance.org/find-certified/kroger" target="_top">Kroger</a>
+                        <a href="https://www.rainforest-alliance.org/find-certified/kroger" target="_blank">Kroger</a>
                         <br></br>
-                        <a href="https://www.rainforest-alliance.org/find-certified/mcdonalds" target="_top">McDonalds</a>
+                        <a href="https://www.rainforest-alliance.org/find-certified/mcdonalds" target="_blank">McDonalds</a>
                       </ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>
@@ -214,11 +207,11 @@ class CoffeeDesktop extends Component {
                         <br></br><br></br>
                         Try:
                         <br></br>
-                        <a href="https://www.puravidacreategood.com/" target="_top">Pura Vida Coffee</a>
+                        <a href="https://www.puravidacreategood.com/" target="_blank">Pura Vida Coffee</a>
                         <br></br>
-                        <a href="https://larryscoffee.com/" target="_top">Larry's Coffee</a>
+                        <a href="https://larryscoffee.com/" target="_blank">Larry's Coffee</a>
                         <br></br>
-                        <a href="https://cafemam.com/" target="_top">Café Mam</a>
+                        <a href="https://cafemam.com/" target="_blank">Café Mam</a>
                         <br></br>
                         and more!
                       </ListGroupItemText>
@@ -247,12 +240,6 @@ class CoffeeDesktop extends Component {
           </ParallaxLayer>
 
           <ParallaxLayer
-            offset={4}
-            speed={0.1}
-            onClick={() => this.parallax.scrollTo(5)}>
-          </ParallaxLayer>
-
-          <ParallaxLayer
             offset={5}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(6)}>
@@ -275,6 +262,7 @@ class CoffeeDesktop extends Component {
             </Row>
           </ParallaxLayer>
         </Parallax>
+      </div>
     )
   }
 }

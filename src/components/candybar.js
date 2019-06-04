@@ -25,6 +25,8 @@ class Candybar extends Component {
 class CandybarDesktop extends Component {
   render() {
     return (
+      <div>
+        <Link to='/'><Button close id='PopoverHover' type='button' className='floating x-btn'/></Link>
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
 
           {/* Slide One */}
@@ -52,18 +54,14 @@ class CandybarDesktop extends Component {
           <Container>
             <Row>
               <Col sm={9}>
-                <ParallaxLayer offset={1.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Chocolate</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            Around 70% of the world’s cocoa beans grow in West Africa and this area has been affected by increasing temperatures and dry spells due to climate change. There are challenges ahead for cocoa farmers as cocoa trees are particularly sensitive to heat and drought.
-                            <br></br><br></br>
-                            There is hope though, despite these challenges. New farming techniques can help boost existing cocoa farms and genome mapping has helped create cocoa tree varieties that are more climate resistant and productive. You don’t have to stop eating chocolate completely, but thinking about how your chocolate is made is increasingly important.
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={1} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Chocolate</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    Around 70% of the world’s cocoa beans grow in West Africa and this area has been affected by increasing temperatures and dry spells due to climate change. There are challenges ahead for cocoa farmers as cocoa trees are particularly sensitive to heat and drought.
+                    <br></br><br></br>
+                    There is hope though, despite these challenges. New farming techniques can help boost existing cocoa farms and genome mapping has helped create cocoa tree varieties that are more climate resistant and productive. You don’t have to stop eating chocolate completely, but thinking about how your chocolate is made is increasingly important.
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={3}>
@@ -98,20 +96,16 @@ class CandybarDesktop extends Component {
           <Container>
             <Row>
               <Col sm={9}>
-                <ParallaxLayer offset={3.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Chocolate Impacted Primates in the Ivory Coast?</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            “The world’s passion for chocolate is having unexpectedly far-reaching effects. It’s endangering the world’s primate population. Ohio State University’s Scott McGraw and team spent over 200 days tramping through 18 forest reserves and five national parks of the Ivory Coast.
-                            <br></br><br></br>
-                            McGraw’s group found that 13 of 23 protected reserves and parks now had no primate species at all, and five had lost half of their original primate populations.
-                            <br></br><br></br>
-                            Instead of monkeys, chimpanzees, and old-growth forest, McGraw’s group found “a sea of cocoa plants.” -nationalgeographic.com
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={3} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2'>How has Chocolate Impacted Primates in the Ivory Coast?</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    “The world’s passion for chocolate is having unexpectedly far-reaching effects. It’s endangering the world’s primate population. Ohio State University’s Scott McGraw and team spent over 200 days tramping through 18 forest reserves and five national parks of the Ivory Coast.
+                    <br></br><br></br>
+                    McGraw’s group found that 13 of 23 protected reserves and parks now had no primate species at all, and five had lost half of their original primate populations.
+                    <br></br><br></br>
+                    Instead of monkeys, chimpanzees, and old-growth forest, McGraw’s group found “a sea of cocoa plants.” -nationalgeographic.com
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={3}>
@@ -127,7 +121,7 @@ class CandybarDesktop extends Component {
           {/* Slide Five */}
           <Row>
             <Col md='6'>
-              <ParallaxLayer offset={4} speed={0.5}>
+              <ParallaxLayer offset={4} speed={0.5} onClick={() => this.parallax.scrollTo(5)}>
                 <div className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap container'>
                   <Row className='px-3'>
                     <h1>Eat responsibly</h1>
@@ -137,7 +131,7 @@ class CandybarDesktop extends Component {
               </ParallaxLayer>
             </Col>
             <Col md='6'>
-              <ParallaxLayer offset={4} speed={1.5}>
+              <ParallaxLayer offset={4} speed={1.5} onClick={() => this.parallax.scrollTo(5)}>
                 <div className='split-vertical d-flex align-items-center container'>
                   <ListGroup flush>
                     <ListGroupItem>
@@ -147,13 +141,13 @@ class CandybarDesktop extends Component {
                         <br></br><br></br>
                         These brands are local to Seattle and Fair Trade:
                         <br></br>
-                        <a href="https://frans.com/" target="_top">Fran’s Chocolates</a> - Local to Seattle!
+                        <a href="https://frans.com/" target="_blank">Fran’s Chocolates</a> - Local to Seattle!
                         <br></br>
-                        <a href="https://www.theochocolate.com/" target="_top">Theo Chocolate</a> - Local to Seattle!
+                        <a href="https://www.theochocolate.com/" target="_blank">Theo Chocolate</a> - Local to Seattle!
                         <br></br>
-                        <a href="https://us.greenandblacks.com/" target="_top">GREEN & BLACK’S</a>
+                        <a href="https://us.greenandblacks.com/" target="_blank">GREEN & BLACK’S</a>
                         <br></br>
-                        <a href="https://www.traderjoes.com/" target="_top">Trader Joe's Chocolate</a>
+                        <a href="https://www.traderjoes.com/" target="_blank">Trader Joe's Chocolate</a>
                         <br></br>
                         And more on fairtradeamerica.org
                       </ListGroupItemText>
@@ -165,13 +159,13 @@ class CandybarDesktop extends Component {
                         <br></br><br></br>
                         Check out these Rainforest Alliance Certified brands:
                         <br></br>
-                        <a href="https://www.rainforest-alliance.org/find-certified/seattle-chocolates" target="_top">Seattle Chocolates</a> - Local to Seattle!
+                        <a href="https://www.rainforest-alliance.org/find-certified/seattle-chocolates" target="_blank">Seattle Chocolates</a> - Local to Seattle!
                         <br></br>
-                        <a href="https://www.rainforest-alliance.org/find-certified/whole-foods" target="_top">Whole Foods Market</a>
+                        <a href="https://www.rainforest-alliance.org/find-certified/whole-foods" target="_blank">Whole Foods Market</a>
                         <br></br>
-                        <a href="https://www.rainforest-alliance.org/find-certified/dove" target="_top">Dove Dark Chocolate</a>
+                        <a href="https://www.rainforest-alliance.org/find-certified/dove" target="_blank">Dove Dark Chocolate</a>
                         <br></br>
-                        <a href="https://www.rainforest-alliance.org/find-certified/magnum" target="_top">Magnum</a>
+                        <a href="https://www.rainforest-alliance.org/find-certified/magnum" target="_blank">Magnum</a>
                       </ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>
@@ -231,12 +225,6 @@ class CandybarDesktop extends Component {
           </ParallaxLayer>
 
           <ParallaxLayer
-            offset={4}
-            speed={0.1}
-            onClick={() => this.parallax.scrollTo(5)}>
-          </ParallaxLayer>
-
-          <ParallaxLayer
             offset={5}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(6)}>
@@ -259,6 +247,7 @@ class CandybarDesktop extends Component {
             </Row>
           </ParallaxLayer>
         </Parallax>
+      </div>
     )
   }
 }

@@ -27,6 +27,8 @@ class Fish extends Component {
 class FishDesktop extends Component {
   render() {
     return (
+      <div>
+        <Link to='/'><Button close id='PopoverHover' type='button' className='floating x-btn'/></Link>
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
 
           {/* Slide One */}
@@ -60,9 +62,9 @@ class FishDesktop extends Component {
                         <h1 className='text-center text-md-left pt-2 pt-lg-5'>About the Fishing Industry</h1>
                           <p className='text-monospace body-text'>
                             <br></br>
-                            Fish are a high demand product. There are several different species of fish that are on sale, but with the impacts of overfishing in various parts of the world, some species of fish are being pushed to extinction.
+                            Fish are a high demand product. Your local grocery store probably has at least several different types, but with the impacts of overfishing in various parts of the world, some species of fish are being pushed to extinction.
                             <br></br><br></br>
-                            According to worldatlas.com; “if the fishing industry continues as is, wild-caught seafood will be non-existent by the year 2048”.
+                            According to worldatlas.com: “If the fishing industry continues as is, wild-caught seafood will be non-existent by the year 2048”.
                           </p>
                       {/* </div> */}
                     {/* </div> */}
@@ -151,11 +153,11 @@ class FishDesktop extends Component {
                     </ListGroupItem>
                     <ListGroupItem>
                       <ListGroupItemHeading>Halibut</ListGroupItemHeading>
-                      <ListGroupItemText>Halibut is often considered endangered, however there have been conservation efforts. Despite these conservation efforts, Halibut still struggled to regrow its population.</ListGroupItemText>
+                      <ListGroupItemText>Halibut is often considered endangered, however there have been conservation efforts. Despite these conservation efforts, Halibut continues to struggle to regrow its population.</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
                       <ListGroupItemHeading>Atlantic Salmon</ListGroupItemHeading>
-                      <ListGroupItemText>Since 2000, Atlantic Salmon has been at risk of extinction.</ListGroupItemText>
+                      <ListGroupItemText>Since 2000, the Atlantic Salmon has been at risk of extinction.</ListGroupItemText>
                     </ListGroupItem>
                     <ListGroupItem>
                       <ListGroupItemHeading>Bluefin Tuna</ListGroupItemHeading>
@@ -246,6 +248,7 @@ class FishDesktop extends Component {
             </Row>
           </ParallaxLayer>
         </Parallax>
+      </div>
     )
   }
 }

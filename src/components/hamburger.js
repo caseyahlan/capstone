@@ -25,6 +25,8 @@ class Hamburger extends Component {
 class HamburgerDesktop extends Component {
   render() {
     return (
+      <div>
+        <Link to='/'><Button close id='PopoverHover' type='button' className='floating x-btn'/></Link>
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
 
           {/* Slide One */}
@@ -53,17 +55,13 @@ class HamburgerDesktop extends Component {
             <Row>
               <Col sm={8}>
                 <ParallaxLayer offset={1.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About the Beef Industry</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            Hamburgers are a staple food from barbecues to 3-star restaurants. In the United States, people eat over 50 billion hamburgers every year! What you might not realize is that eating meat has more of an environmental impact than almost any other food we eat.
-                            <br></br><br></br>
-                            Raising cows requires a lot of food, water, land, and energy.
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <h1 className='text-center text-md-left pt-2 pt-lg-5'>About the Beef Industry</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    Hamburgers are a staple food from barbecues to 3-star restaurants. In the United States, people eat over 50 billion hamburgers every year! What you might not realize is that eating meat has more of an environmental impact than almost any other food we eat.
+                    <br></br><br></br>
+                    Raising cows requires a lot of food, water, land, and energy.
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={4}>
@@ -99,15 +97,11 @@ class HamburgerDesktop extends Component {
             <Row>
               <Col sm={8}>
                 <ParallaxLayer offset={3.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has the Beef Industry Impacted the Amazon Rainforest?</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            “Each year, millions of hectares of forest are cleared for beef pasture, releasing carbon into the atmosphere and destroying habitat of endangered species. The deforestation impact of beef is greatest in South America, where beef was responsible for nearly three-quarters of total deforestation between 1990 and 2005.” - www.ucsusa.org
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has the Beef Industry Impacted the Amazon Rainforest?</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    “Each year, millions of hectares of forest are cleared for beef pasture, releasing carbon into the atmosphere and destroying habitat of endangered species. The deforestation impact of beef is greatest in South America, where beef was responsible for nearly three-quarters of total deforestation between 1990 and 2005.” - www.ucsusa.org
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={4}>
@@ -123,7 +117,7 @@ class HamburgerDesktop extends Component {
           {/* Slide Five */}
           <Row>
             <Col md='6'>
-              <ParallaxLayer offset={4} speed={0.5}>
+              <ParallaxLayer offset={4} speed={0.5} onClick={() => this.parallax.scrollTo(5)}>
                 <div className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap container'>
                   <Row className='px-3'>
                     <h1>What can you do to help?</h1>
@@ -132,7 +126,7 @@ class HamburgerDesktop extends Component {
               </ParallaxLayer>
             </Col>
             <Col md='6'>
-              <ParallaxLayer offset={4} speed={1.5}>
+              <ParallaxLayer offset={4} speed={1.5} onClick={() => this.parallax.scrollTo(5)}>
                 <div className='split-vertical d-flex align-items-center container'>
                   <ListGroup flush>
                     <ListGroupItem>
@@ -143,8 +137,8 @@ class HamburgerDesktop extends Component {
                       <ListGroupItemHeading>Choose beef alternatives</ListGroupItemHeading>
                       <ListGroupItemText>The Impossible™ burger and Beyond Burger® are made from plants, but have the flavor, smell, and look of beef.
                       <br></br>
-                      Find a grocery store that sells Impossible™ burgers: impossiblefoods.com/locations/
-                      Here’s a Beyond Burger® location finder: impossiblefoods.com/locations/</ListGroupItemText>
+                      Find a grocery store that sells <a href='https://impossiblefoods.com/locations/' target='_blank'>Impossible™ burgers.  </a>
+                      Or look for a restaurant that has the <a href='https://impossiblefoods.com/locations/' target='_blank'>Beyond Burger®</a> on its menu.</ListGroupItemText>
                     </ListGroupItem>
                   </ListGroup>
                 </div>
@@ -171,12 +165,6 @@ class HamburgerDesktop extends Component {
           </ParallaxLayer>
 
           <ParallaxLayer
-            offset={4}
-            speed={0.1}
-            onClick={() => this.parallax.scrollTo(5)}>
-          </ParallaxLayer>
-
-          <ParallaxLayer
             offset={5}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(6)}>
@@ -199,6 +187,7 @@ class HamburgerDesktop extends Component {
             </Row>
           </ParallaxLayer>
         </Parallax>
+      </div>
     )
   }
 }

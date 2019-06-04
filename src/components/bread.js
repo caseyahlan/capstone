@@ -25,6 +25,8 @@ class Bread extends Component {
 class BreadDesktop extends Component {
   render() {
     return (
+      <div>
+        <Link to='/'><Button close id='PopoverHover' type='button' className='floating x-btn'/></Link>
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
 
           {/* Slide One */}
@@ -52,18 +54,14 @@ class BreadDesktop extends Component {
           <Container>
             <Row>
               <Col sm={8}>
-                <ParallaxLayer offset={1.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Bread</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            Did you know that almost 50% of people in the United States eat a sandwich every day? That’s a lot of bread! Bread in its many forms is widely loved all over the world.
-                            <br></br><br></br>
-                            With the high consumption of this tasty food comes a significant impact to the environment. The production of wheat currently relies heavily on fertilizers, which release harmful emissions and contribute to greenhouse gases. It might be time to think twice before making PB&J for your midnight snack.
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={1} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2'>About Bread</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    Did you know that almost 50% of people in the United States eat a sandwich every day? That’s a lot of bread! Bread in its many forms is widely loved all over the world.
+                    <br></br><br></br>
+                    With the high consumption of this tasty food comes a significant impact to the environment. The production of wheat currently relies heavily on fertilizers, which release harmful emissions and contribute to greenhouse gases. It might be time to think twice before making PB&J for your midnight snack.
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={4}>
@@ -98,20 +96,14 @@ class BreadDesktop extends Component {
           <Container>
             <Row>
               <Col sm={9}>
-                <ParallaxLayer offset={3.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Bread Impacted the Gulf of Mexico?</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            “The enormous “dead zone” in the Gulf of Mexico will take decades to recover even if the flow of farming chemicals that is causing the damage is completely halted, new research has warned.
-                            <br></br>
-                            Intensive agriculture has led to fertilizers leeching into the river, and ultimately the Gulf of Mexico, via soils and waterways. 
-                            <br></br>
-                            Fertilizers spilling into the oceans promote the growth of algae, which can trigger toxic blooms harmful to fish, shellfish, marine mammals and birds. These outbreaks can discolour water and befoul beaches. It also depletes oxygen in the water, leading to further damage to marine creatures and dwindling supplies for the people who rely upon them for food.” - www.theguardian.com
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={3} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2'>How has Bread Impacted the Gulf of Mexico?</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    “The enormous “dead zone” in the Gulf of Mexico will take decades to recover even if the flow of farming chemicals that is causing the damage is completely halted, new research has warned.
+                    Intensive agriculture has led to fertilizers leeching into the river, and ultimately the Gulf of Mexico, via soils and waterways. 
+                    Fertilizers spilling into the oceans promote the growth of algae, which can trigger toxic blooms harmful to fish, shellfish, marine mammals and birds. These outbreaks can discolour water and befoul beaches. It also depletes oxygen in the water, leading to further damage to marine creatures and dwindling supplies for the people who rely upon them for food.” - www.theguardian.com
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={3}>
@@ -203,6 +195,7 @@ class BreadDesktop extends Component {
             </Row>
           </ParallaxLayer>
         </Parallax>
+      </div>
     )
   }
 }

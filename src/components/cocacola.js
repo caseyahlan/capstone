@@ -25,6 +25,8 @@ class Cocacola extends Component {
 class CocacolaDesktop extends Component {
   render() {
     return (
+      <div>
+        <Link to='/'><Button close id='PopoverHover' type='button' className='floating x-btn'/></Link>
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
 
           {/* Slide One */}
@@ -52,18 +54,14 @@ class CocacolaDesktop extends Component {
           <Container>
             <Row>
               <Col sm={8}>
-                <ParallaxLayer offset={1.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Soda</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            You already know the impact soda can have on your health (it’s bad for your blood pressure, teeth, heart, kidney...), but still nothing beats an ice-cold soda on a hot day. Have you thought about the impact each bottle of soda has on the environment though? Coca-Cola alone sells around 3,500 single-use bottles every second! One way or another, most of these bottles end up in the ocean, impacting marine animals.
-                            <br></br><br></br>
-                            It’s predicted that, if nothing changes, by 2050 plastic in the ocean may outweigh fish.
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={1} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Soda</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    You already know the impact soda can have on your health (it’s bad for your blood pressure, teeth, heart, kidney...), but still nothing beats an ice-cold soda on a hot day. Have you thought about the impact each bottle of soda has on the environment though? Coca-Cola alone sells around 3,500 single-use bottles every second! One way or another, most of these bottles end up in the ocean, impacting marine animals.
+                    <br></br><br></br>
+                    It’s predicted that, if nothing changes, by 2050 plastic in the ocean may outweigh fish.
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={4}>
@@ -98,16 +96,12 @@ class CocacolaDesktop extends Component {
           <Container>
             <Row>
               <Col sm={8}>
-                <ParallaxLayer offset={3.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Soda Impacted Marine Life?</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            “Many people think that plastic soft drink bottles are killing wildlife, and it is a contributor as it breaks down into small pieces. However, plastic bottles are not the main reason for plastics killing wildlife, it is the colorful plastic caps that become separated from the bottles. These colorful plastic caps act as lures, attract animals, and become bite size appetizers for sea turtles, dolphins and fish. The plastic can neither be digested nor passed through by most species. Instead, it clogs their intestinal tract and they die a slow and painful death at sea.” - www.woundednature.org
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={3} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2'>How has Soda Impacted Marine Life?</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    “Many people think that plastic soft drink bottles are killing wildlife, and it is a contributor as it breaks down into small pieces. However, plastic bottles are not the main reason for plastics killing wildlife, it is the colorful plastic caps that become separated from the bottles. These colorful plastic caps act as lures, attract animals, and become bite size appetizers for sea turtles, dolphins and fish. The plastic can neither be digested nor passed through by most species. Instead, it clogs their intestinal tract and they die a slow and painful death at sea.” - www.woundednature.org
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={4}>
@@ -123,7 +117,7 @@ class CocacolaDesktop extends Component {
           {/* Slide Five */}
           <Row>
             <Col md='6'>
-              <ParallaxLayer offset={4} speed={0.5}>
+              <ParallaxLayer offset={4} speed={0.5} onClick={() => this.parallax.scrollTo(5)}>
                 <div className='split-vertical light-green-background text-white d-flex align-items-center flex-wrap container'>
                   <Row className='px-3'>
                     <h1>What can you do to help?</h1>
@@ -132,7 +126,7 @@ class CocacolaDesktop extends Component {
               </ParallaxLayer>
             </Col>
             <Col md='6'>
-              <ParallaxLayer offset={4} speed={1.5}>
+              <ParallaxLayer offset={4} speed={1.5} onClick={() => this.parallax.scrollTo(5)}>
                 <div className='split-vertical d-flex align-items-center container'>
                   <ListGroup flush>
                     <ListGroupItem>
@@ -178,12 +172,6 @@ class CocacolaDesktop extends Component {
           </ParallaxLayer>
 
           <ParallaxLayer
-            offset={4}
-            speed={0.1}
-            onClick={() => this.parallax.scrollTo(5)}>
-          </ParallaxLayer>
-
-          <ParallaxLayer
             offset={5}
             speed={0.1}
             onClick={() => this.parallax.scrollTo(6)}>
@@ -206,6 +194,7 @@ class CocacolaDesktop extends Component {
             </Row>
           </ParallaxLayer>
         </Parallax>
+      </div>
     )
   }
 }

@@ -25,6 +25,8 @@ class Rice extends Component {
 class RiceDesktop extends Component {
   render() {
     return (
+      <div>
+        <Link to='/'><Button close id='PopoverHover' type='button' className='floating x-btn'/></Link>
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
 
           {/* Slide One */}
@@ -52,18 +54,14 @@ class RiceDesktop extends Component {
           <Container>
             <Row>
               <Col sm={9}>
-                <ParallaxLayer offset={1.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Rice</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            Rice is a nutritious staple food that many communities depend on to survive. However, growing rice produces methane, a greenhouse gas. The methane from rice production contributes to 1.5% of total greenhouse gas emissions, and could continue to grow.
-                            <br></br><br></br>
-                            Rice is a unique food that produces a lot of methane, but is necessary in communities that grow it and for those that lack a lot of resources for food. Rice production also helps biodiversity for wetland habitats, so it cannot be eliminated without other environmental harm. Therefore, it is crucial to find the balance between competing environmental factors and human need for rice.
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={1} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2'>About Rice</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    Rice is a nutritious staple food that many communities depend on to survive. However, growing rice produces methane, a greenhouse gas. The methane from rice production contributes to 1.5% of total greenhouse gas emissions, and could continue to grow.
+                    <br></br><br></br>
+                    Rice is a unique food that produces a lot of methane, but is necessary in communities that grow it and for those that lack a lot of resources for food. Rice production also helps biodiversity for wetland habitats, so it cannot be eliminated without other environmental harm. Therefore, it is crucial to find the balance between competing environmental factors and human need for rice.
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={3}>
@@ -98,20 +96,16 @@ class RiceDesktop extends Component {
           <Container>
             <Row>
               <Col sm={9}>
-                <ParallaxLayer offset={3.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How has Rice Impacted Asian Wetland habitats?</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            “In Asia, wetland habitats are at grave risk globally and as a result, there are great concerns on the rates of loss of biological diversity. Rice agricultural systems provide important human-modified wetlands for wildlife... Flooded rice environments provide important ‘supporting services’ for wildlife through their extensive water networks.” - www.irri.org
-                            <br></br><br></br>
-                            So, what do we do?
-                            <br></br><br></br>
-                            “Feeding the world and saving the planet have to become mutual goals if we are to meet the demands of a billion extra people by 2030, while keeping global warming below the 1.5°C critical risk threshold.” - www.eco-business.com
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={3} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2'>How has Rice Impacted Asian Wetland habitats?</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    “In Asia, wetland habitats are at grave risk globally and as a result, there are great concerns on the rates of loss of biological diversity. Rice agricultural systems provide important human-modified wetlands for wildlife... Flooded rice environments provide important ‘supporting services’ for wildlife through their extensive water networks.” - www.irri.org
+                    <br></br><br></br>
+                    So, what do we do?
+                    <br></br><br></br>
+                    “Feeding the world and saving the planet have to become mutual goals if we are to meet the demands of a billion extra people by 2030, while keeping global warming below the 1.5°C critical risk threshold.” - www.eco-business.com
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={3}>
@@ -132,7 +126,7 @@ class RiceDesktop extends Component {
                   <Row className='px-3'>
                     <h1>What can you do to help?</h1>
                     <p className='text-monospace pt-3'>
-                      There are many ways you can reduce your impact. Below is a small list of ways you can help reduce your environmental impact.
+                      There are many ways you can reduce your impact. This is a small list of ways you can help reduce your environmental impact.
                     </p>
                   </Row>
                 </div>
@@ -206,6 +200,7 @@ class RiceDesktop extends Component {
             </Row>
           </ParallaxLayer>
         </Parallax>
+      </div>
     )
   }
 }

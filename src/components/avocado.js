@@ -25,6 +25,8 @@ class Avocado extends Component {
 class AvocadoDesktop extends Component {
   render() {
     return (
+      <div>
+        <Link to='/'><Button close id='PopoverHover' type='button' className='floating x-btn'/></Link>
         <Parallax ref={ref => (this.parallax = ref)} pages={7}>
 
           {/* Slide One */}
@@ -52,18 +54,14 @@ class AvocadoDesktop extends Component {
           <Container>
             <Row>
               <Col sm={8}>
-                <ParallaxLayer offset={1.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Avocados</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            In recent years, avocados have gained popularity in the United States for their mild, yummy taste and health benefits. From avocado toast, to guacamole, and even avocado smoothies, millions of these green fruits are eaten every day.
-                            <br></br><br></br>
-                            While avocados are good for the health of humans, the health of forests and animal habitats suffer due to the high demand for the crop and the amount of water this fruit requires to grow.
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={1.1} speed={0.1}>
+                  <h1 className='text-center text-md-left pt-2 pt-lg-5'>About Avocados</h1>
+                    <p className='text-monospace body-text'>
+                      <br></br>
+                      In recent years, avocados have gained popularity in the United States for their mild, yummy taste and health benefits. From avocado toast, to guacamole, and even avocado smoothies, millions of these green fruits are eaten every day.
+                      <br></br><br></br>
+                      While avocados are good for the health of humans, the health of forests and animal habitats suffer due to the high demand for the crop and the amount of water this fruit requires to grow.
+                    </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={4}>
@@ -98,16 +96,12 @@ class AvocadoDesktop extends Component {
           <Container>
             <Row>
               <Col sm={8}>
-                <ParallaxLayer offset={3.2} speed={0.1}>
-                    {/* <div className='media'> */}
-                      {/* <div className='media-body'> */}
-                        <h1 className='text-center text-md-left pt-2 pt-lg-5'>How have Avocados Impacted Monarch Butterflies?</h1>
-                          <p className='text-monospace body-text'>
-                            <br></br>
-                            "Apútzio de Juárez, Mexico fills with swarms of migrating monarch butterflies each year. But downhill from the monarchs’ mountain roost, there lurks a new threat to their winter habitat: a lust to grow the lucrative avocados... Farmers here in the western state of Michoacán are clearing land to make room for avocado orchards, cutting oak and pine trees that form a vital buffer around the mountain forests where the monarchs nest. The trees cool the air from Michoacán’s warm western plains. If the temperature at the heart of the reserve, were to rise, the forest could suffer, and thus the butterflies would suffer, too." -nytimes.com
-                          </p>
-                      {/* </div> */}
-                    {/* </div> */}
+                <ParallaxLayer offset={3.1} speed={0.1}>
+                <h1 className='text-center text-md-left pt-2 pt-lg-5'>How have Avocados Impacted Monarch Butterflies?</h1>
+                  <p className='text-monospace body-text'>
+                    <br></br>
+                    "Apútzio de Juárez, Mexico fills with swarms of migrating monarch butterflies each year. But downhill from the monarchs’ mountain roost, there lurks a new threat to their winter habitat: a lust to grow the lucrative avocados... Farmers here in the western state of Michoacán are clearing land to make room for avocado orchards, cutting oak and pine trees that form a vital buffer around the mountain forests where the monarchs nest. The trees cool the air from Michoacán’s warm western plains. If the temperature at the heart of the reserve, were to rise, the forest could suffer, and thus the butterflies would suffer, too." -nytimes.com
+                  </p>
                 </ParallaxLayer>
               </Col>
               <Col sm={4}>
@@ -249,6 +243,7 @@ class AvocadoDesktop extends Component {
             </Row>
           </ParallaxLayer>
         </Parallax>
+      </div>
     )
   }
 }
